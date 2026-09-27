@@ -397,7 +397,13 @@
       return { nodes, edges };
     }
     // classes: type(a) --p--> type(b) for every assertion, plus rdfs:subClassOf among them
-    const typesOf = Object.fromEntries(inst.nodes.map((x) => [x.id, x.types.length ? x.types : [x.curie]]));
+    // keep the most specific asserted type: drop a type that is a superclass of another one
+    const lab = Object.fromEntries(b.schema.nodes.map((x) => [x.id, x.label]));
+    const supers = {};
+    b.schema.edges.filter((e) => e.type === "subclass").forEach((e) => { (supers[lab[e.source]] = supers[lab[e.source]] || []).push(lab[e.target]); });
+    const ancestors = (c, seen = new Set()) => { (supers[c] || []).forEach((p) => { if (!seen.has(p)) { seen.add(p); ancestors(p, seen); } }); return seen; };
+    const specific = (ts) => ts.filter((t) => !ts.some((o) => o !== t && ancestors(o).has(t)));
+    const typesOf = Object.fromEntries(inst.nodes.map((x) => [x.id, x.types.length ? specific(x.types) : [x.curie]]));
     const classes = new Set(), edgeKeys = new Map();
     inst.edges.forEach((e) => typesOf[e.source].forEach((s) => typesOf[e.target].forEach((t) => {
       classes.add(s); classes.add(t);
