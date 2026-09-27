@@ -4,6 +4,92 @@
   "objectProperties": 52,
   "individuals": 101
  },
+ "prefixes": {
+  "fsyn": {
+   "kind": "framester",
+   "source": "Framester"
+  },
+  "fs": {
+   "kind": "framester",
+   "source": "Framester"
+  },
+  "dbo": {
+   "kind": "external",
+   "source": "DBpedia"
+  },
+  "dbr": {
+   "kind": "external",
+   "source": "DBpedia"
+  },
+  "foaf": {
+   "kind": "external",
+   "source": "FOAF"
+  },
+  "cco": {
+   "kind": "external",
+   "source": "Cognitive Characteristics Ontology"
+  },
+  "prov": {
+   "kind": "odp",
+   "source": "Provenance"
+  },
+  "exob": {
+   "kind": "odp",
+   "source": "Experience & Observation"
+  },
+  "aff": {
+   "kind": "odp",
+   "source": "Affected By"
+  },
+  "participation": {
+   "kind": "odp",
+   "source": "Participation"
+  },
+  "partof": {
+   "kind": "odp",
+   "source": "Part Of"
+  },
+  "parameter": {
+   "kind": "odp",
+   "source": "Parameter"
+  },
+  "sequence": {
+   "kind": "odp",
+   "source": "Sequence"
+  },
+  "classification": {
+   "kind": "odp",
+   "source": "Classification"
+  },
+  "move": {
+   "kind": "odp",
+   "source": "Move"
+  },
+  "action": {
+   "kind": "odp",
+   "source": "Action"
+  },
+  "actpat": {
+   "kind": "odp",
+   "source": "Activity Reasoning"
+  },
+  "activ": {
+   "kind": "odp",
+   "source": "Activity Specification"
+  },
+  "news": {
+   "kind": "odp",
+   "source": "News Reporting Event"
+  },
+  "aos": {
+   "kind": "odp",
+   "source": "AOS (AGROVOC concept server)"
+  },
+  "owl": {
+   "kind": "local",
+   "source": "OWL"
+  }
+ },
  "generatedFrom": {
   "repository": "https://github.com/alicepicco333/CognitiveBiasOntologies",
   "upstream": "https://github.com/corrado877/CognitiveBiasOntologies",
@@ -657,6 +743,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Biased_Opinion",
       "label": "Biased Opinion",
+      "curie": "Biased_Opinion",
       "types": [
        "Bias"
       ],
@@ -665,6 +752,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Chris",
       "label": "Chris",
+      "curie": "Chris",
       "types": [
        "fs:People"
       ],
@@ -673,6 +761,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Decision",
       "label": "Decision",
+      "curie": "Decision",
       "types": [
        "MentalProperty"
       ],
@@ -681,6 +770,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Emily",
       "label": "Emily",
+      "curie": "Emily",
       "types": [
        "Agent"
       ],
@@ -689,6 +779,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Realization_of_bias",
       "label": "Realization of bias",
+      "curie": "Realization_of_bias",
       "types": [
        "Outcome"
       ],
@@ -697,6 +788,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Superiority_of_one's_idea",
       "label": "Superiority of one's idea",
+      "curie": "Superiority_of_one's_idea",
       "types": [
        "fsyn:Belief.n.1"
       ],
@@ -1402,6 +1494,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris",
       "label": "Chris",
+      "curie": "Chris",
       "types": [
        "fs:People"
       ],
@@ -1410,6 +1503,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge",
       "label": "Current challenge",
+      "curie": "Current_challenge",
       "types": [
        "fs:Event"
       ],
@@ -1418,6 +1512,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer",
       "label": "Decline of offer",
+      "curie": "Decline_of_offer",
       "types": [
        "Outcome"
       ],
@@ -1426,6 +1521,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism",
       "label": "Naive Cynicism",
+      "curie": "Naive_Cynicism",
       "types": [
        "Bias"
       ],
@@ -1434,6 +1530,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help",
       "label": "Offered help",
+      "curie": "Offered_help",
       "types": [
        "fs:Assistance"
       ],
@@ -2027,6 +2124,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Akio",
       "label": "Akio",
+      "curie": "Akio",
       "types": [
        "fs:People"
       ],
@@ -2035,6 +2133,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Maria",
       "label": "Maria",
+      "curie": "Maria",
       "types": [
        "Agent",
        "fs:People"
@@ -2044,6 +2143,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism",
       "label": "Naive Realism",
+      "curie": "Naive_Realism",
       "types": [
        "Bias"
       ],
@@ -2052,6 +2152,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own's_belief",
       "label": "Perception of own's belief",
+      "curie": "Perception_of_own's_belief",
       "types": [
        "fs:PerceptionExperience"
       ],
@@ -2060,6 +2161,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective",
       "label": "Target Perspective",
+      "curie": "Target_Perspective",
       "types": [
        "fs:Statement"
       ],
@@ -2068,6 +2170,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Underlying_belief_(cultural_universality)",
       "label": "Underlying belief (cultural universality)",
+      "curie": "Underlying_belief_(cultural_universality)",
       "types": [
        "fsyn:Belief.n.1"
       ],
@@ -3087,6 +3190,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Fabricated_story",
       "label": "Fabricated story",
+      "curie": "Fabricated_story",
       "types": [
        "fs:Evidence"
       ],
@@ -3095,6 +3199,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Memory_gap",
       "label": "Memory gap",
+      "curie": "Memory_gap",
       "types": [
        "MemoryGap"
       ],
@@ -3103,6 +3208,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Night_Out",
       "label": "Night Out",
+      "curie": "Night_Out",
       "types": [
        "fs:Event"
       ],
@@ -3111,6 +3217,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Sarah",
       "label": "Sarah",
+      "curie": "Sarah",
       "types": [
        "fs:People"
       ],
@@ -3119,6 +3226,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Telling_parents_fabricated_evidence",
       "label": "Telling parents fabricated evidence",
+      "curie": "Telling_parents_fabricated_evidence",
       "types": [
        "Outcome"
       ],
@@ -3901,6 +4009,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Consecutive_digits",
       "label": "Consecutive digits",
+      "curie": "Consecutive_digits",
       "types": [
        "fs:ExperiencerObj"
       ],
@@ -3909,6 +4018,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Illusion_pattern",
       "label": "Illusion pattern",
+      "curie": "Illusion_pattern",
       "types": [
        "dbr:Illusion"
       ],
@@ -3917,6 +4027,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Lottery",
       "label": "Lottery",
+      "curie": "Lottery",
       "types": [
        "fs:Activity"
       ],
@@ -3925,6 +4036,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Pattern_lottery_numbers",
       "label": "Pattern lottery numbers",
+      "curie": "Pattern_lottery_numbers",
       "types": [
        "fs:Pattern"
       ],
@@ -3933,6 +4045,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Sarah",
       "label": "Sarah",
+      "curie": "Sarah",
       "types": [
        "fsyn:Person"
       ],
@@ -4512,6 +4625,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_bought",
       "label": "Game bought",
+      "curie": "Game_bought",
       "types": [
        "Decision"
       ],
@@ -4520,6 +4634,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_choice",
       "label": "Game choice",
+      "curie": "Game_choice",
       "types": [
        "fs:Assessing"
       ],
@@ -4528,6 +4643,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_review",
       "label": "Game review",
+      "curie": "Game_review",
       "types": [
        "Thing"
       ],
@@ -4536,6 +4652,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Me",
       "label": "Me",
+      "curie": "Me",
       "types": [
        "fsyn:Person"
       ],
@@ -5131,6 +5248,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Amelia",
       "label": "Amelia",
+      "curie": "Amelia",
       "types": [
        "fsyn:Person"
       ],
@@ -5139,6 +5257,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Deadline",
       "label": "Deadline",
+      "curie": "Deadline",
       "types": [
        "Thing"
       ],
@@ -5147,6 +5266,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Job_presentation",
       "label": "Job presentation",
+      "curie": "Job_presentation",
       "types": [
        "Decision"
       ],
@@ -5155,6 +5275,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Procrastinate",
       "label": "Procrastinate",
+      "curie": "Procrastinate",
       "types": [
        "Ignore"
       ],
@@ -5163,6 +5284,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Task_management",
       "label": "Task management",
+      "curie": "Task_management",
       "types": [
        "fs:Assessing"
       ],
@@ -6182,6 +6304,7 @@
      {
       "id": "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Diet_works",
       "label": "Diet works",
+      "curie": "Diet_works",
       "types": [
        "fs:Pattern"
       ],
@@ -6190,6 +6313,7 @@
      {
       "id": "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Friend_lost_weight",
       "label": "Friend lost weight",
+      "curie": "Friend_lost_weight",
       "types": [
        "fs:Sequence"
       ],
@@ -6198,6 +6322,7 @@
      {
       "id": "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Losing_weight",
       "label": "Losing weight",
+      "curie": "Losing_weight",
       "types": [
        "fs:Activity"
       ],
@@ -6206,6 +6331,7 @@
      {
       "id": "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Subject",
       "label": "Subject",
+      "curie": "Subject",
       "types": [
        "fsyn:Person"
       ],
@@ -6214,6 +6340,7 @@
      {
       "id": "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Working_diet",
       "label": "Working diet",
+      "curie": "Working_diet",
       "types": [
        "fs:PerceptionExperience"
       ],
@@ -6222,6 +6349,7 @@
      {
       "id": "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#friend_losing_weight",
       "label": "friend losing weight",
+      "curie": "friend_losing_weight",
       "types": [
        "fs:ExperiencerObj"
       ],
@@ -6720,6 +6848,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Biased_investement",
       "label": "Biased investement",
+      "curie": "Biased_investement",
       "types": [
        "action:Action"
       ],
@@ -6728,6 +6857,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Expert_investor",
       "label": "Expert investor",
+      "curie": "Expert_investor",
       "types": [
        "fs:People"
       ],
@@ -6736,6 +6866,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Identicality_aspect",
       "label": "Identicality aspect",
+      "curie": "Identicality_aspect",
       "types": [
        "fs:Identicality"
       ],
@@ -6744,6 +6875,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_PerceivedValidity",
       "label": "Investor PerceivedValidity",
+      "curie": "Investor_PerceivedValidity",
       "types": [
        "PerceivedValidity"
       ],
@@ -6752,6 +6884,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_predicting",
       "label": "Investor predicting",
+      "curie": "Investor_predicting",
       "types": [
        "fs:Predicting"
       ],
@@ -6760,6 +6893,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investorship_knowledge",
       "label": "Investorship knowledge",
+      "curie": "Investorship_knowledge",
       "types": [
        "dbr:Knowledge"
       ],
@@ -6768,6 +6902,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Negative_outcome",
       "label": "Negative outcome",
+      "curie": "Negative_outcome",
       "types": [
        "Outcome"
       ],
@@ -6776,6 +6911,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Positive_outcome",
       "label": "Positive outcome",
+      "curie": "Positive_outcome",
       "types": [
        "fs:Expectation"
       ],
@@ -7829,6 +7965,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon",
       "label": "Heart surgeon",
+      "curie": "Heart_surgeon",
       "types": [
        "KnownFeature"
       ],
@@ -7837,6 +7974,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual",
       "label": "Individual",
+      "curie": "Individual",
       "types": [
        "fs:People"
       ],
@@ -7845,6 +7983,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perceived_validity",
       "label": "Individual perceived validity",
+      "curie": "Individual_perceived_validity",
       "types": [
        "PerceivedValidity"
       ],
@@ -7853,6 +7992,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perception_experience",
       "label": "Individual perception experience",
+      "curie": "Individual_perception_experience",
       "types": [
        "fs:PerceptionExperience"
       ],
@@ -7861,6 +8001,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist",
       "label": "Jazz saxophonist",
+      "curie": "Jazz_saxophonist",
       "types": [
        "Un-knownFeature"
       ],
@@ -7869,6 +8010,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#John_Smith",
       "label": "John Smith",
+      "curie": "John_Smith",
       "types": [
        "dbr:Entity"
       ],
@@ -7877,6 +8019,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Knowledge",
       "label": "Knowledge",
+      "curie": "Knowledge",
       "types": [
        "dbr:Knowledge"
       ],
@@ -9204,6 +9347,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision",
       "label": "Final decision",
+      "curie": "Final_decision",
       "types": [
        "Decision"
       ],
@@ -9212,6 +9356,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interview_perception_experience",
       "label": "Interview perception experience",
+      "curie": "Interview_perception_experience",
       "types": [
        "fs:PerceptionExperience"
       ],
@@ -9220,6 +9365,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer",
       "label": "Interviewer",
+      "curie": "Interviewer",
       "types": [
        "fs:People"
       ],
@@ -9228,6 +9374,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding",
       "label": "Memory encoding",
+      "curie": "Memory_encoding",
       "types": [
        "MemoryEncoding"
       ],
@@ -9236,6 +9383,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory",
       "label": "Past memory",
+      "curie": "Past_memory",
       "types": [
        "PastMemory"
       ],
@@ -9244,6 +9392,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory",
       "label": "Recent memory",
+      "curie": "Recent_memory",
       "types": [
        "RecentMemory"
       ],
@@ -9252,6 +9401,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl#High_importance",
       "label": "High importance",
+      "curie": "High_importance",
       "types": [
        "HighImportance"
       ],
@@ -9260,6 +9410,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl#Importance",
       "label": "Importance",
+      "curie": "Importance",
       "types": [
        "fs:Importance"
       ],
@@ -9268,6 +9419,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl#Low_importance",
       "label": "Low importance",
+      "curie": "Low_importance",
       "types": [
        "LowImportance"
       ],
@@ -9276,6 +9428,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl#Memory",
       "label": "Memory",
+      "curie": "Memory",
       "types": [
        "fs:Memory"
       ],
@@ -9284,6 +9437,7 @@
      {
       "id": "https://w3id.org/framester/data/framestercore/Deciding",
       "label": "Deciding",
+      "curie": "fs:Deciding",
       "types": [
        "fs:Deciding"
       ],
@@ -10812,6 +10966,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number",
       "label": "Black Number",
+      "curie": "Black_Number",
       "types": [
        "OutcomeColorNumber"
       ],
@@ -10820,6 +10975,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw",
       "label": "Lottery Draw",
+      "curie": "Lottery_Draw",
       "types": [
        "fs:Activity"
       ],
@@ -10828,6 +10984,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Player",
       "label": "Lottery Player",
+      "curie": "Lottery_Player",
       "types": [
        "fsyn:Player.n.1"
       ],
@@ -10836,6 +10993,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Next_Number_Draw",
       "label": "Next Number Draw",
+      "curie": "Next_Number_Draw",
       "types": [
        "NextRandomOccurrence"
       ],
@@ -10844,6 +11002,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series",
       "label": "Past Number Draw Series",
+      "curie": "Past_Number_Draw_Series",
       "types": [
        "fs:Sequence"
       ],
@@ -10852,6 +11011,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ProbabilityLevel",
       "label": "ProbabilityLevel",
+      "curie": "ProbabilityLevel",
       "types": [
        "fs:Probability"
       ],
@@ -10860,6 +11020,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number",
       "label": "Red Number",
+      "curie": "Red_Number",
       "types": [
        "OutcomeColorNumber"
       ],
@@ -11974,6 +12135,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet",
       "label": "Football Team Match Bet",
+      "curie": "Football_Team_Match_Bet",
       "types": [
        "NextChance-BasedOccurence"
       ],
@@ -11982,6 +12144,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series",
       "label": "Football Team Match Bet Series",
+      "curie": "Football_Team_Match_Bet_Series",
       "types": [
        "fs:Sequence"
       ],
@@ -11990,6 +12153,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel",
       "label": "ProbabilityLevel",
+      "curie": "ProbabilityLevel",
       "types": [
        "fs:Probability"
       ],
@@ -11998,6 +12162,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets",
       "label": "Sport Bets",
+      "curie": "Sport_Bets",
       "types": [
        "fs:Activity"
       ],
@@ -12006,6 +12171,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor",
       "label": "Sport Bettor",
+      "curie": "Sport_Bettor",
       "types": [
        "fsyn:Bettor.n.1"
       ],
@@ -12014,6 +12180,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet",
       "label": "Winning Bet",
+      "curie": "Winning_Bet",
       "types": [
        "dbr:Success"
       ],
@@ -13143,6 +13310,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match",
       "label": "Baseball Match",
+      "curie": "Baseball_Match",
       "types": [
        "fs:Activity"
       ],
@@ -13151,6 +13319,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Player",
       "label": "Baseball Player",
+      "curie": "Baseball_Player",
       "types": [
        "fsyn:Player.n.1"
       ],
@@ -13159,6 +13328,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect",
       "label": "IllusionEffect",
+      "curie": "IllusionEffect",
       "types": [
        "dbr:Illusion"
       ],
@@ -13167,6 +13337,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness",
       "label": "TrendAwareness",
+      "curie": "TrendAwareness",
       "types": [
        "fs:BecomingAware"
       ],
@@ -13175,6 +13346,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation",
       "label": "VariablesCorrelation",
+      "curie": "VariablesCorrelation",
       "types": [
        "fs:CognitiveConnection"
       ],
@@ -13183,6 +13355,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern",
       "label": "VariablesPattern",
+      "curie": "VariablesPattern",
       "types": [
        "VariablesPattern"
       ],
@@ -13191,6 +13364,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories",
       "label": "Victories",
+      "curie": "Victories",
       "types": [
        "VariableEntity2"
       ],
@@ -13199,6 +13373,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks",
       "label": "pair of socks",
+      "curie": "pair_of_socks",
       "types": [
        "VariableEntity1"
       ],
@@ -14536,6 +14711,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape",
       "label": "FacialShape",
+      "curie": "FacialShape",
       "types": [
        "RecognizablePattern"
       ],
@@ -14544,6 +14720,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion",
       "label": "FacialShapeIllusion",
+      "curie": "FacialShapeIllusion",
       "types": [
        "dbr:Illusion"
       ],
@@ -14552,6 +14729,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus",
       "label": "RandomStimulus",
+      "curie": "RandomStimulus",
       "types": [
        "AmbiguousStimulus"
       ],
@@ -14560,6 +14738,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception",
       "label": "SensorialPerception",
+      "curie": "SensorialPerception",
       "types": [
        "fs:PerceptionExperience"
       ],
@@ -14568,6 +14747,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk",
       "label": "Walk",
+      "curie": "Walk",
       "types": [
        "fs:Activity"
       ],
@@ -14576,6 +14756,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#park_hiker",
       "label": "park hiker",
+      "curie": "park_hiker",
       "types": [
        "fsyn:Hiker.n.1"
       ],
@@ -14584,6 +14765,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#weather-beaten_tree_trunk",
       "label": "weather-beaten tree trunk",
+      "curie": "weather-beaten_tree_trunk",
       "types": [
        "VisualStimulus"
       ],
@@ -15404,6 +15586,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child",
       "label": "Child",
+      "curie": "Child",
       "types": [
        "fs:People"
       ],
@@ -15412,6 +15595,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child_perception_experience",
       "label": "Child perception experience",
+      "curie": "Child_perception_experience",
       "types": [
        "fs:PerceptionExperience"
       ],
@@ -15420,6 +15604,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Joy",
       "label": "Joy",
+      "curie": "Joy",
       "types": [
        "HumanFeature"
       ],
@@ -15428,6 +15613,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Puppet",
       "label": "Puppet",
+      "curie": "Puppet",
       "types": [
        "move:PhysicalObject"
       ],
@@ -15436,6 +15622,7 @@
      {
       "id": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Sadness",
       "label": "Sadness",
+      "curie": "Sadness",
       "types": [
        "HumanFeature"
       ],

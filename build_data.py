@@ -115,11 +115,12 @@ PREFIXES = [
     ("activ", "icity/"),
     ("news", "newsreportingevent.owl#"),
     ("aos", "fao.org/aims/aos/aos.owl#"),
+    ("owl", "www.w3.org/2002/07/owl#"),
 ]
 
 KIND_OF_PREFIX = {
     "fs": "framester", "fsyn": "framester",
-    "dbo": "external", "dbr": "external", "foaf": "external", "cco": "external",
+    "dbo": "external", "dbr": "external", "foaf": "external", "cco": "external", "owl": "local",
 }
 EXTERNAL_NAMES = {"dbo": "DBpedia", "dbr": "DBpedia", "foaf": "FOAF", "cco": "Cognitive Characteristics Ontology"}
 
@@ -459,7 +460,7 @@ def instance_graph(m):
         ids.add(i)
     nodes = []
     for i in sorted(ids):
-        nodes.append({"id": i, "label": local_name(i).replace("_", " "),
+        nodes.append({"id": i, "label": local_name(i).replace("_", " "), "curie": curie(i),
                       "types": sorted(curie(t) for t in m.types.get(i, ())),
                       "kind": "individual" if kind_of(i) == "local" else kind_of(i)})
     data = [{"subject": local_name(s).replace("_", " "), "property": curie(p), "value": v}
@@ -738,8 +739,25 @@ def build():
                     (("classes", OWL.Class), ("objectProperties", OWL.ObjectProperty),
                      ("individuals", OWL.NamedIndividual))}
 
+    prefix_info = {}
+    for pfx, frag in PREFIXES:
+        sample = {
+            "sequence": "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#X",
+            "move": "http://www.ontologydesignpatterns.org/cp/owl/move.owl#X",
+            "action": "http://www.ontology.se/odp/content/owl/Action.owl#X",
+            "actpat": "http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#X",
+            "activ": "http://ontology.eil.utoronto.ca/icity/ActivitySpecification/X",
+        }.get(pfx, "http://" + frag + "X")
+        oid = odp_of_iri(sample)
+        prefix_info.setdefault(pfx, {
+            "kind": kind_of(sample),
+            "source": EXTERNAL_NAMES.get(pfx) or ("Framester" if pfx in ("fs", "fsyn") else None)
+                      or (ODPS[oid]["name"] if oid else ("OWL" if pfx == "owl" else None)),
+        })
+
     data = {
         "merged": merged_stats,
+        "prefixes": prefix_info,
         "generatedFrom": {
             "repository": REPO_WEB,
             "upstream": "https://github.com/corrado877/CognitiveBiasOntologies",
