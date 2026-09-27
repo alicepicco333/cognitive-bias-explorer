@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot">
+    <Prefix name="" IRI="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#"/>
+    <Prefix name="fs" IRI="https://w3id.org/framester/data/framestercore/"/>
+    <Prefix name="aff" IRI="https://w3id.org/affectedBy#"/>
+    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"/>
+    <Prefix name="cco" IRI="http://purl.org/ontology/cco/core#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="fsyn" IRI="https://w3id.org/framester/data/framestersyn/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal>20/03/2024</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal>Alice Picco</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal>Bias Blind Spot specification in the Cognitive Bias Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal>Bias Blind Spot Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#hascomponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#hascomponent"/>
+        <Literal>http://purl.org/ontology/cco/core#</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#hascomponent"/>
+        <Literal>https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#hascomponent"/>
+        <Literal>https://w3id.org/affectedBy</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#hascomponent"/>
+        <Literal>https://w3id.org/framester/data/framestercore</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#userstory"/>
+        <Literal>As a product manager, Emily was tasked with prioritizing features for the upcoming software update. Wanting to ensure an objective and user-centric approach, she initiated a team discussion to gather input.
+Emily noticed that her colleague, Chris, passionately advocated for a feature related to data visualization, emphasizing its impact on user engagement. As the discussion progressed, Emily felt increasingly convinced that Chris&apos;s viewpoint was swayed by his personal interest in data visualization.
+However, during a later discussion, when Emily found herself advocating for a feature that streamlined workflow processes—a functionality she personally valued—she realized the potential bias in her own decision-making. It struck her that, just like Chris, her preferences and experiences were influencing her choices.
+Reflecting on this realization, Emily became more mindful of her own bias blind spot. She acknowledged the need to consider a broader range of user perspectives and experiences, recognizing that her personal preferences might not align with the diverse needs of the entire user base. This awareness prompted her to implement a more inclusive decision-making process for feature prioritization, ensuring a balanced consideration of different user needs and preferences.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Bias Blind Spot refers to the cognitive bias where individuals recognize and easily identify biases in others but fail to acknowledge or perceive their own cognitive biases. It involves the tendency to believe that one is less susceptible to biases than other people, leading individuals to overlook their own subjective judgments and assumptions. The bias blind spot can hinder self-awareness and critical reflection, potentially influencing decision-making, problem-solving, and interpersonal relationships. Recognizing and addressing the bias blind spot is essential for fostering a more accurate and unbiased understanding of one&apos;s own thought processes and behaviors.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Bias"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Outcome"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Assessing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:BecomingAware"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Deciding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Event"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Evidence"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Importance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:People"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Predicting"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Sequence"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fsyn:Belief.n.1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cco:belief"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:focusesOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:hasBiasedOpinion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:isUnawareOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="aff:affectedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Biased_Opinion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Decision"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Emily"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Realization_of_bias"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#hascomponent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#userstory"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="cbo:Agent"/>
+        <Class abbreviatedIRI="fs:People"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:Bias"/>
+        <NamedIndividual IRI="#Biased_Opinion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="fs:People"/>
+        <NamedIndividual IRI="#Chris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+        <NamedIndividual IRI="#Decision"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:Agent"/>
+        <NamedIndividual IRI="#Emily"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:Outcome"/>
+        <NamedIndividual IRI="#Realization_of_bias"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="fsyn:Belief.n.1"/>
+        <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:hasBiasedOpinion"/>
+        <NamedIndividual IRI="#Chris"/>
+        <NamedIndividual IRI="#Biased_Opinion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
+        <NamedIndividual IRI="#Decision"/>
+        <NamedIndividual IRI="#Realization_of_bias"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="aff:affectedBy"/>
+        <NamedIndividual IRI="#Decision"/>
+        <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
+        <NamedIndividual IRI="#Emily"/>
+        <NamedIndividual IRI="#Decision"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cco:belief"/>
+        <NamedIndividual IRI="#Emily"/>
+        <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:focusesOn"/>
+        <NamedIndividual IRI="#Emily"/>
+        <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:isUnawareOf"/>
+        <NamedIndividual IRI="#Emily"/>
+        <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="aff:affectedBy"/>
+        <NamedIndividual IRI="#Realization_of_bias"/>
+        <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
+        <Class abbreviatedIRI="cbo:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cco:belief"/>
+        <Class abbreviatedIRI="cbo:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cbo:focusesOn"/>
+        <Class abbreviatedIRI="cbo:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cbo:hasBiasedOpinion"/>
+        <Class abbreviatedIRI="fs:People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class abbreviatedIRI="fs:Event"/>
+            <Class abbreviatedIRI="fs:Sequence"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cbo:isUnawareOf"/>
+        <Class abbreviatedIRI="cbo:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="aff:affectedBy"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+            <Class abbreviatedIRI="cbo:Outcome"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+            <Class abbreviatedIRI="fs:Activity"/>
+            <Class abbreviatedIRI="fs:Assessing"/>
+            <Class abbreviatedIRI="fs:BecomingAware"/>
+            <Class abbreviatedIRI="fs:Deciding"/>
+            <Class abbreviatedIRI="fs:Event"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+            <Class abbreviatedIRI="fs:Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cco:belief"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="fs:Sequence"/>
+            <Class abbreviatedIRI="fsyn:Belief.n.1"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cbo:focusesOn"/>
+        <Class abbreviatedIRI="cbo:Bias"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cbo:hasBiasedOpinion"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:Bias"/>
+            <Class abbreviatedIRI="fs:Event"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:Outcome"/>
+            <Class abbreviatedIRI="fs:Importance"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cbo:isUnawareOf"/>
+        <Class abbreviatedIRI="fsyn:Belief.n.1"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="aff:affectedBy"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="fs:Evidence"/>
+            <Class abbreviatedIRI="fsyn:Belief.n.1"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty</IRI>
+        <Literal>MentalProperty, when used for decision-making, refers to the collection of intangible assets, including intellectual property, knowledge assets, creative outputs, innovative ideas, cognitive constructs, and personal and cultural heritage, that are considered and evaluated to inform and guide decision processes. In this context, MentalProperty serves as the foundation upon which decisions are made, providing valuable insights, perspectives, and resources that influence the course of action chosen. Decision-makers may assess and leverage MentalProperty assets to address challenges, capitalize on opportunities, mitigate risks, and achieve desired outcomes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:Agent</AbbreviatedIRI>
+        <Literal>Individual who performs the Bias Blind Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:Bias</AbbreviatedIRI>
+        <Literal>a class for defining any kind of bias</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:Outcome</AbbreviatedIRI>
+        <Literal>Refers to the result, effect, or consequence of a particular action, event, process, or situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:focusesOn</AbbreviatedIRI>
+        <Literal>describes the primary subject or area of attention associated with an entity or concept.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:hasBiasedOpinion</AbbreviatedIRI>
+        <Literal>a property connecting a Person who has a biased opinion about something eg the possible outcome of an Event such as a Random or Chance-based Occurrence  or a person who has a biased Opinion about a Bias.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:hasOutcome</AbbreviatedIRI>
+        <Literal>A property linking an entity that produces an Outcome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:isUnawareOf</AbbreviatedIRI>
+        <Literal>indicates the lack of knowledge or awareness of a particular entity or concept by another entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fs:People</AbbreviatedIRI>
+        <Literal>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming babyyesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fsyn:Belief.n.1</AbbreviatedIRI>
+        <Literal>A belief is a mental state or attitude where an individual holds something to be true or probable. Beliefs can range from factual assertions about the world to subjective evaluations, opinions, or attitudes about various matters. They form a fundamental part of human cognition and influence perception, decision-making, and behavior. Beliefs can be based on evidence, personal experience, cultural upbringing, social influences, or even intuition. They often shape an individual&apos;s worldview and can be deeply ingrained or subject to change over time based on new information or experiences.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,833 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl"
+     xmlns:fs="https://w3id.org/framester/data/framestercore/"
+     xmlns:aff="https://w3id.org/affectedBy#"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
+     xmlns:cco="http://purl.org/ontology/cco/core#"
+     xmlns:dbo="https://dbpedia.org/ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:fsyn="https://w3id.org/framester/data/framestersyn/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:partof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
+     xmlns:parameter="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"
+     xmlns:participation="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-20T00:00:00</terms:created>
+        <terms:creator>Corrado Consiglio</terms:creator>
+        <terms:description>The Gamblers&apos;Fallacy module of the Cognitive Bias Ontology</terms:description>
+        <terms:title>The Gamblers&apos;Fallacy Ontology Bias</terms:title>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:AffectedBy"/>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Parameter"/>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Participation"/>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Provenance"/>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:RecurrentEventSeries"/>
+        <cpannotationschema:hasComponent rdf:resource="http://purl.org/ontology/cco/20100926/cognitivecharacteristics.html"/>
+        <cpannotationschema:scenarios>In a lottery, a person thinks that a certain number is more likely to be drawn next because it hasn&apos;t been drawn in a long time.</cpannotationschema:scenarios>
+        <rdfs:comment xml:lang="en">The Gambler&apos;s Fallacy bias, also known as the Fallacy of the Maturity of Chances, is a cognitive bias that occurs when an individual believes that past events in a random or chance-based process can influence the likelihood of future events in the same process. It is a mistaken belief that, because a certain outcome has occurred frequently or infrequently in the past, the probability of that outcome occurring again in the future is somehow altered or &quot;due&quot; to happen.</rdfs:comment>
+        <hasComponent rdf:resource="https://dbpedia.org/ontology/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasComponent -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasComponent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
+        <terms:description>Define the relation between an entity (activity or event) and its produced outcome.</terms:description>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ontology/cco/core#belief -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/cco/core#belief">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>An uncertain relation for competence representation. That means beliefs, persuasions or opinions, which can also be misconceptions. A Person who believes that a sequence of past events with the same outcome can change the probability of the outcome of the same event in the future</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameter">
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#isParameterFor"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PastMemory"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecentMemory"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Importance"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#isParameterFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#isParameterFor">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Importance"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PastMemory"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecentMemory"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant">
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/People"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>inverse property of isParticipantIn</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/People"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>Define the participation of an entity in a process or an Activity</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart">
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dbpedia.org/ontology/produces -->
+
+    <owl:ObjectProperty rdf:about="https://dbpedia.org/ontology/produces">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/People"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Evidence"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Expectation"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Memory"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>Define the relation between an entity (activity or event) and its produced outcome.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>A property connecting a Person who has a biased opinion about the possible outcome of a Future Event, such as a Random/Chance-based Occurrence, because he/she thinks that there is a correlation between this future event and a series of past events.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence">
+        <owl:inverseOf rdf:resource="https://w3id.org/affectedBy#influencedBy"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>A property connecting an Entity (Sequence) that affects in different ways another entity (Probability).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome">
+        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isOutcomeOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Importance"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>A property linking series of events to the same Outcome produced</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isOutcomeOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isOutcomeOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Importance"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>Inverse property of HasOutcome property</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#influencedBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameterDataValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameterDataValue">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Identicality"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Importance"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#FutureEvent -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#FutureEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
+        <terms:description>This class represent an event that will happen in the next future.</terms:description>
+        <rdfs:label>FutureEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#NextRandomOccurrence -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#NextRandomOccurrence">
+        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#FutureEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>This class represent an event that will happen in the next future and it is characterized by randomness.</terms:description>
+        <rdfs:label>NextRandomOccurence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <terms:description>This class represent the outcome of an event such as a RandomOccurence</terms:description>
+        <rdfs:label>Outcome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#OutcomeColorNumber -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#OutcomeColorNumber">
+        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+        <terms:description>A class representing a type of Outcome such as Colored Numbers</terms:description>
+        <rdfs:label>ColorNumber</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PastMemory -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PastMemory"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecentMemory -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecentMemory"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Activity -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <terms:description>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame. In this case the frame represents an activity with random or chance-based outcomes in which a person is involved in.</terms:description>
+        <rdfs:label>Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Deciding -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Event -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <terms:description>An Event takes place at a Place and Time. Big earthquakes only happen along plate boundaries. INI The party will take place on Sunday in the all-you-can-eat buffet.</terms:description>
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Evidence -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Evidence"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Expectation -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Expectation"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Identicality -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Identicality"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Importance -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Importance"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Memory -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Memory"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Pattern -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/People -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <terms:description>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming baby yesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</terms:description>
+        <rdfs:label>People</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/PerceptionExperience -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Predicting -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Probability -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Probability">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <terms:description>This frame characterizes the likelihood that a Hypothetical_event will happen as a position on a scale of impossible to inevitable. The likelihood can expressed as numerical Odds or a metaphorical representation of the Position on a scale. There&apos;s a 20 % chance that you&apos;ll succeed. The odds that he&apos;ll actually do it are one in a million.</terms:description>
+        <rdfs:label>Probability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Sequence -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>The words in this frame describe entities that occur in some temporally-ordered sequence. The entities thus have some sort of relation between them that might be described by the Relative_time frame. However, at this time, this frame has no Frame Relation with that frame (though this is still under discussion). Additionally, it should be noted that the words in this frame have a metaphorical link to the words in Shape. Describe in detail the sequence of steps taken during an emergency. In this case this frame represent a sequence of temporally-ordered past events that have the same outcome</terms:description>
+        <rdfs:label>Sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestersyn/Belief.n.1 -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestersyn/Player.n.1 -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Player.n.1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <terms:description>A class for a player involved in an Activity such as a Lottery Draw.</terms:description>
+        <rdfs:label>Player</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#OutcomeColorNumber"/>
+        <rdfs:comment>The outcome of the next number draw or past number draws. Black numbers and red numbers have the same probability of being extracted.</rdfs:comment>
+        <rdfs:label>Black Number</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+        <rdfs:comment>an activity where numbers are of two different colours (black and red) and where only one number is extracted for each draw.</rdfs:comment>
+        <rdfs:label>Lottery Draw</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Player -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Player">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Player.n.1"/>
+        <cco:belief rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series"/>
+        <participation:isParticipantIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
+        <cbo:hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Next_Number_Draw"/>
+        <rdfs:comment>An human being that participates as a player to a lottery draw.</rdfs:comment>
+        <rdfs:label>Lottery Player</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Next_Number_Draw -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Next_Number_Draw">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#NextRandomOccurrence"/>
+        <parameter:hasParameter rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ProbabilityLevel"/>
+        <partof:isPartOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
+        <dbo:produces rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number"/>
+        <dbo:produces rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number"/>
+        <rdfs:comment>A number draw in a lottery is an event totally random where each number has the same probability of being extracted. In this case the outcome of the next number draw can be the same of the past number draws series  or not. If  in the past Number draws series the Outcome was Black and player believes that the probability of drawing a Black number in the next draw is lower so the next outcome will be Red, he/she is affected by the Gambler&apos;s Fallacy Bias. On the contrary, if he/she believes that the probability of drawing again a Black number is higher, he/she is affected by the Hot Outcome bias.</rdfs:comment>
+        <rdfs:label>Number Draw</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <prov:wasGeneratedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
+        <cbo:hasOutcome rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number"/>
+        <rdfs:comment>An ordered sequence of past number draws that has the same outcome (black) will influence the judgment of the participant about the probability of the outcome in the next number draw.</rdfs:comment>
+        <rdfs:label>Past Number Draw Series</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ProbabilityLevel -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ProbabilityLevel">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <aff:influencedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series"/>
+        <parameter:hasParameterDataValue>High</parameter:hasParameterDataValue>
+        <parameter:hasParameterDataValue>Low</parameter:hasParameterDataValue>
+        <rdfs:comment>The level of probability that the outcome of the next number draw will be red or black  can be higher or lower for the participant, depending on the outcomes of the previous number draws.</rdfs:comment>
+        <rdfs:label>Probability Level</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#OutcomeColorNumber"/>
+        <rdfs:comment>The outcome of the next number draw or past number draws. Black numbers and red numbers have the same probability of being extracted</rdfs:comment>
+        <rdfs:label>Red Number</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

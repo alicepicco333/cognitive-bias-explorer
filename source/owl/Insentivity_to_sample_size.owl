@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size">
+    <Prefix name="" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size"/>
+    <Prefix name="fs" IRI="https://w3id.org/framester/data/framestercore/"/>
+    <Prefix name="aff" IRI="https://w3id.org/affectedBy"/>
+    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="term" IRI="http://modellingdh.github.io/ont/odp/term/"/>
+    <Prefix name="actspec" IRI="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal>27/02/2024</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal>Salvatore Di Marzo</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal>Insensitivity to sample size part of the Cognitive Bias Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal>Insensitivity to sample size bias ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Insensitivity to sample size bias is a cognitive bias where people misjudge the reliability of information based on the sample size. In simpler terms, we often fail to consider how much a small group represents the larger population. This can lead to drawing false conclusions and making poor decisions.
+People tend to treat small and large samples as equally representative, neglecting the increased accuracy of larger samples. We overgeneralize from small samples, applying their findings to the broader population without considering the margin of error.
+It&apos;s related to other biases like the clustering illusion, where we underestimate randomness in small samples.
+Our intuition struggles with the complex relationship between sample size and statistical uncertainty, we often lack the statistical training to analyse data critically and assess its generalizability, heuristics, which are mental shortcuts, can lead us to jump to conclusions without enough evidence.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hascomponent"/>
+        <Literal>I&apos;m excited for the upcoming release of &quot;Nova Odyssey,&quot; an RPG lauded by several popular streamers I follow. Their glowing reviews have me hyped, but I&apos;m worried about potentially overhyping the game based on a limited perspective. I don&apos;t want to be disappointed if the gameplay doesn&apos;t match my expectations or there are hidden issues not mentioned in the reviews. I want to avoid falling prey to insensitivity to sample size bias and make a well-rounded decision about &quot;Nova Odyssey.&quot; I need tools and information that help me consider diverse perspectives, analyse gameplay beyond streamer opinions, and understand the potential for bias in early reviews. On the Reviewer, I find a mix of professional reviews and player feedback, offering diverse perspectives beyond the streamer hype. While some praise the game&apos;s visuals and story, others point out bugs and repetitive gameplay mechanics. This balanced view helps me manage my expectations.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hascomponent"/>
+        <Literal>http://ontology.eil.utoronto.ca/icity/ActivitySpecification</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hascomponent"/>
+        <Literal>http://xmlns.com/foaf/0.1/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hascomponent"/>
+        <Literal>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hascomponent"/>
+        <Literal>https://w3id.org/affectedBy</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hascomponent"/>
+        <Literal>https://w3id.org/framester/data/framestercore/</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Assessing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:BecomingAware"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Deciding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Event"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Pattern"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:People"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Predicting"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Probability"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Sequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="term:inActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:have_knowledge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Game_bought"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Game_choice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Game_review"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Me"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hascomponent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#user_story"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
+        <Class abbreviatedIRI="fs:People"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI="cbo:Thing"/>
+        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:Decision"/>
+        <NamedIndividual IRI="#Game_bought"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="fs:Assessing"/>
+        <NamedIndividual IRI="#Game_choice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:Thing"/>
+        <NamedIndividual IRI="#Game_review"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
+        <NamedIndividual IRI="#Me"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
+        <NamedIndividual IRI="#Game_bought"/>
+        <NamedIndividual IRI="#Game_review"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="term:inActivity"/>
+        <NamedIndividual IRI="#Game_choice"/>
+        <NamedIndividual IRI="#Game_bought"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
+        <NamedIndividual IRI="#Game_review"/>
+        <NamedIndividual IRI="#Game_bought"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <NamedIndividual IRI="#Me"/>
+        <NamedIndividual IRI="#Game_choice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:have_knowledge"/>
+        <NamedIndividual IRI="#Me"/>
+        <NamedIndividual IRI="#Game_review"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="term:inActivity"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="fs:Assessing"/>
+            <Class abbreviatedIRI="fs:BecomingAware"/>
+            <Class abbreviatedIRI="fs:Pattern"/>
+            <Class abbreviatedIRI="fs:People"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <Class abbreviatedIRI="fs:People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cbo:have_knowledge"/>
+        <Class abbreviatedIRI="fs:People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:Decision"/>
+            <Class abbreviatedIRI="cbo:Thing"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+            <Class abbreviatedIRI="fs:Probability"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="term:inActivity"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:Decision"/>
+            <Class abbreviatedIRI="fs:Activity"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+            <Class abbreviatedIRI="fs:Activity"/>
+            <Class abbreviatedIRI="fs:Assessing"/>
+            <Class abbreviatedIRI="fs:BecomingAware"/>
+            <Class abbreviatedIRI="fs:Deciding"/>
+            <Class abbreviatedIRI="fs:Event"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+            <Class abbreviatedIRI="fs:Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cbo:have_knowledge"/>
+        <Class abbreviatedIRI="cbo:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:Decision"/>
+            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
+            <Class abbreviatedIRI="fs:Pattern"/>
+            <Class abbreviatedIRI="fs:Sequence"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>term:inActivity</AbbreviatedIRI>
+        <Literal>what activity/ies are affecting or affected by a certain engagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>term:isEngagedIn</AbbreviatedIRI>
+        <Literal>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:Decision</AbbreviatedIRI>
+        <Literal>a class representing a decision made in a certain situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:Thing</AbbreviatedIRI>
+        <Literal>a class for defining any kind of information about which a person has some knowledge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:have_knowledge</AbbreviatedIRI>
+        <Literal>a property that links the cognitive process of storing some information regarding a topic.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/affectedBy#influencedBy</IRI>
+        <Literal>A relation between qualities. A quality is influenced by another quality if the value of the latter affects the value of the former.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fs:Assessing</AbbreviatedIRI>
+        <Literal>An Assessor examines a Phenomenon to figure out its Value according to some Feature of the Phenomenon. This Value is a factor in determining the acceptability of the Phenomenon. In some cases, a Method (implicitly involving an Assessor) is used to determine the Phenomenon&apos;s Value. Each company is then evaluated for their earning potential. CNI From the evidence of the pilot studies the risk of damage to the test subjects was rated too high to continue. CNI He weighed his options carefully.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fs:People</AbbreviatedIRI>
+        <Literal>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming babyyesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

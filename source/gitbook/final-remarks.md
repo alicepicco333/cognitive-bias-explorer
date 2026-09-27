@@ -1,0 +1,15 @@
+> For the complete documentation index, see [llms.txt](https://the-bias-project.gitbook.io/cognitive-bias-ontologies-project-documentation/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://the-bias-project.gitbook.io/cognitive-bias-ontologies-project-documentation/the-cognitive-bias-ontology-introduction/the-cognitive-bias-ontologies-project-an-overview/final-remarks.md).
+
+# Final Remarks
+
+Once the project was finished, we reflected on several aspects that affected the workflow.
+
+Working on this project was not an easy task partly because of the number of ontologies to be developed and partly because of difficulties related to the unfolding in itself of the steps to be followed. At the same time, this presented a very intellectually stimulating challenge. In particular, we understood how developing an ontology is not an immediate process and that it requires a careful phase of thought and understanding of the domain of interest before moving on to the actual modeling.&#x20;
+
+In the first part of the project, interaction with Chat GPT highlighted the great potential of these tools in constructing an ontology but at the same time its limitations, and where the answers were inaccurate, it was necessary to intervene on the prompts to get more accurate results from the AI.
+
+In the design phase it was sometimes not easy to figure out which ODPs to use, especially depending on the classes and properties to be adopted. This fact highlighted the need to be flexible in using all available resources and in some cases even to be creative in choosing for example classes and properties without, however, distorting the main meaning of each bias.
+
+Many of the biases had elements in common, therefore an attempt was made where possible to reuse the same ODPs as well as the same classes and properties to ensure some interchangeability between them and facilitate the subsequent modeling phase. Nevertheless, the realization of an ontology is often related to the interpretation of the individual and may depend on what aspects of that ontology a person wants to represent. Thus, this attempt to standardize similar biases has not always been easy to achieve.
+
+To conclude, the creation of one or more ontologies may not be a straightforward task but the presence of a methodology such as in our case the eXtreme Desing approach and guidelines on the steps to follow, surely can facilitate the work of ideation, design and modeling. In addition to this having adequate resources in the process of understanding the ontology can help, as before anything else it is essential to understand the main aspects of the knowledge domain one wants to represent in order to identify appropriate classes and properties on which to then build the ontology. Finally, flexibility in the use of resources and the ability to exchange views with your team members can make this task much more agile and rewarding.

@@ -1,0 +1,800 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/2/untitled-ontology-23/"/>
+    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"/>
+    <Prefix name="dbr" IRI="https://dbpedia.org/resource/"/>
+    <Prefix name="fao" IRI="http://www.fao.org/aims/aos/aos.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="news" IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="term" IRI="http://modellingdh.github.io/ont/odp/term/"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="sequence" IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#"/>
+    <Prefix name="parameter" IRI="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"/>
+    <Prefix name="classification" IRI="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#"/>
+    <Prefix name="activitypattern" IRI="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal>01/03/24</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal>Marco Lamorte</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal>The Recency bias module of the cognitive bias ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal>Recency bias ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>The Recency Bias is a cognitive bias where people give greater importance to recent events and information while discounting older data. This bias can affect decision-making and judgment, as recent experiences may carry more weight in evaluations and assessments.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:AOS_AGROVOC_Concept_Server_fundation_ontology_model</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:An_Ontology_Design_Pattern_for_Activity_Reasoning</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Classification</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:NewsReportingEvent</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Parameter</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Sequence</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#scenarios"/>
+        <Literal>In a job interview, a candidate performs exceptionally well in the final part of the interview. The interviewer, influenced by the Recency Bias, places disproportionate weight on this recent performance and is more likely to remember it and give it more significance in the evaluation, potentially overlooking earlier parts of the interview.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://dbpedia.org/page/Illusion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:HighImportance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:LowImportance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Outcome"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:PastMemory"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Assistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Identicality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Probability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.fao.org/aims/aos/aos.owl#affects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="classification:classifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="classification:isClassifiedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="parameter:hasParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sequence:follows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sequence:precedes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interview_perception_experience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#High_importance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Importance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Low_importance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Memory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#scenarios"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Evidence"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="cbo:HighImportance"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+            <DataHasValue>
+                <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
+                <Literal>High</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="cbo:LowImportance"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+            <DataHasValue>
+                <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
+                <Literal>Low</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="cbo:PastMemory"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="parameter:hasParameter"/>
+                <Class abbreviatedIRI="cbo:LowImportance"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="parameter:hasParameter"/>
+                <Class abbreviatedIRI="cbo:HighImportance"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="cbo:HighImportance"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cbo:LowImportance"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cbo:PastMemory"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:Decision"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interview_perception_experience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:PastMemory"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:HighImportance"/>
+        <NamedIndividual IRI="#High_importance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+        <NamedIndividual IRI="#Importance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:LowImportance"/>
+        <NamedIndividual IRI="#Low_importance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+        <NamedIndividual IRI="#Memory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+        <NamedIndividual IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interview_perception_experience"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interview_perception_experience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer"/>
+        <NamedIndividual IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer"/>
+        <NamedIndividual IRI="#Memory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding"/>
+        <NamedIndividual IRI="#Memory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding"/>
+        <NamedIndividual IRI="#Importance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sequence:precedes"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.fao.org/aims/aos/aos.owl#affects"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
+        <NamedIndividual IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="classification:classifies"/>
+        <NamedIndividual IRI="#High_importance"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="classification:classifies"/>
+        <NamedIndividual IRI="#Importance"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="classification:classifies"/>
+        <NamedIndividual IRI="#Importance"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="classification:classifies"/>
+        <NamedIndividual IRI="#Low_importance"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <NamedIndividual IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
+        <NamedIndividual IRI="#High_importance"/>
+        <Literal>High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
+        <NamedIndividual IRI="#Low_importance"/>
+        <Literal>Low</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="classification:classifies"/>
+        <ObjectProperty abbreviatedIRI="classification:isClassifiedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="sequence:follows"/>
+        <ObjectProperty abbreviatedIRI="sequence:precedes"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.fao.org/aims/aos/aos.owl#affects"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Knowledge"/>
+            <Class abbreviatedIRI="cbo:RecentMemory"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="classification:classifies"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:HighImportance"/>
+            <Class abbreviatedIRI="cbo:LowImportance"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="classification:isClassifiedBy"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:PastMemory"/>
+            <Class abbreviatedIRI="cbo:RecentMemory"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="parameter:hasParameter"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:PastMemory"/>
+            <Class abbreviatedIRI="cbo:RecentMemory"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sequence:follows"/>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sequence:precedes"/>
+        <Class abbreviatedIRI="cbo:PastMemory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+        <ObjectUnionOf>
+            <Class IRI="https://dbpedia.org/page/Illusion"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Knowledge"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.fao.org/aims/aos/aos.owl#affects"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="classification:classifies"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:PastMemory"/>
+            <Class abbreviatedIRI="cbo:RecentMemory"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="classification:isClassifiedBy"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:HighImportance"/>
+            <Class abbreviatedIRI="cbo:LowImportance"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="parameter:hasParameter"/>
+        <ObjectUnionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Probability"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sequence:follows"/>
+        <Class abbreviatedIRI="cbo:PastMemory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sequence:precedes"/>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:Decision"/>
+            <Class abbreviatedIRI="cbo:Outcome"/>
+            <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Evidence"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:Outcome"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Entity"/>
+            <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Assistance"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
+        <ObjectUnionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Identicality"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Probability"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>term:isEngagedIn</AbbreviatedIRI>
+        <Literal>Links the individual to the activity which he’s engaged in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>news:owns</AbbreviatedIRI>
+        <Literal>This property can be used to link a certain NewsProvider with a Media that the NewsProvider ows, e.g. Fox News Channel is owned by Fox Entertainment Group, which also owns other Media (FXX Channel, etc.). This is an universal property, it can be also used in different context (e.g. Ruslana owns a Persian cat).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.fao.org/aims/aos/aos.owl#affects</IRI>
+        <Literal>X &lt;affects&gt; Y. Agent X acts on object Y in such a way that Y changes state or location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>classification:classifies</AbbreviatedIRI>
+        <Literal>A relation between a Concept and an Entity, e.g. the Role &apos;student&apos; classifies a Person &apos;John&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>parameter:hasParameterDataValue</AbbreviatedIRI>
+        <Literal>A Concept can have a Parameter that constrains the attributes that a classified Entity can have in a certain Situation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>sequence:follows</AbbreviatedIRI>
+        <Literal>A relation between entities, expressing a &apos;sequence&apos; schema.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>sequence:precedes</AbbreviatedIRI>
+        <Literal>A relation between entities, expressing a &apos;sequence&apos; schema.
+E.g. &apos;year 1999 precedes 2000&apos;, &apos;deciding what coffee to use&apos; precedes &apos;preparing coffee&apos;, &apos;World War II follows World War I&apos;, &apos;in the Milan to Rome autoroute, Bologna precedes Florence&apos;, etc.
+
+It can then be used between tasks, processes, time intervals, spatially locate objects, situations, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://dbpedia.org/ontology/produces</IRI>
+        <Literal>Define the relation between an activity and its produced outcome.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision</IRI>
+        <Literal>Influenced by the Recency bias the interviewer gives the job to the applicant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interview_perception_experience</IRI>
+        <Literal>The perception experience the individual is engaged in during the job interview.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer</IRI>
+        <Literal>The individual conducting the job interview.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding</IRI>
+        <Literal>The process of encoding memory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory</IRI>
+        <Literal>The memory about the applicant not performing really well at the start of the interview.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory</IRI>
+        <Literal>The memory about the applicant performing really well in the really last part of the job interview.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:Decision</AbbreviatedIRI>
+        <Literal>The final decision the individual reaches as ending result of the decision-making process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:Decision</AbbreviatedIRI>
+        <Literal>Decision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:MemoryEncoding</AbbreviatedIRI>
+        <Literal>The process of encoding memory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:MemoryEncoding</AbbreviatedIRI>
+        <Literal>Memory encoding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:PastMemory</AbbreviatedIRI>
+        <Literal>A memory that has been produced previously in the memory encoding process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:PastMemory</AbbreviatedIRI>
+        <Literal>Past memory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:RecentMemory</AbbreviatedIRI>
+        <Literal>A memory that has been produced more recently in the memory encoding process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:RecentMemory</AbbreviatedIRI>
+        <Literal>Recent memory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:hasOutcome</AbbreviatedIRI>
+        <Literal>The final decision the individual reaches as ending result of the decision-making process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:involves</AbbreviatedIRI>
+        <Literal>connects an activity to the entities involved in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Importance</IRI>
+        <Literal>The  value the interviewer gives to some memoryes at the expense of others</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/Deciding</IRI>
+        <Literal>The decision-making process carried out by the individual about the final outcome of the job interview.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/Importance</IRI>
+        <Literal>A Factor affects the outcome of an Undertaking, which can be a goal-oriented activity or the maintenance of a desirable state, the work in a Field, or something portrayed as affecting an Interested_party. A Reason may be given for the importance of the Factor. The Degree of importance may also be specified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/framester/data/framestercore/Importance</IRI>
+        <Literal>Importance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/Memory</IRI>
+        <Literal>This frame is concerned with Cognizers remembering and forgetting mental Content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/framester/data/framestercore/Memory</IRI>
+        <Literal>Memory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/People</IRI>
+        <Literal>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/framester/data/framestercore/People</IRI>
+        <Literal>People</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/PerceptionExperience</IRI>
+        <Literal>Perception experience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/PerceptionExperience</IRI>
+        <Literal>This frame contains perception words whose Perceivers have perceptual experiences that they do not necessarily intend to. For this reason we call the Perceiver role Perceiver_passive. Comparing the Perception_experience frame to the Perception_active frame, we note that for some modalities there are different lexical items in each frame. For instance, whereas Perception_experience has see, Perception_active has look at. For other sense modalities, we find the same lexical items in both frames. To illustrate, consider the verb smell where I smell something rotten exemplifies its Perception_experience use and Smell this to see if it&apos;s fresh exemplifies its Perception_active sense. This frame also includes words which are not specific to any sense modality, including detect, perceive, perception, sense.</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

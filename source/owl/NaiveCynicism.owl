@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-25/"
+     xml:base="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-25/"
+     xmlns:fs="https://w3id.org/framester/data/framestercore/"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:term="http://modellingdh.github.io/ont/odp/term/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:Cynicism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#"
+     xmlns:Naive_Cynicism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#">
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism">
+        <terms:created>20/03/2024</terms:created>
+        <terms:creator>Alice Picco</terms:creator>
+        <terms:description>Naive Cynicism specification of the Cognitive Bias Ontology</terms:description>
+        <terms:title>Naive Cynicism Ontology</terms:title>
+        <rdfs:comment>Naive cynicism is a cognitive bias characterized by the tendency to doubt others&apos; intentions and perceive actions as driven by selfish motives or ulterior motives, even in the absence of concrete evidence supporting such skepticism. Individuals exhibiting naive cynicism often display a general distrust of others, assuming that individuals or groups have hidden agendas, leading to a distorted and overly negative interpretation of people&apos;s behaviors or actions. This bias can hinder effective communication, collaboration, and relationship-building, as it contributes to an unwarranted suspicion of others&apos; motives.</rdfs:comment>
+        <Cynicism:hascomponent>http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation</Cynicism:hascomponent>
+        <Cynicism:hascomponent>https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism</Cynicism:hascomponent>
+        <Cynicism:hascomponent>https://w3id.org/framester/data/framestercore/</Cynicism:hascomponent>
+        <Cynicism:userstory>Sarah, having experienced similar challenges in the past, approaches Alex and offers her assistance. She suggests collaborating on specific tasks, sharing resources, and even providing guidance to ease the workload. Her intention is rooted in empathy and a desire to foster teamwork within the department.
+However, due to his naive cynicism, Alex, already stressed by the demanding project, interprets Sarah&apos;s generous offer with suspicion. He questions her motives, wondering if she&apos;s attempting to showcase her skills to gain favor with their manager or if there&apos;s an underlying agenda that might compromise his position on the project.
+Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to decline her offer, assuming that there must be hidden motives behind her willingness to help. This scenario illustrates how naive cynicism can hinder collaboration and prevent the positive outcomes that could arise from genuine acts of assistance and teamwork.</Cynicism:userstory>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#hascomponent -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#hascomponent"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#userstory -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#userstory"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://modellingdh.github.io/ont/odp/term/isEngagedIn -->
+
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/isEngagedIn">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>a property connecting a Person who has a biased opinion about something eg the possible outcome of an Event such as a Random or Chance-based Occurrence  or a person who has a biased Opinion about a Bias.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Importance"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>A property linking an entity that produces an Outcome.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://dbpedia.org/page/Illusion"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://dbpedia.org/resource/Entity"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>a property connecting an entity to any kind of thing that is related to that Entity</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment>a property that links the cognitive process of perceiving something in a specific way. E.g. a person being aware of a trend in an activity that is perceived as a pattern in that activity. E.g. an assistance process being perceived as Malicious.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#misjudges -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#misjudges">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Assistance"/>
+        <rdfs:comment>a property that links the cognitive process of misinterpreting information</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#receives -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#receives">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Assistance"/>
+        <rdfs:comment>denotes the capability of an entity to accept or obtain information, data, or objects from another source.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Malicious -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Malicious">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology.se/odp/content/owl/Action.owl#Action -->
+
+    <owl:Class rdf:about="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    
+
+
+    <!-- https://dbpedia.org/page/Illusion -->
+
+    <owl:Class rdf:about="https://dbpedia.org/page/Illusion"/>
+    
+
+
+    <!-- https://dbpedia.org/resource/Entity -->
+
+    <owl:Class rdf:about="https://dbpedia.org/resource/Entity"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias">
+        <rdfs:comment>a class for defining any kind of bias</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome">
+        <rdfs:comment>Refers to the result, effect, or consequence of a particular action, event, process, or situation</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Activity -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Assessing -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Assistance -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assistance">
+        <rdfs:comment>A Helper benefits a Benefited_party by enabling the culmination of a Goal that the Benefited_party has. A Focal_entity that is involved in reaching the Goal may stand in for it. Will you help the Government find your brother? Maybe Stephen should assist him with the last manuscript. They helped me psychologically to overcome the physical loss I had suffered. You have helped him tremendously by showing him how to stand up for himself and by being his friend. By bringing assistance to his troops wherever they were in trouble he aided them greatly.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/BecomingAware -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Deciding -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Event -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event">
+        <rdfs:comment>An Event takes place at a Place and Time. Big earthquakes only happen along plate boundaries.INI The party will take place on Sunday in the all-you-can-eat buffet.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/ExperiencerObj -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Importance -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Importance"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/People -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
+        <rdfs:comment>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming babyyesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/PerceptionExperience -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Predicting -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Sequence -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestersyn/Belief.n.1 -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <term:isEngagedIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge"/>
+        <cbo:hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism"/>
+        <Naive_Cynicism:receives rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
+        <cbo:hasOutcome rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer"/>
+        <cbo:involves rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+        <Naive_Cynicism:misjudges rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Assistance"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

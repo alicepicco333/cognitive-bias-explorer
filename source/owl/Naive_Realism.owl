@@ -1,0 +1,430 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26/"
+     xml:base="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26/"
+     xmlns:fs="https://w3id.org/framester/data/framestercore/"
+     xmlns:aff="https://w3id.org/affectedBy#"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
+     xmlns:cco="http://purl.org/ontology/cco/core#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:fsyn="https://w3id.org/framester/data/framestersyn/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:term="term:http://modellingdh.github.io/ont/odp/term/"
+     xmlns:term1="http://modellingdh.github.io/ont/odp/term/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:Realism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#"
+     xmlns:untitled-ontology-26="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26#">
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism">
+        <terms:created>20/03/2024</terms:created>
+        <terms:creator>Alice Picco</terms:creator>
+        <terms:description>Naive Realism specification of the Cognitive Bias Ontology</terms:description>
+        <terms:title>Naive Realism Ontology</terms:title>
+        <untitled-ontology-26:hascomponent>http://modellingdh.github.io/ont/odp/term</untitled-ontology-26:hascomponent>
+        <untitled-ontology-26:hascomponent>https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism</untitled-ontology-26:hascomponent>
+        <untitled-ontology-26:hascomponent>https://purl.org/ontology/cco/core#</untitled-ontology-26:hascomponent>
+        <untitled-ontology-26:hascomponent>https://w3id.org/affectedBy</untitled-ontology-26:hascomponent>
+        <untitled-ontology-26:hascomponent>https://w3id.org/framester/data/framestercore</untitled-ontology-26:hascomponent>
+        <untitled-ontology-26:hascomponent>https://w3id.org/framester/data/framestersyn</untitled-ontology-26:hascomponent>
+        <rdfs:comment>Naive realism is a cognitive bias characterized by the belief that one&apos;s perception of reality is objective, accurate, and unbiased. Individuals exhibiting naive realism assume that they see the world as it truly is, and they often expect others to share the same perception. This bias can lead to the misconception that one&apos;s perspective is the only valid viewpoint, overlooking the subjective nature of perception and the fact that others may interpret and experience reality differently. Naive realism can contribute to misunderstandings, conflicts, and a lack of empathy as individuals may struggle to appreciate alternative perspectives.</rdfs:comment>
+        <Realism:userstory>Maria, rooted in her cultural traditions, suggests a lively and dynamic event featuring music and dance styles typical of her background. She believes her proposal perfectly represents the essence of cultural celebration. However, her perspective is influenced by naive realism, as she assumes that her cultural traditions are universally appealing and should be the focal point of the event.
+Akio, on the other hand, proposes a more serene and contemplative event that aligns with traditional Japanese cultural practices. He believes this approach would better capture the spirit of diversity and inclusivity. Akio, too, is influenced by naive realism, as he assumes that his cultural traditions represent an objective and superior choice for the event.
+As the two colleagues engage in discussions about the cultural event, their naive realism becomes apparent. Maria and Akio struggle to appreciate the validity of each other&apos;s cultural traditions, assuming that their own perspectives represent an objective and universal truth.</Realism:userstory>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26#hascomponent -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26#hascomponent"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#userstory -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#userstory"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://modellingdh.github.io/ont/odp/term/includes -->
+
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/includes">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Evidence"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/cco/core#belief -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/cco/core#belief">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBias -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBias">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+        <rdfs:comment>Indicates an individual possesses Naive Realism Bias</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasPerspective -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasPerspective">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Statement"/>
+        <rdfs:comment>this property connect a perspective that a person or a group of Persons has about an aspect of the real world.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#ignores -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#ignores">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Statement"/>
+        <rdfs:comment>denotes the deliberate disregard or lack of attention to a particular entity, concept, or information by another entity.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment>a property that links the cognitive process of perceiving something in a specific way.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#affectedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#affectedBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Evidence"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Universal -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Universal">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>denotes the deliberate disregard or lack of attention to a particular entity, concept, or information by another entity.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias">
+        <rdfs:comment>Indicates an individual possesses Naive Realism Bias</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Activity -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Assistance -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/BecomingAware -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/CognitiveConnection -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Event -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Evidence -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Evidence"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Pattern -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/People -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
+        <rdfs:comment>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming babyyesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/PerceptionExperience -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience">
+        <rdfs:comment>This frame contains perception words whose Perceivers have perceptual experiences that they do not necessarily intend to. For this reason we call the Perceiver role Perceiver_passive. Comparing the Perception_experience frame to the Perception_active frame, we note that for some modalities there are different lexical items in each frame. For instance, whereas Perception_experience has see, Perception_active has look at. For other sense modalities, we find the same lexical items in both frames. To illustrate, consider the verb smell where I smell something rotten exemplifies its Perception_experience use and Smell this to see if it&apos;s fresh exemplifies its Perception_active sense. This frame also includes words which are not specific to any sense modality, including detect, perceive, perception, sense.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Sequence -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Statement -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Statement">
+        <rdfs:comment>a class for defining a statement of a perspective</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestersyn/Belief.n.1 -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1">
+        <rdfs:comment>A belief is a mental state or attitude where an individual holds something to be true or probable. Beliefs can range from factual assertions about the world to subjective evaluations, opinions, or attitudes about various matters. They form a fundamental part of human cognition and influence perception, decision-making, and behavior. Beliefs can be based on evidence, personal experience, cultural upbringing, social influences, or even intuition. They often shape an individual&apos;s worldview and can be deeply ingrained or subject to change over time based on new information or experiences.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Akio -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Akio">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <cbo:hasPerspective rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Maria -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Maria">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <cco:belief rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Underlying_belief_(cultural_universality)"/>
+        <cbo:hasBias rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism"/>
+        <cbo:ignores rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+        <term1:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own&apos;s_belief"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Statement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own&apos;s_belief -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own&apos;s_belief">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Underlying_belief_(cultural_universality) -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Underlying_belief_(cultural_universality)">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
+        <aff:affectedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own&apos;s_belief"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

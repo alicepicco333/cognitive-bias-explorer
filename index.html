@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cognitive Bias Ontology</title>
+<meta name="description" content="A visual explorer of 16 cognitive-bias ontologies modelled in OWL with eXtreme Design, ontology design patterns and Framester frames (KRKE, University of Bologna, 2022/23).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="grid">
+    <p class="mast-label">KRKE 2022/23</p>
+    <div class="mast-title">
+      <a href="#/" class="wordmark">Cognitive Bias Ontology</a>
+      <p class="mast-sub">16 biases, modelled as OWL ontologies</p>
+    </div>
+    <nav class="mast-nav" aria-label="Views">
+      <a href="#/" data-nav="overview">Overview</a>
+      <a href="#/patterns" data-nav="patterns">Reuse matrix</a>
+      <a href="#/about" data-nav="about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<footer class="colophon">
+  <div class="grid">
+    <p class="mast-label">Credits</p>
+    <div class="colophon-body" id="credits"></div>
+  </div>
+</footer>
+
+<div class="tooltip" id="tooltip" role="status" aria-live="polite" hidden></div>
+
+<script src="https://cdn.jsdelivr.net/npm/elkjs@0.9.3/lib/elk.bundled.js"></script>
+<script src="data/biases.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

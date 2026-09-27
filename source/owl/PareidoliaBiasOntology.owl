@@ -1,0 +1,653 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl"
+     xmlns:fs="https://w3id.org/framester/data/framestercore/"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
+     xmlns:dbo="https://dbpedia.org/ontology/"
+     xmlns:dbr="https://dbpedia.org/resource/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:fysn="https://w3id.org/framester/data/framestersyn/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:term="http://modellingdh.github.io/ont/odp/term/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl">
+        <terms:created>February 2024</terms:created>
+        <terms:creator xml:lang="en">Corrado Consiglio</terms:creator>
+        <terms:description>The Pareidolia Bias module of the Cognitive Bias Ontology</terms:description>
+        <terms:title>The Pareidolias Bias Ontology</terms:title>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation"/>
+        <cpannotationschema:hasComponent rdf:resource="https://dbpedia.org/ontology/"/>
+        <cpannotationschema:scenarios>Seeing Faces in Inanimate Objects: Perceiving faces in items like electrical sockets, rocks, or tree bark due to the arrangement of patterns or shapes.</cpannotationschema:scenarios>
+        <rdfs:comment>Pareidolia bias is a psychological phenomenon in which individuals perceive familiar patterns, shapes, or meaningful images, such as faces or objects, where none actually exist. This tendency leads people to interpret ambiguous stimuli as something recognizable and significant, even when there is no intentional design or pattern present. Pareidolia bias can occur in various sensory modalities, including visual, auditory, and tactile, and it often influences how individuals interpret stimuli in their environment, such as seeing shapes in clouds or faces in inanimate objects. This bias reflects the brain&apos;s natural inclination to organize and make sense of sensory information, sometimes leading to the perception of patterns or meanings that are not objectively there.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://modellingdh.github.io/ont/odp/term/inActivity -->
+
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/inActivity">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/People"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://modellingdh.github.io/ont/odp/term/includes -->
+
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/includes">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Evidence"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://modellingdh.github.io/ont/odp/term/isEngagedIn -->
+
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/isEngagedIn">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://modellingdh.github.io/ont/odp/term/producedObservation -->
+
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/producedObservation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasEffect -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasEffect">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://dbpedia.org/page/Illusion"/>
+        <rdfs:comment>hasEffect: a property linking an Entity (a perceived correlation between two variables in a pattern or a perceived pattern due to any kind of external stimulus) and the illusory effect that this Entity produce.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence">
+        <owl:inverseOf rdf:resource="https://w3id.org/affectedBy#influencedBy"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>A property connecting an Entity (Pattern) that affects in different ways another entity (PerceptionExperience).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://dbpedia.org/page/Illusion"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://dbpedia.org/resource/Entity"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>a property connecting an entity such as Activity to any kind of thing that is involved during the execution of that Activity.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isBiasedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isBiasedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
+        <rdfs:comment>a property that connect a Person that is biased by the idea of seeing a Pattern such as meaningful shapes made by a visual stimulus</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#influencedBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology.se/odp/content/owl/Action.owl#Action -->
+
+    <owl:Class rdf:about="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    
+
+
+    <!-- https://dbpedia.org/page/Illusion -->
+
+    <owl:Class rdf:about="https://dbpedia.org/page/Illusion">
+        <terms:description>An illusion is a distortion of the senses, which can reveal how the mind normally organizes and interprets sensory stimulation. Although illusions distort the human perception of reality, they are generally shared by most people. Illusions may occur with any of the human senses, but visual illusions (optical illusions) are the best-known and understood. The emphasis on visual illusions occurs because vision often dominates the other senses. For example, individuals watching a ventriloquist will perceive the voice is coming from the dummy since they are able to see the dummy mouth the words.</terms:description>
+        <rdfs:label>Illusion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://dbpedia.org/resource/Entity -->
+
+    <owl:Class rdf:about="https://dbpedia.org/resource/Entity"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus">
+        <terms:description>A class for colleting different kinds of random stimuli that can involve a sensorial perception.</terms:description>
+        <rdfs:label>Ambiguos Stimuli</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecognizablePattern -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecognizablePattern">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VisualStimulus -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VisualStimulus">
+        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
+        <terms:description>A class for visual stimuli, namely anything that involves the use of sight.</terms:description>
+        <rdfs:label>Visual Stimulus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Activity -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
+        <terms:description>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame.</terms:description>
+        <rdfs:label>Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Assessing -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Assistance -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/BecomingAware -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/CognitiveConnection -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Deciding -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Event -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Evidence -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Evidence"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/ExperiencerObj -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Pattern -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern">
+        <terms:description>This frame describes the interrelation of a collection of Entities; they may be physical entities or shapes in a recognizable configuration, a pattern of events, or a relation among abstract entities. The pattern is not the individual Entities nor the set of Entities, but an abstraction of their interrelations, as a gestalt. The Cougers are playing in a Wing-T formation tonight. The auditors noticed a suspicious pattern of withdrawals from the maintenance account . The digits of irrational numbers do not repeat in any kind of pattern.</terms:description>
+        <rdfs:label>Pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/People -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
+        <terms:description>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming baby yesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</terms:description>
+        <rdfs:label>People</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/PerceptionExperience -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience">
+        <terms:description>This frame contains perception words whose Perceivers have perceptual experiences that they do not necessarily intend to. For this reason we call the Perceiver role Perceiver_passive. Comparing the Perception_experience frame to the Perception_active frame, we note that for some modalities there are different lexical items in each frame. For instance, whereas Perception_experience has see, Perception_active has look at. For other sense modalities, we find the same lexical items in both frames. To illustrate, consider the verb smell where I smell something rotten exemplifies its Perception_experience use and Smell this to see if it&apos;s fresh exemplifies its Perception_active sense. This frame also includes words which are not specific to any sense modality, including detect, perceive, perception, sense.</terms:description>
+        <rdfs:label>Perception Experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Predicting -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Probability -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Sequence -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestersyn/Hiker.n.1 -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Hiker.n.1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <terms:description>A class for people that go hiking or go for a walk.</terms:description>
+        <rdfs:label>Hiker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecognizablePattern"/>
+        <cbo:hasEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion"/>
+        <cbo:hasInfluence rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception"/>
+        <terms:description>this individual represent the pattern, such as familiar shapes of faces or objects, recognized by the mind and caused by the visual stimulus.</terms:description>
+        <rdfs:label>Facial Shape</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion">
+        <rdf:type rdf:resource="https://dbpedia.org/page/Illusion"/>
+        <rdfs:comment>The actual illusion effect of seeing a facial shape in a weather-beaten tree trunk.</rdfs:comment>
+        <rdfs:label>FacialShapeIllusion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
+        <rdfs:comment>An individual representing any kind of Random Stimulus that can involve a sensorial perception.</rdfs:comment>
+        <rdfs:label>Random Stimulus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <term:inActivity rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk"/>
+        <rdfs:comment>The perception experience in which is involed a person: it can be sensorial but not only.</rdfs:comment>
+        <rdfs:label>Sensorial Perception</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+        <term:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape"/>
+        <cbo:involves rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus"/>
+        <rdfs:comment>the activity  (such a walk in a park) ih which a perception experience is involved.</rdfs:comment>
+        <rdfs:label>Walk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#park_hiker -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#park_hiker">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Hiker.n.1"/>
+        <term:isEngagedIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception"/>
+        <cbo:isBiasedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape"/>
+        <rdfs:comment>an individual representing a person such as an hiker who goes for a walk in a park.</rdfs:comment>
+        <rdfs:label>Park hiker</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#weather-beaten_tree_trunk -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#weather-beaten_tree_trunk">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VisualStimulus"/>
+        <term:producedObservation rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape"/>
+        <rdfs:comment>A subclass individual  involving a visual stimuli  that can stimulate a process of association with familiar patterns such as facial shapes.</rdfs:comment>
+        <rdfs:label>weather beaten tree trunk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://dbpedia.org/page/Illusion"/>
+            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
+            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/People"/>
+            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl">
+    <Prefix name="" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism/"/>
+    <Prefix name="fs" IRI="https://w3id.org/framester/data/framestercore/"/>
+    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"/>
+    <Prefix name="dbr" IRI="https://dbpedia.org/resource/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="move" IRI="http://www.ontologydesignpatterns.org/cp/owl/move.owl#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="term" IRI="http://modellingdh.github.io/ont/odp/term/"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal>01/03/24</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal>Marco Lamorte</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal>The Anthropomorphism module of the cognitive bias ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal>Anthropomorphism ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Anthropomorphism is a cognitive bias where people attribute human characteristics, emotions, or intentions to non-human entities, objects, or animals. It is a form of personification where human traits are projected onto things that do not possess them.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Move</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#scenarios"/>
+        <Literal>A young child attributes human emotions and intentions to his beloved puppet, Mr. Whiskers, engaging in conversations and interpreting its expressions.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="move:PhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://dbpedia.org/page/Illusion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:HumanFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:RecognizablePattern"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Variables"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:VisualStimulus"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Assessing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Assistance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:BecomingAware"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:CognitiveConnection"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Deciding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Event"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:ExperiencerObj"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Pattern"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:People"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Predicting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="term:isReflectionOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="term:producedObservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Child"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Child_perception_experience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Joy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Puppet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sadness"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#scenarios"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="move:PhysicalObject"/>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dbr:Animal"/>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dbr:Concept"/>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dbr:Plant"/>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cbo:HumanFeature"/>
+        <Class abbreviatedIRI="cbo:Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+        <Class abbreviatedIRI="dbr:Entity"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="fs:People"/>
+        <NamedIndividual IRI="#Child"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
+        <NamedIndividual IRI="#Child_perception_experience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:HumanFeature"/>
+        <NamedIndividual IRI="#Joy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="move:PhysicalObject"/>
+        <NamedIndividual IRI="#Puppet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:HumanFeature"/>
+        <NamedIndividual IRI="#Sadness"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <NamedIndividual IRI="#Child"/>
+        <NamedIndividual IRI="#Child_perception_experience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+        <NamedIndividual IRI="#Child_perception_experience"/>
+        <NamedIndividual IRI="#Puppet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="term:isReflectionOn"/>
+        <NamedIndividual IRI="#Joy"/>
+        <NamedIndividual IRI="#Child_perception_experience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="term:producedObservation"/>
+        <NamedIndividual IRI="#Puppet"/>
+        <NamedIndividual IRI="#Joy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="term:producedObservation"/>
+        <NamedIndividual IRI="#Puppet"/>
+        <NamedIndividual IRI="#Sadness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="term:isReflectionOn"/>
+        <NamedIndividual IRI="#Sadness"/>
+        <NamedIndividual IRI="#Child_perception_experience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <Class abbreviatedIRI="fs:People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="term:isReflectionOn"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:HumanFeature"/>
+            <Class abbreviatedIRI="fs:CognitiveConnection"/>
+            <Class abbreviatedIRI="fs:Pattern"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="term:producedObservation"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
+            <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+            <Class abbreviatedIRI="cbo:Variables"/>
+            <Class abbreviatedIRI="fs:ExperiencerObj"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+        <ObjectUnionOf>
+            <Class IRI="https://dbpedia.org/page/Illusion"/>
+            <Class abbreviatedIRI="fs:Activity"/>
+            <Class abbreviatedIRI="fs:Event"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+            <Class abbreviatedIRI="fs:Activity"/>
+            <Class abbreviatedIRI="fs:Assessing"/>
+            <Class abbreviatedIRI="fs:BecomingAware"/>
+            <Class abbreviatedIRI="fs:Deciding"/>
+            <Class abbreviatedIRI="fs:Event"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+            <Class abbreviatedIRI="fs:Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="term:isReflectionOn"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="fs:Activity"/>
+            <Class abbreviatedIRI="fs:BecomingAware"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="term:producedObservation"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:HumanFeature"/>
+            <Class abbreviatedIRI="fs:CognitiveConnection"/>
+            <Class abbreviatedIRI="fs:Pattern"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Entity"/>
+            <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class abbreviatedIRI="fs:Assistance"/>
+            <Class abbreviatedIRI="fs:ExperiencerObj"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>term:isEngagedIn</AbbreviatedIRI>
+        <Literal>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>term:isReflectionOn</AbbreviatedIRI>
+        <Literal>Used to connect the subjective elements of an experience with the corresponding observation, which is extrapolated from the content being interacted with and in itself may not be including a critique.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>term:producedObservation</AbbreviatedIRI>
+        <Literal>This property can be used to denote that something is (even indirectly, not necessary through direct reflection) responsible for the existence of an observation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>move:PhysicalObject</AbbreviatedIRI>
+        <Literal>This class comprises items of a material nature that are units for documentation and have physical boundaries that separate them completely in an objective way from other objects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>move:PhysicalObject</AbbreviatedIRI>
+        <Literal>Physical object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbr:Animal</AbbreviatedIRI>
+        <Literal>Animals are multicellular, eukaryotic organisms in the biological kingdom Animalia. With few exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce sexually, and go through an ontogenetic stage in which their body consists of a hollow sphere of cells, the blastula, during embryonic development.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Animal</AbbreviatedIRI>
+        <Literal>Animal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbr:Concept</AbbreviatedIRI>
+        <Literal>Concepts are defined as abstract ideas. They are understood to be the fundamental building blocks of the concept behind principles, thoughts and beliefs.They play an important role in all aspects of cognition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Concept</AbbreviatedIRI>
+        <Literal>Concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbr:Entity</AbbreviatedIRI>
+        <Literal>An entity is something that exists as itself, as a subject or as an object, actually or potentially, concretely or abstractly, physically or not. It need not be of material existence. In particular, abstractions and legal fictions are usually regarded as entities. In general, there is also no presumption that an entity is animate, or present. The term is broad in scope and may refer to animals; natural features such as mountains; inanimate objects such as tables; numbers or sets as symbols written on a paper; human contrivances such as laws, corporations and academic disciplines; or supernatural beings such as gods and spirits. The adjectival form is entitative. (en)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbr:Plant</AbbreviatedIRI>
+        <Literal>Plants are predominantly photosynthetic eukaryotes of the kingdom Plantae. Historically, the plant kingdom encompassed all living things that were not animals, and included algae and fungi; however, all current definitions of Plantae exclude the fungi and some algae, as well as the prokaryotes (the archaea and bacteria).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Plant</AbbreviatedIRI>
+        <Literal>Plant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Child</IRI>
+        <Literal>The child experiencing anthropomorphism bias.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Joy</IRI>
+        <Literal>The emotion the child assumes Mr. Whiskers is feeling during playtime.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Puppet</IRI>
+        <Literal>Mr Whiskers, the child&apos;s puppet.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sadness</IRI>
+        <Literal>The emotion the child assumes Mr. Whiskers is feeling when left alone.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:Feature</AbbreviatedIRI>
+        <Literal>The feature, description or title used to refer to an entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:HumanFeature</AbbreviatedIRI>
+        <Literal>Defines a feature of a human being</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:HumanFeature</AbbreviatedIRI>
+        <Literal>Human feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:Non-humanEntity</AbbreviatedIRI>
+        <Literal>Any entity that isn&apos;t human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:Non-humanEntity</AbbreviatedIRI>
+        <Literal>Non-human entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:involves</AbbreviatedIRI>
+        <Literal>Connects entites such as an activity to other entities involved in it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fs:People</AbbreviatedIRI>
+        <Literal>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>fs:People</AbbreviatedIRI>
+        <Literal>People</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fs:PerceptionExperience</AbbreviatedIRI>
+        <Literal>This frame contains perception words whose Perceivers have perceptual experiences that they do not necessarily intend to. For this reason we call the Perceiver role Perceiver_passive. Comparing the Perception_experience frame to the Perception_active frame, we note that for some modalities there are different lexical items in each frame. For instance, whereas Perception_experience has see, Perception_active has look at. For other sense modalities, we find the same lexical items in both frames. To illustrate, consider the verb smell where I smell something rotten exemplifies its Perception_experience use and Smell this to see if it&apos;s fresh exemplifies its Perception_active sense. This frame also includes words which are not specific to any sense modality, including detect, perceive, perception, sense.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>fs:PerceptionExperience</AbbreviatedIRI>
+        <Literal>Perception experience</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

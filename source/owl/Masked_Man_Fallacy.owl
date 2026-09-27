@@ -1,0 +1,560 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/2/untitled-ontology-23/"/>
+    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"/>
+    <Prefix name="dbr" IRI="https://dbpedia.org/resource/"/>
+    <Prefix name="fao" IRI="http://www.fao.org/aims/aos/aos.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="news" IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="term" IRI="http://modellingdh.github.io/ont/odp/term/"/>
+    <Prefix name="activitypattern" IRI="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal>01/03/24</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal>Marco Lamorte</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal>The Masked man fallacy module of the cognitive bias ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal>Masked Man Fallacy ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>The Masked Man fallacy, also known as the Illicit Substitution of Identicals, is a cognitive bias where people mistakenly reject two names as referring to the same person or thing if one of the names involves a description or characteristic. This occurs because people tend to treat names as rigid designators and fail to recognize that a masked or described name can refer to the same entity.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:AOS_AGROVOC_Concept_Server_fundation_ontology_model</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:NewsReportingEvent</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#Scenarios"/>
+        <Literal>A man enters a local jazz club and is told that the great saxophonist John Smith will play that night. It happens to be also the name of a local talented surgeon. Immediately he refuses to believe that they are the same person, in his biased reasoning someone can&apos;t excel in two such diverse professions.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://dbpedia.org/page/Illusion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:KnownFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Outcome"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Un-knownFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Assistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="fao:affects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:hasFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:rejects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:supports"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Heart_surgeon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individual_perceived_validity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individual_perception_experience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jazz_saxophonist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#John_Smith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#Scenarios"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Evidence"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="cbo:KnownFeature"/>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cbo:KnownFeature"/>
+        <Class abbreviatedIRI="cbo:Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cbo:Un-knownFeature"/>
+        <Class abbreviatedIRI="cbo:Feature"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:KnownFeature"/>
+        <NamedIndividual IRI="#Heart_surgeon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <NamedIndividual IRI="#Individual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+        <NamedIndividual IRI="#Individual_perceived_validity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <NamedIndividual IRI="#Individual_perception_experience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:Un-knownFeature"/>
+        <NamedIndividual IRI="#Jazz_saxophonist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:Entity"/>
+        <NamedIndividual IRI="#John_Smith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
+        <NamedIndividual IRI="#Knowledge"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <NamedIndividual IRI="#Individual"/>
+        <NamedIndividual IRI="#Individual_perception_experience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
+        <NamedIndividual IRI="#Individual"/>
+        <NamedIndividual IRI="#Knowledge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:rejects"/>
+        <NamedIndividual IRI="#Individual_perceived_validity"/>
+        <NamedIndividual IRI="#Jazz_saxophonist"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:supports"/>
+        <NamedIndividual IRI="#Individual_perceived_validity"/>
+        <NamedIndividual IRI="#Heart_surgeon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <NamedIndividual IRI="#Individual_perception_experience"/>
+        <NamedIndividual IRI="#Individual_perceived_validity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+        <NamedIndividual IRI="#Individual_perception_experience"/>
+        <NamedIndividual IRI="#John_Smith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:hasFeature"/>
+        <NamedIndividual IRI="#John_Smith"/>
+        <NamedIndividual IRI="#Heart_surgeon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:hasFeature"/>
+        <NamedIndividual IRI="#John_Smith"/>
+        <NamedIndividual IRI="#Jazz_saxophonist"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="fao:affects"/>
+        <NamedIndividual IRI="#Knowledge"/>
+        <NamedIndividual IRI="#Individual_perception_experience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="fao:affects"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Knowledge"/>
+            <Class abbreviatedIRI="cbo:RecentMemory"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cbo:hasFeature"/>
+        <Class abbreviatedIRI="dbr:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+        <ObjectUnionOf>
+            <Class IRI="https://dbpedia.org/page/Illusion"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cbo:rejects"/>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cbo:supports"/>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Knowledge"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="fao:affects"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:Decision"/>
+            <Class abbreviatedIRI="cbo:Outcome"/>
+            <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Evidence"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cbo:hasFeature"/>
+        <Class abbreviatedIRI="cbo:Feature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Entity"/>
+            <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Assistance"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cbo:rejects"/>
+        <Class abbreviatedIRI="cbo:Un-knownFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cbo:supports"/>
+        <Class abbreviatedIRI="cbo:KnownFeature"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>term:isEngagedIn</AbbreviatedIRI>
+        <Literal>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>news:owns</AbbreviatedIRI>
+        <Literal>This property can be used to link a certain NewsProvider with a Media that the NewsProvider ows, e.g. Fox News Channel is owned by Fox Entertainment Group, which also owns other Media (FXX Channel, etc.).
+This is an universal property, it can be also used in different context (e.g. Ruslana owns a Persian cat).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fao:affects</AbbreviatedIRI>
+        <Literal>X &lt;affects&gt; Y. Agent X acts on object Y in such a way that Y changes state or location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://dbpedia.org/ontology/produces</IRI>
+        <Literal>Define the relation between an entity (activity or event) and its produced outcome.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbr:Entity</AbbreviatedIRI>
+        <Literal>An entity is something that exists as itself, as a subject or as an object, actually or potentially, concretely or abstractly, physically or not. It need not be of material existence. In particular, abstractions and legal fictions are usually regarded as entities. In general, there is also no presumption that an entity is animate, or present. The adjectival form is entitative.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Entity</AbbreviatedIRI>
+        <Literal>Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbr:Knowledge</AbbreviatedIRI>
+        <Literal>Knowledge can be defined as awareness of facts or as practical skills, and may also refer to familiarity with objects or situations. Knowledge of facts, also called propositional knowledge, is often defined as true belief that is distinct from opinion or guesswork by virtue of justification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Knowledge</AbbreviatedIRI>
+        <Literal>Knowledge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:Feature</AbbreviatedIRI>
+        <Literal>The feature, description or title used to refer to an entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:Feature</AbbreviatedIRI>
+        <Literal>Feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:KnownFeature</AbbreviatedIRI>
+        <Literal>The feature, description or title used to refer to an entity and aknowledged by the individual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:KnownFeature</AbbreviatedIRI>
+        <Literal>Known feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:PerceivedValidity</AbbreviatedIRI>
+        <Literal>It assess the perceived validity of an object due to a perception activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:PerceivedValidity</AbbreviatedIRI>
+        <Literal>Perceived validity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:Un-knownFeature</AbbreviatedIRI>
+        <Literal>The feature, description or title used to refer to an entity but not aknowledged by the individual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:Un-knownFeature</AbbreviatedIRI>
+        <Literal>Un-known feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:hasFeature</AbbreviatedIRI>
+        <Literal>Connects an entity to its relative feature or intention.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:involves</AbbreviatedIRI>
+        <Literal>Connects entites such as an activity to other entities involved in it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:rejects</AbbreviatedIRI>
+        <Literal>The act of denying a particular intention in favour of one or more others.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:supports</AbbreviatedIRI>
+        <Literal>The act of confirming a particular intention at the expense of one or more others.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Heart_surgeon</IRI>
+        <Literal>The feature that characterizes John Smith (the entity) and is known to the biased individual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Individual</IRI>
+        <Literal>A masked man fallacy biased individual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Individual_perceived_validity</IRI>
+        <Literal>The perceived validity towards the known feature at the expense of the unknown one</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Individual_perception_experience</IRI>
+        <Literal>The perception experience of the individual when he discovers that the name of the musician is the same of a local surgeon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Jazz_saxophonist</IRI>
+        <Literal>The feature that characterizes John Smith (the entity) and is un-known to the biased individual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#John_Smith</IRI>
+        <Literal>John Smith, both a talented local surgeon and a great jazz saxophonist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Knowledge</IRI>
+        <Literal>The biased individual knowledge about an entity that leads him to associate to it only a particular intention.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/People</IRI>
+        <Literal>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/framester/data/framestercore/People</IRI>
+        <Literal>People</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/PerceptionExperience</IRI>
+        <Literal>This frame contains perception words whose Perceivers have perceptual experiences that they do not necessarily intend to. For this reason we call the Perceiver role Perceiver_passive. Comparing the Perception_experience frame to the Perception_active frame, we note that for some modalities there are different lexical items in each frame. For instance, whereas Perception_experience has see, Perception_active has look at. For other sense modalities, we find the same lexical items in both frames. To illustrate, consider the verb smell where I smell something rotten exemplifies its Perception_experience use and Smell this to see if it&apos;s fresh exemplifies its Perception_active sense. This frame also includes words which are not specific to any sense modality, including detect, perceive, perception, sense.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/framester/data/framestercore/PerceptionExperience</IRI>
+        <Literal>Perception experience</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
