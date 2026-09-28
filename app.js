@@ -426,7 +426,7 @@
         edgeKeys.set(s + "|sub|" + t, { source: s, target: t, label: "subClassOf", sub: true });
       }
     });
-    const nodes = [...classes].map((c) => ({ id: c, lines: [c.includes(":") ? c.split(":")[1] : c, c.includes(":") ? `${prefixOf(c)}: / ${sourceOf(c)}` : "team / bias-specific"], kind: kindOf(c), aria: `${c}, ${sourceOf(c)}` }));
+    const nodes = [...classes].map((c) => ({ id: c, lines: [c.includes(":") ? c.split(":")[1] : c, c.includes(":") ? `${prefixOf(c)} · ${sourceOf(c)}` : "team · bias-specific"], kind: kindOf(c), aria: `${c}, ${sourceOf(c)}` }));
     const edges = [...edgeKeys.values()].map((e, i) => Object.assign({ id: "c" + i }, e));
     return { nodes, edges };
   }
