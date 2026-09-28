@@ -93,6 +93,8 @@
           a user story, competency questions, reused ontology design patterns and alignment with Framester frames.
           Every ontology instantiates its user story as a small graph of individuals. This explorer draws those graphs
           straight from the OWL files.</p>
+        </div>
+        <div class="full">
           <div class="stats">
             <div class="stat"><b>16</b><span>ontologies, one per bias</span></div>
             <div class="stat"><b>${D.merged.classes}</b><span>classes in the merged module</span></div>

@@ -89,7 +89,7 @@ section.band:first-child { border-top: 0; }
 .stat { padding: 12px 20px 4px 0; border-right: 2px solid var(--ink); }
 .stat + .stat { padding-left: 20px; }
 .stat:last-child { border-right: 0; }
-.stat b { display: block; font-stretch: 125%; font-weight: 800; font-size: clamp(56px, 7.6vw, 124px); line-height: .9; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+.stat b { display: block; font-stretch: 125%; font-weight: 800; font-size: clamp(56px, 8.4vw, 150px); line-height: .9; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
 .stat span { display: block; font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; margin-top: 10px; }
 
 /* ---- pattern filter ------------------------------------------------ */
