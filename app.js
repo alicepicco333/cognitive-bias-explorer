@@ -53,7 +53,7 @@
     <a href="${D.generatedFrom.repository}">GitHub repository</a> (a fork of
     <a href="${D.generatedFrom.upstream}">corrado877/CognitiveBiasOntologies</a>).
     This explorer only re-reads those files and pages; it adds no classes, properties or relations.</p>
-    <p>Set in Instrument Sans (SIL Open Font Licence). Diagrams laid out with the Eclipse Layout Kernel (elkjs).</p>`;
+    <p>Set in Archivo and JetBrains Mono (SIL Open Font Licence). Diagrams laid out with the Eclipse Layout Kernel (elkjs).</p>`;
 
   // ---------- router ----------------------------------------------------
   function route() {
@@ -72,6 +72,7 @@
       : view === "patterns" ? "Reuse matrix · Cognitive Bias Ontology"
       : view === "about" ? "About · Cognitive Bias Ontology" : "Cognitive Bias Ontology";
     document.title = title;
+    document.body.dataset.view = nav || "bias";
     if (route.started) { window.scrollTo({ top: 0, behavior: "instant" }); main.focus({ preventScroll: true }); }
     route.started = true;
   }
@@ -86,43 +87,42 @@
 
     main.innerHTML = `
       <section class="band"><div class="grid">
-        <div class="label-col"><p class="kicker">Project</p></div>
+        <div class="label-col"><p class="kicker">00 / Project</p></div>
         <div class="body-col">
           <p class="lede">Sixteen cognitive biases, each modelled as its own OWL ontology with the eXtreme Design method:
           a user story, competency questions, reused ontology design patterns and alignment with Framester frames.
           Every ontology instantiates its user story as a small graph of individuals. This explorer draws those graphs
           straight from the OWL files.</p>
           <div class="stats">
-            <div class="stat"><b>16</b><span>bias ontologies in 2 clusters of the Cognitive Bias Codex</span></div>
-            <div class="stat"><b>${odpOrder.length}</b><span>content design patterns reused inside the story graphs</span></div>
-            <div class="stat"><b>${totalAssertions}</b><span>object-property assertions across the 16 user stories</span></div>
-            <div class="stat"><b>${D.merged.classes}</b><span>classes in the merged module, with ${D.merged.objectProperties} object properties</span></div>
+            <div class="stat"><b>16</b><span>ontologies, one per bias</span></div>
+            <div class="stat"><b>${D.merged.classes}</b><span>classes in the merged module</span></div>
+            <div class="stat"><b>${D.merged.objectProperties}</b><span>object properties</span></div>
+            <div class="stat"><b>${totalAssertions}</b><span>assertions in 16 user stories</span></div>
           </div>
         </div>
       </div></section>
 
       <section class="band" aria-labelledby="h-clusters"><div class="grid">
-        <div class="label-col"><p class="kicker" id="h-clusters">The 16 ontologies</p>
-          <p class="small muted" style="margin-top:8px">Pick a pattern to see which stories are built on it.</p></div>
+        <div class="label-col"><p class="kicker" id="h-clusters">01 / The 16 ontologies</p>
+          <p class="small muted" style="margin-top:8px">${odpOrder.length} content design patterns are reused inside the story graphs. Pick one to see which stories are built on it.</p></div>
         <div class="body-col">
           <div class="filter" role="group" aria-label="Highlight ontologies that use a design pattern">
-            <span class="filter-label">Design pattern</span>
             <button class="chip" type="button" data-odp="" aria-pressed="true">All</button>
             ${odpOrder.map((o) => `<button class="chip" type="button" data-odp="${o}" aria-pressed="false">${esc(odpById[o].name)}<span class="n">${odpUse[o].length}</span></button>`).join("")}
           </div>
-          <p class="small muted" id="filter-status" aria-live="polite"></p>
+          <p class="muted" id="filter-status" aria-live="polite"></p>
         </div>
         <div class="full">
           ${D.clusters.map((c, ci) => `
             <div class="cluster">
-              <div class="cluster-head"><p class="kicker">Cluster ${ci + 1} · ${c.members.length} biases</p><h3>${esc(c.name)}</h3></div>
+              <div class="cluster-head"><p class="kicker">Cluster 0${ci + 1} / ${String(c.members.length).padStart(2, "0")} biases</p><h3>${esc(c.name)}</h3></div>
               <div class="tiles">${c.members.map((id) => tile(byId[id])).join("")}</div>
             </div>`).join("")}
         </div>
       </div></section>
 
-      <section class="band" aria-labelledby="h-shared"><div class="grid">
-        <div class="label-col"><p class="kicker" id="h-shared">Shared vocabulary</p>
+      <section class="band inv" aria-labelledby="h-shared"><div class="grid">
+        <div class="label-col"><p class="kicker" id="h-shared">02 / Shared vocabulary</p>
           <p class="small muted" style="margin-top:8px">The group reused the same properties across biases on purpose, to keep the modules interchangeable.</p></div>
         <div class="body-col">
           <h2 style="margin-bottom:16px">Properties asserted in more than one user story</h2>
@@ -164,12 +164,14 @@
 
   function tile(b) {
     const so = storyOdps(b);
+    const n = String(D.biases.indexOf(b) + 1).padStart(2, "0");
     return `<a class="tile" href="#/bias/${b.id}" data-odps="${so.join(" ")}">
+      <div class="idx"><span>${n} / 16</span><span>${esc(b.owlFormat)}</span></div>
       <h4>${esc(b.name)}</h4>
       <div class="who">${esc(b.creator.join(", "))}</div>
       <div class="story">${b.userStoryTitle ? "“" + esc(b.userStoryTitle) + "”" : ""}</div>
       <div class="uses"><b>Patterns</b> ${so.length ? so.map((o) => esc(odpById[o].name)).join(", ") : "none in the story"}<br>
-        <b>Frames</b> ${esc(b.framesterInStory.map((f) => f.split(":")[1]).join(", ") || "none")}</div>
+        <b>Frames</b> ${esc(b.framesterInStory.join(" ") || "none")}</div>
       <div class="count">${plural(b.instances.nodes.length, "individual")} · ${plural(b.instances.edges.length, "assertion")}</div>
     </a>`;
   }
@@ -186,35 +188,38 @@
       const hit = [...all].find((c) => c.split(":")[1].toLowerCase() === name.toLowerCase());
       return hit || (/\.n\.\d/.test(name) ? "fsyn:" + name : "fs:" + name[0].toUpperCase() + name.slice(1));
     };
-    const fsState = (b, c) => b.framesterInStory.includes(c) ? "story" : b.framesOnPage.map(pageToCurie).includes(c) ? "doc" : null;
+    const fsState = (b, c) => b.framesterInStory.includes(c) ? "story" : b.framesOnPage.map(pageToCurie).includes(c) ? "doc"
+      : b.framesterInOwl.includes(c) ? "file" : null;
     const fsAll = [...new Set(D.biases.flatMap((b) => b.framesterInStory.concat(b.framesOnPage.map(pageToCurie))))];
     const fsCount = (c, s) => D.biases.filter((b) => fsState(b, c) === s).length;
     const fsCols = fsAll.sort((a, b) => fsCount(b, "story") - fsCount(a, "story") || fsCount(b, "doc") - fsCount(a, "doc") || a.localeCompare(b));
 
     const odpCell = (b, o) => {
       const ev = b.odps[o] || [];
-      const s = ev.includes("story") ? "story" : docOnlyOdps(b).includes(o) ? "doc" : "";
-      const text = s === "story" ? "used in story" : s === "doc" ? "documented only" : "not used";
+      const s = ev.includes("story") ? "story" : docOnlyOdps(b).includes(o) ? "doc" : ev.includes("axioms") ? "file" : "";
+      const text = s === "story" ? "used in story" : s === "doc" ? "documented only" : s === "file" ? "only in the file's shared axioms" : "not used";
       return `<td class="cell ${s}" data-b="${b.id}" data-c="${o}" data-t="odp"><span class="m"></span><span class="sr">${text}</span></td>`;
     };
     const fsCell = (b, c) => {
       const s = fsState(b, c) || "";
-      const text = s === "story" ? "used in story" : s === "doc" ? "named on the page only" : "not used";
+      const text = s === "story" ? "used in story" : s === "doc" ? "named on the page only" : s === "file" ? "only in the file's shared axioms" : "not used";
       return `<td class="cell ${s}" data-b="${b.id}" data-c="${esc(c)}" data-t="fs"><span class="m"></span><span class="sr">${text}</span></td>`;
     };
     const rowTotal = (b) => storyOdps(b).length + b.framesterInStory.length;
 
     main.innerHTML = `
       <section class="band"><div class="grid">
-        <div class="label-col"><p class="kicker">Reuse matrix</p></div>
+        <div class="label-col"><p class="kicker">03 / Reuse matrix</p></div>
         <div class="body-col">
           <h2 style="margin-bottom:12px">What each ontology borrows</h2>
           <p class="lede" style="font-size:18px">Rows are the 16 bias ontologies, grouped by cluster. Columns are the content ontology design patterns and
           Framester frames they reuse. A filled square means the pattern or frame is used by the individuals that model the user story.
-          An outlined square means the group lists it in the documentation or the ontology's annotations, but the story graph never uses it.</p>
+          An outlined square means the group lists it in the documentation or annotations, but the story graph never uses it.
+          A hatched square means it only turns up in the shared domain and range axioms the file carries from the collective vocabulary.</p>
           <div class="legend">
             <span class="key"><span class="sw story" aria-hidden="true"></span>Used in the story graph</span>
             <span class="key"><span class="sw doc" aria-hidden="true"></span>Documented only</span>
+            <span class="key"><span class="sw file" aria-hidden="true"></span>Only in the file's shared axioms</span>
           </div>
         </div>
         <div class="full matrix-wrap" tabindex="0" role="region" aria-label="Reuse matrix, scrolls sideways">
@@ -224,7 +229,7 @@
               <tr><th></th><th class="group" colspan="${odpCols.length}" scope="colgroup">Content design patterns</th><td class="gap"></td>
                   <th class="group" colspan="${fsCols.length}" scope="colgroup">Framester frames and synsets</th><td class="gap"></td><th></th></tr>
               <tr><th></th>${odpCols.map((o) => `<th scope="col"><span class="vh">${esc(odpById[o].name)}</span></th>`).join("")}<td class="gap"></td>
-                  ${fsCols.map((c) => `<th scope="col"><span class="vh">${esc(c)}</span></th>`).join("")}<td class="gap"></td>
+                  ${fsCols.map((c) => `<th scope="col" class="fs"><span class="vh">${esc(c)}</span></th>`).join("")}<td class="gap"></td>
                   <th scope="col" class="tot"><span class="vh">Total used</span></th></tr>
             </thead>
             <tbody>
@@ -235,7 +240,7 @@
                   ${odpCols.map((o) => odpCell(b, o)).join("")}<td class="gap"></td>
                   ${fsCols.map((f) => fsCell(b, f)).join("")}<td class="gap"></td>
                   <td class="tot">${rowTotal(b)}</td></tr>`; }).join("")}`).join("")}
-              <tr><th class="row muted" scope="row">Used by</th>
+              <tr class="sum"><th class="row" scope="row">Used in stories</th>
                 ${odpCols.map((o) => `<td class="tot">${odpCount(o, "story")}</td>`).join("")}<td class="gap"></td>
                 ${fsCols.map((f) => `<td class="tot">${fsCount(f, "story")}</td>`).join("")}<td class="gap"></td><td></td></tr>
             </tbody>
@@ -243,9 +248,8 @@
         </div>
         <div class="full" style="margin-top:24px">
           <p class="note">Sources per cell: the GitBook “Ontologies Developed” list, each bias page, the <code>hasComponent</code> annotations in the OWL file,
-          and the terms the story individuals actually use (their classes and the properties asserted between them). Terms that appear only in the
-          shared domain and range axioms each file carries are not counted, because those axioms are the same collective vocabulary in every file.
-          Hover a cell for its sources.</p>
+          and the terms the story individuals actually use (their classes and the properties asserted between them). Totals count only filled squares:
+          the hatched ones come from domain and range axioms that repeat the same collective vocabulary in every file. Hover a cell for its sources.</p>
         </div>
       </div></section>`;
 
@@ -259,7 +263,7 @@
           body = `<b>${esc(b.name)} × ${esc(odpById[c].name)}</b>${esc(body)}`;
         } else {
           const s = fsState(b, c);
-          body = `<b>${esc(b.name)} × ${esc(c)}</b>${s === "story" ? "A story individual is typed with this frame" : s === "doc" ? "Named on the bias page, not used by the story individuals" : "Not used"}`;
+          body = `<b>${esc(b.name)} × ${esc(c)}</b>${s === "story" ? "A story individual is typed with this frame" : s === "doc" ? "Named on the bias page, not used by the story individuals" : s === "file" ? "Only in the file's shared domain and range axioms" : "Not used"}`;
         }
         showTip(body, ev.clientX, ev.clientY);
       });
@@ -280,12 +284,12 @@
     main.innerHTML = `
       <section class="bias-head"><div class="grid">
         <div class="label-col">
-          <p class="kicker">Cluster ${b.cluster + 1}</p>
+          <p class="kicker">${String(D.biases.indexOf(b) + 1).padStart(2, "0")} / 16 · Cluster 0${b.cluster + 1}</p>
           <p class="small muted" style="margin-top:4px">${esc(clusterName(b))}</p>
         </div>
         <div class="body-col">
-          <h1>${esc(b.name)}</h1>
-          <p class="bias-meta" style="margin-top:12px">Modelled by ${esc(b.creator.join(", "))} ·
+          <h1 class="display">${esc(b.name)}</h1>
+          <p class="bias-meta">Modelled by ${esc(b.creator.join(", "))} ·
             ${plural(b.instances.nodes.length, "individual")}, ${plural(b.instances.edges.length, "assertion")} ·
             <a href="${b.owlUrl}">OWL file</a> · <a href="${b.gitbookUrl}">GitBook page</a></p>
           <p class="bias-def">${esc(b.definition)}</p>
@@ -301,6 +305,7 @@
 
       <section class="bias-body"><div class="grid">
         <div class="diagram-col">
+          <div class="diagram-frame">
           <div class="diagram-bar">
             <h2 class="kicker" id="dg-title">The user story as a graph</h2>
             <div class="toggle" role="group" aria-label="Diagram level">
@@ -312,11 +317,12 @@
             <div class="diagram-scroll" id="dg" tabindex="-1"></div>
             <figcaption id="dg-cap"></figcaption>
           </figure>
-          <div class="kinds" aria-label="Box colour shows where the class comes from">
-            <span class="field f-local">Bias-specific class</span>
-            <span class="field f-framester">Framester frame or synset</span>
-            <span class="field f-odp">Design-pattern class</span>
-            <span class="field f-external">DBpedia, FOAF, CCO</span>
+          </div>
+          <div class="kinds" role="list" aria-label="How a box shows where its class comes from">
+            <span class="k" role="listitem">${miniNode("local")}Created by the team</span>
+            <span class="k" role="listitem">${miniNode("framester")}Framester frame or synset (solid)</span>
+            <span class="k" role="listitem">${miniNode("odp")}Design-pattern class (hatched band)</span>
+            <span class="k" role="listitem">${miniNode("external")}DBpedia, FOAF, CCO (dashed)</span>
           </div>
         </div>
 
@@ -350,9 +356,9 @@
             <dl class="reuse-list">
               <dt>Design patterns used in the story</dt><dd>${so.length ? so.map((o) => `<a href="${odpById[o].wiki}">${esc(odpById[o].name)}</a>`).join(", ") : "None"}</dd>
               ${doc.length ? `<dt>Documented, not used in the story</dt><dd>${doc.map((o) => esc(odpById[o].name)).join(", ")}</dd>` : ""}
-              <dt>Framester frames and synsets typing the individuals</dt><dd>${esc(b.framesterInStory.join(", ") || "None")}</dd>
-              <dt>Framester frames named on the GitBook page</dt><dd>${esc(b.framesOnPage.join(", ") || "None")}</dd>
-              <dt>Other vocabularies in the file</dt><dd>${esc(b.externalInOwl.join(", ") || "None")}</dd>
+              <dt>Framester frames and synsets typing the individuals</dt><dd class="mono">${esc(b.framesterInStory.join(", ") || "None")}</dd>
+              <dt>Framester frames named on the GitBook page</dt><dd class="mono">${esc(b.framesOnPage.join(", ") || "None")}</dd>
+              <dt>Other vocabularies in the file</dt><dd class="mono">${esc(b.externalInOwl.join(", ") || "None")}</dd>
               <dt>The OWL file</dt><dd>${b.owlFormat}, ${plural(b.stats.declaredClasses, "declared class", "declared classes")}, ${plural(b.stats.objectProperties, "object property", "object properties")}</dd>
             </dl>
           </div>
@@ -418,14 +424,23 @@
         edgeKeys.set(s + "|sub|" + t, { source: s, target: t, label: "subClassOf", sub: true });
       }
     });
-    const nodes = [...classes].map((c) => ({ id: c, lines: [c.includes(":") ? c.split(":")[1] : c, c.includes(":") ? sourceOf(c) : "created by the team"], kind: kindOf(c), aria: `${c}, ${sourceOf(c)}` }));
+    const nodes = [...classes].map((c) => ({ id: c, lines: [c.includes(":") ? c.split(":")[1] : c, c.includes(":") ? `${prefixOf(c)}: / ${sourceOf(c)}` : "team / bias-specific"], kind: kindOf(c), aria: `${c}, ${sourceOf(c)}` }));
     const edges = [...edgeKeys.values()].map((e, i) => Object.assign({ id: "c" + i }, e));
     return { nodes, edges };
   }
 
   // ---------- diagram: ELK layered layout, rendered as inline SVG ------
   const measureCtx = document.createElement("canvas").getContext("2d");
-  function textWidth(s, weight, size) { measureCtx.font = `${weight} ${size}px "Instrument Sans", Arial, sans-serif`; return measureCtx.measureText(s).width; }
+  function textWidth(s, weight, size, mono) {
+    measureCtx.font = mono ? `${weight} ${size}px "JetBrains Mono", Consolas, monospace` : `${weight} ${size}px Archivo, Arial, sans-serif`;
+    return measureCtx.measureText(s).width;
+  }
+  const STRIP = 12;   // hatched band that marks a design-pattern class
+  function miniNode(kind) {
+    const hatch = kind === "odp" ? `<defs><pattern id="mk-h" patternUnits="userSpaceOnUse" width="5" height="5" patternTransform="rotate(45)"><rect class="hatch-bg" width="5" height="5"/><line class="hatch-ln" x1="0" y1="0" x2="0" y2="5"/></pattern></defs>` : "";
+    return `<svg width="34" height="20" viewBox="0 0 34 20" aria-hidden="true" focusable="false">${hatch}<g class="node k-${kind}">
+      <rect class="bg" x="1.25" y="1.25" width="31.5" height="17.5"/>${kind === "odp" ? `<rect x="2.5" y="2.5" width="8" height="15" fill="url(#mk-h)"/><line class="strip-edge" x1="11" y1="1.25" x2="11" y2="18.75"/>` : ""}</g></svg>`;
+  }
   let drawToken = 0;
 
   async function drawDiagram(b) {
@@ -439,13 +454,13 @@
       ? `Each box is an individual from the OWL file (its name, then its class); each arrow is an object-property assertion between two individuals. ${plural(g.nodes.length, "individual")}, ${plural(g.edges.length, "assertion")}.`
       : `Derived from the same assertions: an arrow from class A to class B means the story links an A to a B with that property. Dashed arrows with a hollow head are rdfs:subClassOf axioms from the file.`;
     if (!window.ELK) { host.innerHTML = `<p class="note">The layout library could not load, so the diagram is missing. The table below lists every assertion.</p>`; return; }
-    try { await document.fonts.ready; } catch (e) { /* fonts API not available */ }
+    try { await Promise.all([document.fonts.load("650 14px Archivo"), document.fonts.load('400 11.5px "JetBrains Mono"')]); } catch (e) { /* fonts API not available */ }
 
     const avail = host.clientWidth - 32;
     const LINE = [18, 16, 16];
     const children = () => g.nodes.map((n) => {
-      const w = Math.max(...n.lines.map((l, i) => textWidth(l, i === 0 ? 600 : 400, i === 0 ? 14 : 12)));
-      return { id: n.id, width: Math.ceil(w) + 24, height: 12 + n.lines.reduce((s, _, i) => s + LINE[i], 0) + 4 };
+      const w = Math.max(...n.lines.map((l, i) => textWidth(l, i === 0 ? 650 : 400, i === 0 ? 14 : 11.5, i > 0)));
+      return { id: n.id, width: Math.ceil(w) + 26 + (n.kind === "odp" ? STRIP : 0), height: 12 + n.lines.reduce((s, _, i) => s + LINE[i], 0) + 4 };
     });
     const elkGraph = (dir) => ({
       id: "root",
@@ -465,7 +480,7 @@
       },
       children: children(),
       edges: g.edges.map((e) => ({ id: e.id, sources: [e.source], targets: [e.target],
-        labels: [{ text: e.label, width: Math.ceil(textWidth(e.label, 400, 12)) + 8, height: 16 }] })),
+        labels: [{ text: e.label, width: Math.ceil(textWidth(e.label, 400, 11, true)) + 10, height: 16 }] })),
     });
     const elk = new window.ELK();
     let res;
@@ -484,6 +499,7 @@
     let s = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-labelledby="${svgId}-t">
       <title id="${svgId}-t">${esc(b.name)}: ${diagramMode === "individuals" ? "user-story individuals and the object properties between them" : "classes used by the user story"}</title>
       <defs>
+        <pattern id="${svgId}-hatch" patternUnits="userSpaceOnUse" width="5" height="5" patternTransform="rotate(45)"><rect class="hatch-bg" width="5" height="5"/><line class="hatch-ln" x1="0" y1="0" x2="0" y2="5"/></pattern>
         <marker id="${svgId}-a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path class="arrow" d="M0,1 L10,5 L0,9 z"/></marker>
         <marker id="${svgId}-h" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="arrow hollow" d="M1,1 L11,6 L1,11 z"/></marker>
       </defs><g class="edges">`;
@@ -506,10 +522,12 @@
       const n = nodeById[c.id];
       const outs = g.edges.filter((e) => e.source === c.id).map((e) => `${e.label} ${(nodeById[e.target] || {}).lines ? nodeById[e.target].lines[0] : ""}`);
       const aria = n.aria + (outs.length ? ". Links: " + outs.join("; ") : "");
-      s += `<g class="node" tabindex="0" data-id="${esc(c.id)}" transform="translate(${c.x.toFixed(1)},${c.y.toFixed(1)})" role="img" aria-label="${esc(aria)}">
-        <rect class="bg" width="${c.width}" height="${c.height}" style="fill:var(--k-${n.kind})"/>`;
+      const x0 = n.kind === "odp" ? STRIP + 13 : 13;
+      s += `<g class="node k-${n.kind}" tabindex="0" data-id="${esc(c.id)}" transform="translate(${c.x.toFixed(1)},${c.y.toFixed(1)})" role="img" aria-label="${esc(aria)}">
+        <rect class="bg" x="1.25" y="1.25" width="${c.width - 2.5}" height="${c.height - 2.5}"/>`;
+      if (n.kind === "odp") s += `<rect x="2.5" y="2.5" width="${STRIP}" height="${c.height - 5}" fill="url(#${svgId}-hatch)"/><line class="strip-edge" x1="${STRIP + 3}" y1="1.25" x2="${STRIP + 3}" y2="${c.height - 1.25}"/>`;
       let y = 8;
-      n.lines.forEach((l, i) => { y += LINE[i]; s += `<text class="n${i + 1}" x="12" y="${y - 4}">${esc(l)}</text>`; });
+      n.lines.forEach((l, i) => { y += LINE[i]; s += `<text class="n${i + 1}" x="${x0}" y="${y - 4}">${esc(l)}</text>`; });
       s += `</g>`;
     });
     s += `</g></svg>`;
@@ -534,9 +552,9 @@
         e.classList.toggle("on", hit);
         if (hit) { svg.querySelector(`.node[data-id="${CSS.escape(e.dataset.s)}"]`).classList.add("on"); svg.querySelector(`.node[data-id="${CSS.escape(e.dataset.t)}"]`).classList.add("on"); }
       });
-      svg.querySelector(`.node[data-id="${CSS.escape(id)}"]`).classList.add("on");
+      svg.querySelector(`.node[data-id="${CSS.escape(id)}"]`).classList.add("on", "inv-on");
     };
-    const off = () => { svg.classList.remove("focusing"); svg.querySelectorAll(".on").forEach((x) => x.classList.remove("on")); };
+    const off = () => { svg.classList.remove("focusing"); svg.querySelectorAll(".on, .inv-on").forEach((x) => x.classList.remove("on", "inv-on")); };
     svg.querySelectorAll(".node").forEach((nd) => {
       nd.addEventListener("mouseenter", () => on(nd.dataset.id));
       nd.addEventListener("mouseleave", off);
@@ -560,7 +578,7 @@
     const noAnswer = D.biases.filter((b) => b.competencyQuestions.some((q) => !q.answer)).map((b) => b.name);
     main.innerHTML = `
       <section class="band"><div class="grid">
-        <div class="label-col"><p class="kicker">About</p></div>
+        <div class="label-col"><p class="kicker">04 / About</p></div>
         <div class="body-col prose">
           <h2 style="margin-bottom:16px">How the ontologies were made</h2>
           <p>The group picked two clusters from the Cognitive Bias Codex: three biases under “${esc(D.clusters[0].name)}”
