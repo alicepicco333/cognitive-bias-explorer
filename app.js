@@ -543,6 +543,7 @@
       svg.setAttribute("width", Math.round(W * 0.9)); svg.setAttribute("height", Math.round(H * 0.9));
       host.setAttribute("tabindex", "0"); host.setAttribute("aria-label", "Diagram, scrolls sideways");
       host.insertAdjacentHTML("beforebegin", `<p class="scroll-hint">Scroll sideways to see the whole graph, or read the table below.</p>`);
+      host.scrollLeft = Math.max(0, (host.scrollWidth - host.clientWidth) / 2);
     }
     else host.setAttribute("tabindex", "-1");
 
