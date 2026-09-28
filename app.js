@@ -321,10 +321,10 @@
           </figure>
           </div>
           <div class="kinds" role="list" aria-label="How a box shows where its class comes from">
-            <span class="k" role="listitem">${miniNode("local")}Created by the team</span>
-            <span class="k" role="listitem">${miniNode("framester")}Framester frame or synset (solid)</span>
-            <span class="k" role="listitem">${miniNode("odp")}Design-pattern class (hatched band)</span>
-            <span class="k" role="listitem">${miniNode("external")}DBpedia, FOAF, CCO (dashed)</span>
+            <span class="k" role="listitem">${miniNode("local")}Team class</span>
+            <span class="k" role="listitem">${miniNode("framester")}Framester (solid)</span>
+            <span class="k" role="listitem">${miniNode("odp")}Design pattern (hatched)</span>
+            <span class="k" role="listitem">${miniNode("external")}DBpedia · FOAF · CCO (dashed)</span>
           </div>
         </div>
 
