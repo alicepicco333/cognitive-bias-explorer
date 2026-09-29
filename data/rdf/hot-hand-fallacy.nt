@@ -1,0 +1,326 @@
+<https://w3id.org/framester/data/framestercore/Probability> <http://www.w3.org/2000/01/rdf-schema#label> "Probability" .
+<http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameter> <http://www.w3.org/2000/01/rdf-schema#domain> _:N403970f7c1a747fbbffb76bceb56ad33 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N021156c463c94e43a698ac3f24288833 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore> .
+<http://purl.org/ontology/cco/core#belief> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/People> .
+_:N021156c463c94e43a698ac3f24288833 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4a78454ba76e4ccbae3bfed7970d5162 .
+_:N7db261e7457e43c79227b2c725419097 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+_:N9efd459ce91e42ea8fac3e127696e991 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nb7ab0d32ad544c6cb870ab386121a816 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/framester/data/framestercore/Activity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <https://www.dbpedia.org/ontology/> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/People> .
+_:N5a8ee09f124a44219d0bbbb6f83adf82 <http://www.w3.org/2002/07/owl#unionOf> _:N33dc5b55ae3344a3ac6705f1341e62aa .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#producesOutcomeEffect> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/page/Success> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#domain> _:N1a56589599ca498e9e6aba03f0d5b121 .
+_:Ndedc3ff694b94691b833256549780539 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N41ae9d0b8040485c87e086307f321de8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecentMemory> .
+<https://w3id.org/framester/data/framestercore/Pattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne5dcfa25e61c46c8812df1e0b63d1436 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:N8197383ca09e4e488849962007d9237a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Na4a70afd9f524505b776b4c2a79315bd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na88a3503ebb2469285d5ae2148dae3a2 .
+_:Nc50fde960e6d4b9689f0e32d63664ecf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Sequence> .
+_:N75020bbb2af148dfa54b0a98de5e67e3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N8197383ca09e4e488849962007d9237a .
+_:Ne265371e8e4f49eea9133193f6685506 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/Probability> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Ncdb0c6e9153540309d973729c2580d1a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nc667a6e97e23485e9bd4b6fa6d9408df <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N403970f7c1a747fbbffb76bceb56ad33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nb7ab0d32ad544c6cb870ab386121a816 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://dbpedia.org/page/Success> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Activity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://ontologydesignpatterns.org/wiki/Submissions:Provenance> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual for the next chance-based occurence class such as a Footbal Team Match Bet where the probability level is not completely random and can be influenced by different external and/or internal elements of the game itself." .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne7f8273a0c5a4c5cb0e9c7e6caadc240 <http://www.w3.org/2002/07/owl#unionOf> _:Na41ab54c035445abaab3a7d96b976588 .
+<https://w3id.org/framester/data/framestercore/Event> <http://purl.org/dc/terms/description> "An Event takes place at a Place and Time. Big earthquakes only happen along plate boundaries. INI The party will take place on Sunday in the all-you-can-eat buffet." .
+<https://dbpedia.org/page/Success> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/People> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#FutureEvent> <http://www.w3.org/2000/01/rdf-schema#label> "FutureEvent" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecentMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Probability> <http://purl.org/dc/terms/description> "This frame characterizes the likelihood that a Hypothetical_event will happen as a position on a scale of impossible to inevitable. The likelihood can expressed as numerical Odds or a metaphorical representation of the Position on a scale. There's a 20 % chance that you'll succeed. The odds that he'll actually do it are one in a million." .
+_:Nc866895ec0b94c068ddc882045c02a07 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PastMemory> .
+_:N061344bf994d4f66ab909da0a7efff8c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+_:N1a3f880ac2fd4b1f97f2c4d5f43d5645 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N073269cae86341268e2e2898c5243567 .
+_:N03ab7605cfa24ea79c2f05d7084a3fd8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Probability> .
+_:N2c71d998f8024f988e2768802f33e5e5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> .
+_:N5536e6bd3bef43c5aa37e9f4d7e86c6d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isOutcomeEffectOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/page/Success> .
+<https://w3id.org/framester/data/framestercore/Sequence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Ne37345b0f06e4b80a3acf07f2762da85 .
+_:Ncde41409920b4e5990d08e80a784290b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N3793aae3eb1e486eb8251e0536fd51c3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Predicting> .
+<https://w3id.org/framester/data/framestersyn/Belief.n.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne37345b0f06e4b80a3acf07f2762da85 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+_:Ne9398adbc95947c9aee73681f339ad87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ncde41409920b4e5990d08e80a784290b .
+_:N61e055e58ae74c37be32fa24ac2c1290 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+<https://dbpedia.org/page/Success> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#comment> "inverse property of isParticipantIn" .
+_:N1e328dd74e564a53a004f484e40dcc09 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets> <http://www.w3.org/2000/01/rdf-schema#label> "Sport Bets" .
+_:N0eea97e52738474b8136b6ba5644a884 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> .
+<http://purl.org/ontology/cco/core#belief> <http://www.w3.org/2000/01/rdf-schema#range> _:N1e328dd74e564a53a004f484e40dcc09 .
+_:Nabd02c9299e3480fa9ac1227d6a2ed6a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N1a56589599ca498e9e6aba03f0d5b121 <http://www.w3.org/2002/07/owl#unionOf> _:N5536e6bd3bef43c5aa37e9f4d7e86c6d .
+<https://w3id.org/framester/data/framestercore/People> <http://purl.org/dc/terms/description> "This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming baby yesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man." .
+_:Ndedc3ff694b94691b833256549780539 <http://www.w3.org/2002/07/owl#unionOf> _:N75020bbb2af148dfa54b0a98de5e67e3 .
+_:Nbda831420fac4756a15fba134baf440f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#isParameterFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Success> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Probability> .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> _:Ned5c3860b05e47eb92999cae49bf2c09 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#FutureEvent> <http://purl.org/dc/terms/description> "This class represent an event that will happen in the next future." .
+_:Ned5c3860b05e47eb92999cae49bf2c09 <http://www.w3.org/2002/07/owl#unionOf> _:N7db261e7457e43c79227b2c725419097 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dbpedia.org/page/Success> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#NextChance-BasedOccurence> .
+_:N325ffeea4e3340e6b2d94d00e70ad5c0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na9229dff1cd943f594a89b1b1d6e5374 .
+<https://w3id.org/framester/data/framestersyn/Bettor.n.1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/framester/data/framestercore/People> .
+_:Ne5dcfa25e61c46c8812df1e0b63d1436 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N3b63cc8a78b14c358d908066e9593400 .
+_:N1cf5f88489b144deadde0298e01ee3fc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N31b00661cf7f48498faa1292f1c58635 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N708c134ba51c49c88c3ff45c68ed435e .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N31b00661cf7f48498faa1292f1c58635 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://purl.org/ontology/cco/20100926/cognitivecharacteristics.html> .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> .
+<https://w3id.org/affectedBy#influencedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:Nf4f2ce0b902848ff9aa0f859a366c87f .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sport Bettor individual who is participating in an Activity such as Sport Bets" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isProducedEffectBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/framester/data/framestercore/Event> .
+<https://w3id.org/framester/data/framestercore/Importance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#producesOutcomeEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "a property linking an event which Outcome will produce an effect" .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Ne7568f0ac4e24e5892ea964df4326e60 <http://www.w3.org/2002/07/owl#unionOf> _:N2c71d998f8024f988e2768802f33e5e5 .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Probability> .
+<https://w3id.org/framester/data/framestersyn/Bettor.n.1> <http://purl.org/dc/terms/description> "A class for a player involved in an Activity such as Sport Bets." .
+_:Nc50fde960e6d4b9689f0e32d63664ecf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N750adcf238b943febd3d9f62dd267bdc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence> <http://www.w3.org/2000/01/rdf-schema#domain> _:Ne7568f0ac4e24e5892ea964df4326e60 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor> <http://www.w3.org/2000/01/rdf-schema#label> "Sport Bettor" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isProducedEffectBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#isParameterFor> <http://www.w3.org/2000/01/rdf-schema#range> _:Ncede344f56984e2cbc9d9017691378fd .
+_:Na9229dff1cd943f594a89b1b1d6e5374 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na4a70afd9f524505b776b4c2a79315bd .
+_:N02a4e0783aae4a0dacd70e1e6f06197e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+_:N33dc5b55ae3344a3ac6705f1341e62aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ncdb0c6e9153540309d973729c2580d1a .
+_:N13e925b69c714d10a191b1bb3c63a78c <http://www.w3.org/2002/07/owl#unionOf> _:N02a4e0783aae4a0dacd70e1e6f06197e .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isOutcomeEffectOf> <http://www.w3.org/2000/01/rdf-schema#comment> "inverse property of HasOutcomeEffect" .
+_:N3b63cc8a78b14c358d908066e9593400 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ne7f8273a0c5a4c5cb0e9c7e6caadc240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Predicting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet> <http://www.w3.org/2000/01/rdf-schema#label> "Football Team Match Bet" .
+_:Na9229dff1cd943f594a89b1b1d6e5374 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing> .
+_:N0eea97e52738474b8136b6ba5644a884 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9ee5ed0259ff4b3b909685b2e05cad4c .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N403970f7c1a747fbbffb76bceb56ad33 <http://www.w3.org/2002/07/owl#unionOf> _:Nc866895ec0b94c068ddc882045c02a07 .
+_:Nce00796591204aeab2c9c916c6b22e33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/affectedBy#influencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N23860a426d4a48539b4af543557bcc61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Sequence> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestersyn/Bettor.n.1> .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/2000/01/rdf-schema#label> "People" .
+_:N4e2d926c1f5549f3a31c9b4afcb166f4 <http://www.w3.org/2002/07/owl#unionOf> _:Ne65a798a0dbb4402afc938c5754538e1 .
+_:Ncdb0c6e9153540309d973729c2580d1a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Predicting> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Nc667a6e97e23485e9bd4b6fa6d9408df <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+<https://w3id.org/affectedBy#influencedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:N03ab7605cfa24ea79c2f05d7084a3fd8 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isProducedEffectBy> <http://www.w3.org/2000/01/rdf-schema#comment> "inverse property of producesOutcomeEffect" .
+<http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameterDataValue> <http://www.w3.org/2000/01/rdf-schema#range> _:N357c621016f242d0b7e74f4591f816f5 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isOutcomeEffectOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/framester/data/framestercore/Sequence> .
+_:Ned5c3860b05e47eb92999cae49bf2c09 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "The Hot Hand Fallacy Bias, also known as the Hot Hand Fallacy, is a cognitive bias that leads people to believe that a series of successful outcomes in a random or chance-based process is more likely to continue in the short term. In other words, individuals tend to think that if they or someone else has experienced a streak of wins or successes, they are more likely to keep winning or succeeding in the near future. This bias can be observed in various contexts, such as sports, gambling, or even everyday decision-making."@en .
+_:N9e2051ed32044c9a9e2f0908b4d91882 <http://www.w3.org/2002/07/owl#unionOf> _:Nca1a31648401478f8c343da53b17c5ab .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor> <http://purl.org/ontology/cco/core#belief> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#range> _:Ne7f8273a0c5a4c5cb0e9c7e6caadc240 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel> <https://w3id.org/affectedBy#influencedBy> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series> .
+_:N23860a426d4a48539b4af543557bcc61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na53a0d1825034899ad5cd881b7acf8c3 .
+_:N9ee5ed0259ff4b3b909685b2e05cad4c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N849171dff569436d8c75fd43ce3e25c5 .
+_:N9efd459ce91e42ea8fac3e127696e991 <http://www.w3.org/2002/07/owl#unionOf> _:Nfbf9b80b085d43cc9efcf88f8bac24f2 .
+<https://dbpedia.org/page/Success> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Event> .
+<https://w3id.org/framester/data/framestercore/PerceptionExperience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Probability> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Sequence> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/affectedBy#influencedBy> .
+_:Na88a3503ebb2469285d5ae2148dae3a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Probability> .
+_:N61c09b20a74f4328bf761919dbb067d3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+<http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#isParameterFor> <http://www.w3.org/2000/01/rdf-schema#domain> _:Nc18239707477423b8f04a6913ea3f7fe .
+_:Nc866895ec0b94c068ddc882045c02a07 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N41ae9d0b8040485c87e086307f321de8 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet> <http://www.w3.org/2000/01/rdf-schema#label> "Winning Bet" .
+_:N325ffeea4e3340e6b2d94d00e70ad5c0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> .
+_:N9ee5ed0259ff4b3b909685b2e05cad4c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> "Sports Betting: A sports bettor assumes that a team that has won several games in a row is more likely to win the next one, overlooking factors like team performance and matchups." .
+_:N1cf5f88489b144deadde0298e01ee3fc <http://www.w3.org/2002/07/owl#unionOf> _:N750adcf238b943febd3d9f62dd267bdc .
+_:N350882847b3648c386783fc6fe4ea3ef <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://ontologydesignpatterns.org/wiki/Submissions:AffectedBy> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#FutureEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:Ndedc3ff694b94691b833256549780539 .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/framester/data/framestercore/Event> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/People> .
+_:N0d6bb8dbae1744d3a00a72284f1e2813 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series> <http://www.w3.org/2000/01/rdf-schema#comment> "a sequence of past bets that have the same outcome effect, namely in this case a Winning Bet." .
+_:N1a56589599ca498e9e6aba03f0d5b121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nf0a362399bc54c3a8ad2e4c0adb2614c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Identicality> .
+_:Na4a70afd9f524505b776b4c2a79315bd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:Nfbf9b80b085d43cc9efcf88f8bac24f2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nc667a6e97e23485e9bd4b6fa6d9408df .
+_:N211b950235dd4bc1b88342628f1d5b42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ne9398adbc95947c9aee73681f339ad87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Importance> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://purl.org/dc/terms/description> "This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent's Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame" .
+_:N0d6bb8dbae1744d3a00a72284f1e2813 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#producesOutcomeEffect> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/Event> .
+_:Nfd81f8f24b4d431eb18f75ce465be6df <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9f69e01aafa0413286abb78f0399b75c .
+_:N5a8ee09f124a44219d0bbbb6f83adf82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N061344bf994d4f66ab909da0a7efff8c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isProducedEffectBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#producesOutcomeEffect> .
+_:N0d6bb8dbae1744d3a00a72284f1e2813 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/framester/data/framestercore/Activity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nf4f2ce0b902848ff9aa0f859a366c87f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N849171dff569436d8c75fd43ce3e25c5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#producesOutcomeEffect> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet> .
+_:Nfbf9b80b085d43cc9efcf88f8bac24f2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion> <http://www.w3.org/2000/01/rdf-schema#comment> "A property connecting a Person who has a biased opinion about the possible outcome of a Future Event, such as a Random/Chance-based Occurrence, because he/she thinks that there is a correlation between this future event and a series of past events." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing an Acitvity such as Sport Bets in which is involved a person such as a Bettor." .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/Sequence> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#NextChance-BasedOccurence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N0d6bb8dbae1744d3a00a72284f1e2813 .
+_:Ncede344f56984e2cbc9d9017691378fd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://ontologydesignpatterns.org/wiki/Submissions:PartOf> .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> _:N9efd459ce91e42ea8fac3e127696e991 .
+_:N1e328dd74e564a53a004f484e40dcc09 <http://www.w3.org/2002/07/owl#unionOf> _:N23860a426d4a48539b4af543557bcc61 .
+_:N03ab7605cfa24ea79c2f05d7084a3fd8 <http://www.w3.org/2002/07/owl#unionOf> _:N325ffeea4e3340e6b2d94d00e70ad5c0 .
+_:N708c134ba51c49c88c3ff45c68ed435e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N59057e21d7634b2a853977d227e9b789 .
+_:Nabd02c9299e3480fa9ac1227d6a2ed6a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Sequence> .
+_:N7db261e7457e43c79227b2c725419097 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb7ab0d32ad544c6cb870ab386121a816 .
+_:N180196091ae94a76ad6054bd5b19e9f1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/People> .
+_:N708c134ba51c49c88c3ff45c68ed435e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#FutureEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/framester/data/framestercore/Event> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#range> _:N1cf5f88489b144deadde0298e01ee3fc .
+_:N1a3f880ac2fd4b1f97f2c4d5f43d5645 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Importance> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isOutcomeEffectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N59057e21d7634b2a853977d227e9b789 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series> <http://www.w3.org/2000/01/rdf-schema#label> "Football Team Match Bet Series" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#NextChance-BasedOccurence> <http://purl.org/dc/terms/description> "This class represent an event that will happen in the next future and it is characterized by chance-based probability." .
+<http://purl.org/ontology/cco/core#belief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> _:N13e925b69c714d10a191b1bb3c63a78c .
+_:N750adcf238b943febd3d9f62dd267bdc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N3793aae3eb1e486eb8251e0536fd51c3 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence> <http://www.w3.org/2000/01/rdf-schema#comment> "A property connecting an Entity (Sequence) that affects in different ways another entity (Probability)." .
+<https://w3id.org/framester/data/framestercore/Event> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Probability> .
+<https://w3id.org/framester/data/framestercore/Event> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Sequence> .
+_:N13e925b69c714d10a191b1bb3c63a78c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/Activity> .
+_:N5536e6bd3bef43c5aa37e9f4d7e86c6d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N180196091ae94a76ad6054bd5b19e9f1 .
+_:Ne7568f0ac4e24e5892ea964df4326e60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nc18239707477423b8f04a6913ea3f7fe <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameter> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#isParameterFor> .
+_:Ne265371e8e4f49eea9133193f6685506 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/People> .
+_:Na41ab54c035445abaab3a7d96b976588 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence> <http://www.w3.org/2000/01/rdf-schema#range> _:N350882847b3648c386783fc6fe4ea3ef .
+<https://w3id.org/framester/data/framestercore/Sequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N357c621016f242d0b7e74f4591f816f5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:N073269cae86341268e2e2898c5243567 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Probability> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Event> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the outcome effect of events such as a Football Team Match Bet. In this case a winning bet will be the effect of a winning match." .
+<https://w3id.org/framester/data/framestercore/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameterDataValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:Nce00796591204aeab2c9c916c6b22e33 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcomeEffect> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isOutcomeEffectOf> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://ontologydesignpatterns.org/wiki/Submissions:Parameter> .
+_:N2c71d998f8024f988e2768802f33e5e5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N021156c463c94e43a698ac3f24288833 .
+_:Nc18239707477423b8f04a6913ea3f7fe <http://www.w3.org/2002/07/owl#unionOf> _:N1a3f880ac2fd4b1f97f2c4d5f43d5645 .
+_:Ne65a798a0dbb4402afc938c5754538e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nbda831420fac4756a15fba134baf440f .
+_:N4a78454ba76e4ccbae3bfed7970d5162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets> <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nf0a362399bc54c3a8ad2e4c0adb2614c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne9398adbc95947c9aee73681f339ad87 .
+_:N59057e21d7634b2a853977d227e9b789 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Probability> .
+<https://w3id.org/framester/data/framestersyn/Bettor.n.1> <http://www.w3.org/2000/01/rdf-schema#label> "Player" .
+_:Ncede344f56984e2cbc9d9017691378fd <http://www.w3.org/2002/07/owl#unionOf> _:Nfd81f8f24b4d431eb18f75ce465be6df .
+_:N4a78454ba76e4ccbae3bfed7970d5162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nabd02c9299e3480fa9ac1227d6a2ed6a .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N02a4e0783aae4a0dacd70e1e6f06197e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N061344bf994d4f66ab909da0a7efff8c .
+_:Ne37345b0f06e4b80a3acf07f2762da85 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/framester/data/framestercore/Activity> .
+<https://w3id.org/framester/data/framestercore/Probability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity" .
+<http://www.w3.org/2001/XMLSchema#string> <http://purl.org/dc/terms/description> "Define the participation of an entity in a process or an Activity" .
+_:Nca1a31648401478f8c343da53b17c5ab <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N211b950235dd4bc1b88342628f1d5b42 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel> <http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameterDataValue> "Low" .
+_:N75020bbb2af148dfa54b0a98de5e67e3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Sequence> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcomeEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N33dc5b55ae3344a3ac6705f1341e62aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+_:N3b63cc8a78b14c358d908066e9593400 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:Nfd81f8f24b4d431eb18f75ce465be6df <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PastMemory> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl> <http://purl.org/dc/terms/description> "The Hot Hand Fallacy module of the Cognitive Bias Ontology" .
+_:N9e2051ed32044c9a9e2f0908b4d91882 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ncde41409920b4e5990d08e80a784290b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Probability> .
+_:N357c621016f242d0b7e74f4591f816f5 <http://www.w3.org/2002/07/owl#unionOf> _:Ne5dcfa25e61c46c8812df1e0b63d1436 .
+<https://dbpedia.org/page/Success> <http://www.w3.org/2000/01/rdf-schema#label> "Success" .
+<https://w3id.org/framester/data/framestercore/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#NextChance-BasedOccurence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#FutureEvent> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcomeEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "A property linking a series of events which Outcome brings to the same effect" .
+_:Na88a3503ebb2469285d5ae2148dae3a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nce00796591204aeab2c9c916c6b22e33 <http://www.w3.org/2002/07/owl#unionOf> _:Nf0a362399bc54c3a8ad2e4c0adb2614c .
+_:N849171dff569436d8c75fd43ce3e25c5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nc50fde960e6d4b9689f0e32d63664ecf .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nca1a31648401478f8c343da53b17c5ab <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias> .
+<https://dbpedia.org/page/Success> <http://purl.org/dc/terms/description> "Success is the state or condition of meeting a defined range of expectations. It may be viewed as the opposite of failure. The criteria for success depend on context and may be relative to a particular observer or belief system. One person might consider a success what another person considers a failure, particularly in cases of direct competition or a zero-sum game. Similarly, the degree of success or failure in a situation may be differently viewed by distinct observers or participants, such that a situation that one considers to be a success, another might consider to be a failure, a qualified success or a neutral situation. For example, a film that is a commercial failure or even a box-office bomb can go on to receive a cult following, with the initial lack of commercial success even." .
+_:Ne37345b0f06e4b80a3acf07f2762da85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/framester/data/framestercore/Sequence> <http://www.w3.org/2000/01/rdf-schema#label> "Sequence" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#producesOutcomeEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Na53a0d1825034899ad5cd881b7acf8c3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestersyn/Belief.n.1> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isProducedEffectBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/page/Success> .
+_:N9b068f2f84a348f0ac767f67ba66230a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> .
+_:N3793aae3eb1e486eb8251e0536fd51c3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#NextChance-BasedOccurence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameterDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#domain> _:N5a8ee09f124a44219d0bbbb6f83adf82 .
+_:N180196091ae94a76ad6054bd5b19e9f1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "The probability level that an event n the next futur, such a chance-based occurence, can have  a specific outcome effect. For example In the Hot Hand fallacy bias if the outcome of previous events series was a Victory then for the player the probability level that the next  event will be a Victory is higher. On the contrary in the opposite bias, the stock of luck, the player belevies that is less probable of winning again in the next event because the luck will be less." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl> <http://purl.org/dc/terms/created> "February 2024" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N211b950235dd4bc1b88342628f1d5b42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+<https://w3id.org/framester/data/framestercore/Identicality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Success> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Sequence> .
+<https://w3id.org/framester/data/framestercore/Sequence> <http://purl.org/dc/terms/description> "The words in this frame describe entities that occur in some temporally-ordered sequence. The entities thus have some sort of relation between them that might be described by the Relative_time frame. However, at this time, this frame has no Frame Relation with that frame (though this is still under discussion). Additionally, it should be noted that the words in this frame have a metaphorical link to the words in Shape. Describe in detail the sequence of steps taken during an emergency." .
+<http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameter> <http://www.w3.org/2000/01/rdf-schema#range> _:N4e2d926c1f5549f3a31c9b4afcb166f4 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://ontologydesignpatterns.org/wiki/Submissions:Participation> .
+_:N9f69e01aafa0413286abb78f0399b75c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N61e055e58ae74c37be32fa24ac2c1290 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion> <http://www.w3.org/2000/01/rdf-schema#range> _:N9e2051ed32044c9a9e2f0908b4d91882 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/Sequence> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series> <http://www.w3.org/ns/prov#wasGeneratedBy> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcomeEffect> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/page/Success> .
+_:Nf4f2ce0b902848ff9aa0f859a366c87f <http://www.w3.org/2002/07/owl#unionOf> _:N0eea97e52738474b8136b6ba5644a884 .
+_:Na53a0d1825034899ad5cd881b7acf8c3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N8197383ca09e4e488849962007d9237a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel> <http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameterDataValue> "High" .
+_:N9b068f2f84a348f0ac767f67ba66230a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N31b00661cf7f48498faa1292f1c58635 .
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Sequence> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcomeEffect> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/Sequence> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "ProbabiltyLevel" .
+<https://w3id.org/framester/data/framestersyn/Bettor.n.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N073269cae86341268e2e2898c5243567 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N61e055e58ae74c37be32fa24ac2c1290 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Na41ab54c035445abaab3a7d96b976588 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne265371e8e4f49eea9133193f6685506 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet> <http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameter> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N41ae9d0b8040485c87e086307f321de8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N61c09b20a74f4328bf761919dbb067d3 .
+_:N350882847b3648c386783fc6fe4ea3ef <http://www.w3.org/2002/07/owl#unionOf> _:N9b068f2f84a348f0ac767f67ba66230a .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PastMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl> <http://purl.org/dc/terms/title> "Hot Hand Fallacy Bias Ontology" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcomeEffect> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet> .
+_:N4e2d926c1f5549f3a31c9b4afcb166f4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nbda831420fac4756a15fba134baf440f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Probability> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl> <http://purl.org/dc/terms/creator> "Corrado Consiglio" .
+_:N61c09b20a74f4328bf761919dbb067d3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N9f69e01aafa0413286abb78f0399b75c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecentMemory> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#NextChance-BasedOccurence> <http://www.w3.org/2000/01/rdf-schema#label> "Next Chance-Based Occurence" .
+_:Ne65a798a0dbb4402afc938c5754538e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Importance> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/People> .

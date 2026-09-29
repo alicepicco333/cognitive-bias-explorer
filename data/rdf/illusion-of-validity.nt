@@ -1,0 +1,202 @@
+_:N0c1b7db5d9fa4cdba0daa9af36a796a1 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "http://www.w3.org/XML/1998/namespace" .
+_:Ncd3b525961a548fcbe80f34743944862 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "http://modellingdh.github.io/ont/odp/term/" .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:Ne42a18e2e2444ab38eb19baa4e24f890 .
+_:N04d8ff917c35445abbd93f7f4a66977a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Assessing> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl> <http://purl.org/dc/terms/description> "The Illusion of validity module of the cognitive bias ontology"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N699265210cc64d22babfb6a4559b41a3 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "http://www.fao.org/aims/aos/aos.owl#" .
+<http://www.ontology.se/odp/content/owl/Action.owl#Action> <http://www.w3.org/2000/01/rdf-schema#comment> "The process of doing something. An action is performed by an agent. An action can be proposed (proposed actions make up a plan), implemented or abandoned, and it has a status and possibly one or more suspension periods."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> <http://www.w3.org/2000/01/rdf-schema#label> "Outcome"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ne622ead9e0cb45e5ac4c2be72b262f34 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "xsd" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Biased_investement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology.se/odp/content/owl/Action.owl#Action> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Positive_outcome> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasAttribute> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Identicality_aspect> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> _:N1ee0062bfd924894b4e943fce381f401 .
+_:N447b54e2f51c4badbd54a48aaf9b98f3 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_predicting> <http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#produces> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Positive_outcome> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "The “Illusion of Validity” is a cognitive bias where individuals overestimate their ability to accurately interpret and predict outcomes when analyzing a set of data, especially when the data show a consistent pattern"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:N5510745c5ba545469bf2df01a9ed2da0 .
+<http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#produces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Expert_investor> <http://modellingdh.github.io/ont/odp/term/isEngagedIn> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Biased_investement> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investorship_knowledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dbpedia.org/resource/Knowledge> .
+_:N699265210cc64d22babfb6a4559b41a3 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "fao" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investorship_knowledge> <http://www.fao.org/aims/aos/aos.owl#affects> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_PerceivedValidity> .
+<https://w3id.org/framester/data/framestercore/Deciding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#scenarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N116508d92a3c4144a1d56f611868dfa8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd211050aba6c4c2aacd83ebc7a2e39fd .
+_:N1712f37e9ec1485aa6bafdfcdcc0a2a6 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "http://www.w3.org/2000/01/rdf-schema#" .
+_:N5be4a608b1ae43999892afd52676d24e <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "participation" .
+_:N9a25870a4cff4fcf9c1cf32adc5789b5 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "https://w3id.org/framester/data/framestercore/" .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Identicality_aspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nfe0671515bf346028c9b28fcbc4e0a44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:Nd01a86197fa549dd91ee68380752d120 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "action" .
+_:N97b954a8dd5d45b4b4294601b7299408 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#" .
+_:N5be4a608b1ae43999892afd52676d24e <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#" .
+_:N998b4092a9f7451ea4472453c02bbcb1 <http://www.w3.org/2002/07/owl#unionOf> _:N595ac32dfc494653a27150fabe381dc3 .
+_:Nc239bf6ff74a4115972679b643b6c90e <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "owl" .
+_:N862ecc3f2faa43ea934692b7d8177c00 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "https://dbpedia.org/resource/" .
+<https://dbpedia.org/resource/Knowledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Negative_outcome> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasAttribute> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Identicality_aspect> .
+_:N4812a13b504e4c1ca86e9b407d90684e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:Ncd3b525961a548fcbe80f34743944862 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_PerceivedValidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:N699265210cc64d22babfb6a4559b41a3 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#hasComponent> "http://ontologydesignpatterns.org/wiki/Submissions:Participation"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N1ee0062bfd924894b4e943fce381f401 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N2333407410c943e584168a00cf8c215d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+_:Ncd3b525961a548fcbe80f34743944862 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "term" .
+<http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#produces> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/Predicting> .
+<https://w3id.org/framester/data/framestercore/Predicting> <http://www.w3.org/2000/01/rdf-schema#label> "Predicting"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nc25fefc8b3514c20ae5857565960aca4 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/ontologyIRI> "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl" .
+<http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Define the participation of an entity in a process."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/2000/01/rdf-schema#label> "People"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.ontology.se/odp/content/owl/Action.owl#hasConsequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.fao.org/aims/aos/aos.owl#affects> <http://www.w3.org/2000/01/rdf-schema#comment> "X <affects> Y. Agent X acts on object Y in such a way that Y changes state or location."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Knowledge> <http://www.w3.org/2000/01/rdf-schema#comment> "Knowledge can be defined as awareness of facts or as practical skills, and may also refer to familiarity with objects or situations. Knowledge of facts, also called propositional knowledge, is often defined as true belief that is distinct from opinion or guesswork by virtue of justification."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investorship_knowledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#hasComponent> "http://ontologydesignpatterns.org/wiki/Submissions:NewsReportingEvent"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/People> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N97b954a8dd5d45b4b4294601b7299408 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "cbo" .
+_:Neca6aeaf91914fedbcf0c27b4582f4ce <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Literal> .
+_:Nfcdb41ca920d4fe194a9fd755292018d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Expectation> .
+_:N04d8ff917c35445abbd93f7f4a66977a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N116508d92a3c4144a1d56f611868dfa8 .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N4812a13b504e4c1ca86e9b407d90684e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_predicting> <http://www.w3.org/2000/01/rdf-schema#comment> "The predicting process taken on by the investor to calculate the future possible outcome of his investement."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N862ecc3f2faa43ea934692b7d8177c00 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "dbr" .
+<http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#scenarios> "\"John, a seasoned investor, relies on his perceived competence and past successes to make investment decisions, often ignoring the influence of unpredictable factors.\""^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/framester/data/framestercore/Predicting> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Biased_investement> <http://www.w3.org/2000/01/rdf-schema#comment> "John continues  to invest based on his overconfident strategy, relying on the Illusion of Validity bias. Despite occasional market fluctuations, he attributes any success to his perceived expertise rather than considering the role of unpredictable factors or external influences."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/framester/data/framestercore/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:Nd01a86197fa549dd91ee68380752d120 .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:N3d917ec16b884bd58d01c58e5efc8519 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#hasComponent> "http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/2000/01/rdf-schema#comment> "This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N6fff67521a7f4b218587c42ac3965b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:Nc239bf6ff74a4115972679b643b6c90e .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Identicality_aspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/Identicality> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#hasComponent> "http://ontologydesignpatterns.org/wiki/Submissions:AOS_AGROVOC_Concept_Server_fundation_ontology_model"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/framester/data/framestercore/Identicality> <http://www.w3.org/2000/01/rdf-schema#comment> "A Current_instance of a certain Type is under discussion. This instance is evaluated as being the same instance or a different instance from a Previous_instance encountered in a Previous_context."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#range> _:N998b4092a9f7451ea4472453c02bbcb1 .
+_:N0c1b7db5d9fa4cdba0daa9af36a796a1 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "xml" .
+<https://w3id.org/framester/data/framestercore/Assessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N5510745c5ba545469bf2df01a9ed2da0 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "news" .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:N5be4a608b1ae43999892afd52676d24e .
+_:N6fff67521a7f4b218587c42ac3965b25 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/abbreviatedIRI> "terms:created" .
+<http://www.ontology.se/odp/content/owl/Action.owl#hasConsequence> <http://www.w3.org/2000/01/rdf-schema#comment> "A causal relation between actions, i.e. one action is the cause of another action. For example, the action of \"swimming\" is a consequence of \"jumping into deep water\". The property is transitive."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Expert_investor> <http://www.w3.org/2000/01/rdf-schema#comment> "John, an hypotetical biased investor"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ne42a18e2e2444ab38eb19baa4e24f890 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "http://purl.org/dc/terms/" .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#produces> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/framester/data/framestercore/Expectation> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Expert_investor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/People> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_PerceivedValidity> <http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_predicting> .
+_:N5d1775702aa14e3387af9f431b433c64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N12b4f9c23c3a4ec09a2324260d33e3fd .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Negative_outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> .
+_:N12b4f9c23c3a4ec09a2324260d33e3fd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Predicting> .
+_:N595ac32dfc494653a27150fabe381dc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nfde9f49c61f242559dab835799ffd39d .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Negative_outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "The final result given by the investement choices."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/framester/data/framestercore/Predicting> <http://www.w3.org/2000/01/rdf-schema#comment> "A Speaker states or makes known a future Eventuality on the basis of some Evidence."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ne42a18e2e2444ab38eb19baa4e24f890 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "terms" .
+<http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:N0c1b7db5d9fa4cdba0daa9af36a796a1 .
+<http://www.fao.org/aims/aos/aos.owl#affects> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/resource/Knowledge> .
+_:Nd4e05555f802479798ed300003602bd0 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "activitypattern" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#hasComponent> "http://ontologydesignpatterns.org/wiki/Submissions:An_Ontology_Design_Pattern_for_Activity_Reasoning"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Expert_investor> <http://modellingdh.github.io/ont/odp/term/isEngagedIn> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_predicting> .
+_:N18cfa6d9b4d2430593f6798f1c3341b8 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
+<http://www.ontology.se/odp/content/owl/Action.owl#hasConsequence> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_predicting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/Predicting> .
+_:N12b4f9c23c3a4ec09a2324260d33e3fd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:N18cfa6d9b4d2430593f6798f1c3341b8 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl> <http://purl.org/dc/terms/title> "Illusion of validity ontology"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N9a25870a4cff4fcf9c1cf32adc5789b5 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "fs" .
+<http://www.ontology.se/odp/content/owl/Action.owl#hasConsequence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.se/odp/content/owl/Action.owl#Action> .
+_:N2333407410c943e584168a00cf8c215d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N04d8ff917c35445abbd93f7f4a66977a .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_predicting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Positive_outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "The positive outcome John expects to get as result of his predicting process"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameterDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Positive_outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/Expectation> .
+<http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns> <http://www.w3.org/2000/01/rdf-schema#comment> "This property can be used to link a certain NewsProvider with a Media that the NewsProvider ows, e.g. Fox News Channel is owned by Fox Entertainment Group, which also owns other Media (FXX Channel, etc.).\nThis is an universal property, it can be also used in different context (e.g. Ruslana owns a Persian cat)."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N5510745c5ba545469bf2df01a9ed2da0 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl#" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Negative_outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nd211050aba6c4c2aacd83ebc7a2e39fd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Deciding> .
+<http://www.ontology.se/odp/content/owl/Action.owl#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nfcdb41ca920d4fe194a9fd755292018d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/framester/data/framestercore/Predicting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N998b4092a9f7451ea4472453c02bbcb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Expectation> <http://www.w3.org/2000/01/rdf-schema#comment> "Words in this frame have to do with a Cognizer believing that some Phenomenon will take place in the future. Some words in the frame (e.g. foresee.v) indicate that the Phenomenon is asserted also to be true, while others do not."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/framester/data/framestercore/Identicality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an object to one of its attributes."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Biased_investement> <http://www.ontology.se/odp/content/owl/Action.owl#hasConsequence> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Negative_outcome> .
+_:N5c6e4d5a371f4cf2b622817993cfb747 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+_:N7e631274df5b4d4e89af659c608470fd <http://www.w3.org/2002/07/owl#unionOf> _:Nfe0671515bf346028c9b28fcbc4e0a44 .
+_:N7e631274df5b4d4e89af659c608470fd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:N5c6e4d5a371f4cf2b622817993cfb747 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N5d1775702aa14e3387af9f431b433c64 .
+<https://dbpedia.org/resource/Knowledge> <http://www.w3.org/2000/01/rdf-schema#label> "Knowledge"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:N97b954a8dd5d45b4b4294601b7299408 .
+_:N5d1775702aa14e3387af9f431b433c64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Nfde9f49c61f242559dab835799ffd39d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty> .
+<http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/resource/Knowledge> .
+<https://w3id.org/framester/data/framestercore/Identicality> <http://www.w3.org/2000/01/rdf-schema#label> "Identicality"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N1712f37e9ec1485aa6bafdfcdcc0a2a6 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "rdfs" .
+<http://www.ontology.se/odp/content/owl/Action.owl#Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nd4e05555f802479798ed300003602bd0 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#" .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:N862ecc3f2faa43ea934692b7d8177c00 .
+_:N3d917ec16b884bd58d01c58e5efc8519 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "parameter" .
+<http://www.fao.org/aims/aos/aos.owl#affects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N595ac32dfc494653a27150fabe381dc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.se/odp/content/owl/Action.owl#Action> .
+_:N447b54e2f51c4badbd54a48aaf9b98f3 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "http://www.semanticweb.org/user/ontologies/2024/2/untitled-ontology-23/" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#hasComponent> "http://ontologydesignpatterns.org/wiki/Submissions:Action"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Identicality_aspect> <http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameterDataValue> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/People> .
+<http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameterDataValue> <http://www.w3.org/2000/01/rdf-schema#range> _:N7e631274df5b4d4e89af659c608470fd .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl> <http://purl.org/dc/terms/created> "01/03/24"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_PerceivedValidity> <http://www.w3.org/2000/01/rdf-schema#comment> "The investor's perception of validity in his previous knowledge and consequentially his predictions."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl> <http://purl.org/dc/terms/creator> "Marco Lamorte"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N3d917ec16b884bd58d01c58e5efc8519 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#" .
+<https://w3id.org/framester/data/framestercore/PerceptionExperience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameterDataValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/Identicality> .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:N447b54e2f51c4badbd54a48aaf9b98f3 .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:N1712f37e9ec1485aa6bafdfcdcc0a2a6 .
+_:N18cfa6d9b4d2430593f6798f1c3341b8 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/name> "rdf" .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:Ne622ead9e0cb45e5ac4c2be72b262f34 .
+_:Nfde9f49c61f242559dab835799ffd39d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N2333407410c943e584168a00cf8c215d .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> <http://www.w3.org/2000/01/rdf-schema#label> "The final result of an activity."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> <http://www.w3.org/2000/01/rdf-schema#label> "Perceived validity"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nd01a86197fa549dd91ee68380752d120 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "http://www.ontology.se/odp/content/owl/Action.owl#" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/framester/data/framestercore/Identicality> .
+_:Ne622ead9e0cb45e5ac4c2be72b262f34 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "http://www.w3.org/2001/XMLSchema#" .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:Nd4e05555f802479798ed300003602bd0 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Biased_investement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nd211050aba6c4c2aacd83ebc7a2e39fd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N5c6e4d5a371f4cf2b622817993cfb747 .
+_:Nfe0671515bf346028c9b28fcbc4e0a44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4812a13b504e4c1ca86e9b407d90684e .
+_:N0cf9a5946c264441a0f8cacde107b5e2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/description> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Expert_investor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_PerceivedValidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> .
+_:Nc25fefc8b3514c20ae5857565960aca4 <http://www.w3.org/2002/07/owl#Prefix> _:N9a25870a4cff4fcf9c1cf32adc5789b5 .
+<https://w3id.org/framester/data/framestercore/Expectation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#produces> <http://www.w3.org/2000/01/rdf-schema#comment> "Define the relation between an activity and its produced outcome."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/framester/data/framestercore/Expectation> <http://www.w3.org/2000/01/rdf-schema#label> "Expectation"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N1ee0062bfd924894b4e943fce381f401 <http://www.w3.org/2002/07/owl#unionOf> _:N0cf9a5946c264441a0f8cacde107b5e2 .
+<http://www.fao.org/aims/aos/aos.owl#affects> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Positive_outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N0cf9a5946c264441a0f8cacde107b5e2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nfcdb41ca920d4fe194a9fd755292018d .
+<https://w3id.org/framester/data/framestercore/BecomingAware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> <http://www.w3.org/2000/01/rdf-schema#comment> "It assess the perceived validity of an object due to a perception activity"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investorship_knowledge> <http://www.w3.org/2000/01/rdf-schema#comment> "The previous knowledge on the field which the investor owns and relies on."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nc239bf6ff74a4115972679b643b6c90e <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/IRI> "http://www.w3.org/2002/07/owl#" .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N116508d92a3c4144a1d56f611868dfa8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .

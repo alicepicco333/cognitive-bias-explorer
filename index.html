@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cognitive Bias Ontology</title>
-<meta name="description" content="A visual explorer of 16 cognitive-bias ontologies modelled in OWL with eXtreme Design, ontology design patterns and Framester frames (KRKE, University of Bologna, 2022/23).">
+<meta name="description" content="A visual explorer of 16 cognitive-bias ontologies modelled in OWL with eXtreme Design, ontology design patterns and Framester frames: walk through each user story, run its competency questions, compare two biases (KRKE, University of Bologna, 2022/23).">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -20,6 +20,10 @@
       <p class="mast-label">KRKE <b>/</b> University of Bologna <b>/</b> 2022&ndash;23</p>
       <nav class="mast-nav" aria-label="Views">
         <a href="#/" data-nav="overview">Overview</a>
+        <a href="#/questions" data-nav="questions">Questions</a>
+        <a href="#/compare" data-nav="compare">Compare</a>
+        <a href="#/quiz" data-nav="quiz">Quiz</a>
+        <a href="#/search" data-nav="search">Search</a>
         <a href="#/patterns" data-nav="patterns">Reuse matrix</a>
         <a href="#/about" data-nav="about">About</a>
       </nav>
@@ -44,6 +48,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/elkjs@0.9.3/lib/elk.bundled.js"></script>
 <script src="data/biases.js"></script>
+<script src="data/cq.js"></script>
+<script src="data/walk.js"></script>
+<script src="data/quiz.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

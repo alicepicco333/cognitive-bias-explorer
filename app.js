@@ -1,25 +1,33 @@
 /* Cognitive Bias Ontology explorer
-   Reads window.CBO_DATA (built by build_data.py from the OWL files and GitBook pages).
-   Views: #/ overview, #/patterns reuse matrix, #/bias/<id> one ontology, #/about. */
+   Reads window.CBO_DATA (built by build_data.py from the OWL files and GitBook pages), and
+   CBO_CQ, CBO_WALK, CBO_QUIZ (build_cq.py, build_walk.py, build_quiz.py).
+   Views: #/ overview, #/questions, #/compare/<a>/<b>, #/quiz, #/search/<q>, #/patterns reuse matrix,
+   #/bias/<id>[/<individual or cq-n>] one ontology, #/about. */
 (function () {
   "use strict";
   const D = window.CBO_DATA;
+  const CQ = window.CBO_CQ;
+  const WALK = window.CBO_WALK;
+  const QUIZ = window.CBO_QUIZ;
   const main = document.getElementById("main");
   const tip = document.getElementById("tooltip");
   const byId = Object.fromEntries(D.biases.map((b) => [b.id, b]));
   const odpById = Object.fromEntries(D.odps.map((o) => [o.id, o]));
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const GB = D.generatedFrom.gitbook;
+  const OXIGRAPH = "https://cdn.jsdelivr.net/npm/oxigraph@0.5.11/web.js";
 
   // ---------- helpers ---------------------------------------------------
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const prefixOf = (curie) => (curie.includes(":") ? curie.split(":")[0] : null);
   const kindOf = (curie) => { const p = prefixOf(curie); return p && D.prefixes[p] ? D.prefixes[p].kind : "local"; };
   const sourceOf = (curie) => { const p = prefixOf(curie); return p && D.prefixes[p] ? D.prefixes[p].source : "created by the team"; };
-  const KIND_NAME = { local: "Bias-specific", framester: "Framester", odp: "Design pattern", external: "DBpedia, FOAF, CCO" };
   const plural = (n, one, many) => `${n} ${n === 1 ? one : many || one + "s"}`;
   const clusterName = (b) => (b.cluster != null ? D.clusters[b.cluster].name : "");
   const EVIDENCE = { overview: "GitBook overview list", page: "bias page on GitBook", annotation: "OWL hasComponent annotation", axioms: "OWL axioms", story: "story individuals" };
+  const localName = (iri) => iri.split(/[#/]/).pop();
+  const pretty = (s) => s.replace(/_/g, " ").replace(/([a-z])([A-Z])/g, "$1 $2");
+  const shuffle = (a) => { const r = a.slice(); for (let i = r.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; } return r; };
+  const pad = (n) => String(n).padStart(2, "0");
 
   function storyOdps(b) { return Object.keys(b.odps).filter((k) => b.odps[k].includes("story")); }
   function docOnlyOdps(b) {
@@ -52,31 +60,44 @@
     <p>Documentation: <a href="${GB}">the project GitBook</a>. Ontology files:
     <a href="${D.generatedFrom.repository}">GitHub repository</a> (a fork of
     <a href="${D.generatedFrom.upstream}">corrado877/CognitiveBiasOntologies</a>).
-    This explorer only re-reads those files and pages; it adds no classes, properties or relations.</p>
-    <p>Set in Archivo and JetBrains Mono (SIL Open Font Licence). Diagrams laid out with the Eclipse Layout Kernel (elkjs).</p>`;
+    This explorer only re-reads those files and pages; it adds no classes, properties or relations. The competency-question
+    queries marked “fixed” or “new” were written for the explorer, and the story walkthrough links were made by reading each story against its graph.</p>
+    <p>Set in Archivo and JetBrains Mono (SIL Open Font Licence). Diagrams laid out with the Eclipse Layout Kernel (elkjs).
+    SPARQL runs in your browser with Oxigraph.</p>`;
 
   // ---------- router ----------------------------------------------------
+  const TITLES = { overview: "", questions: "Tested questions", compare: "Compare", quiz: "Which bias is this?", search: "Search", patterns: "Reuse matrix", about: "About" };
   function route() {
     hideTip();
     const h = location.hash.replace(/^#\/?/, "");
-    const [view, arg] = h.split("/");
-    let nav = "overview";
+    const [view, a1, a2] = h.split("/").map((x) => (x == null ? x : decodeURIComponent(x)));
+    let nav = "overview", title = "";
     if (view === "patterns") { nav = "patterns"; renderPatterns(); }
     else if (view === "about") { nav = "about"; renderAbout(); }
-    else if (view === "bias" && byId[arg]) { nav = null; renderBias(byId[arg]); }
+    else if (view === "questions") { nav = "questions"; renderQuestions(); }
+    else if (view === "compare") { nav = "compare"; renderCompare(byId[a1] ? a1 : "gamblers-fallacy", byId[a2] ? a2 : "hot-hand-fallacy"); }
+    else if (view === "quiz") { nav = "quiz"; renderQuiz(); }
+    else if (view === "search") { nav = "search"; renderSearch(a1 || ""); }
+    else if (view === "bias" && byId[a1]) { nav = null; title = byId[a1].name; renderBias(byId[a1], a2); }
     else renderOverview();
+    pageHeading(nav);
     document.querySelectorAll("[data-nav]").forEach((a) => {
       if (a.dataset.nav === nav) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     });
-    const title = view === "bias" && byId[arg] ? byId[arg].name + " · Cognitive Bias Ontology"
-      : view === "patterns" ? "Reuse matrix · Cognitive Bias Ontology"
-      : view === "about" ? "About · Cognitive Bias Ontology" : "Cognitive Bias Ontology";
-    document.title = title;
+    title = title || (nav && TITLES[nav]) || "";
+    document.title = (title ? title + " · " : "") + "Cognitive Bias Ontology";
     document.body.dataset.view = nav || "bias";
     if (route.started) { window.scrollTo({ top: 0, behavior: "instant" }); main.focus({ preventScroll: true }); }
     route.started = true;
   }
   window.addEventListener("hashchange", route);
+  // every view has one h1: the bias pages show theirs; the others get a hidden one naming the view
+  function pageHeading(nav) {
+    if (main.querySelector("h1")) return;
+    main.insertAdjacentHTML("afterbegin", `<h1 class="sr">${nav && TITLES[nav] ? TITLES[nav] + ": " : ""}Cognitive Bias Ontology</h1>`);
+  }
+  // change the address without re-rendering (the search box)
+  function setHash(h) { history.replaceState(null, "", h); }
 
   // ---------- overview --------------------------------------------------
   function renderOverview() {
@@ -84,6 +105,7 @@
     D.biases.forEach((b) => storyOdps(b).forEach((o) => { (odpUse[o] = odpUse[o] || []).push(b.id); }));
     const odpOrder = Object.keys(odpUse).sort((a, b) => odpUse[b].length - odpUse[a].length || odpById[a].name.localeCompare(odpById[b].name));
     const totalAssertions = D.biases.reduce((s, b) => s + b.instances.edges.length, 0);
+    const S = CQ.summary;
 
     main.innerHTML = `
       <section class="band"><div class="grid">
@@ -92,7 +114,12 @@
           <p class="lede">Sixteen cognitive biases, each modelled as its own OWL ontology with the eXtreme Design method:
           a user story, competency questions, reused ontology design patterns and alignment with Framester frames.
           Every ontology instantiates its user story as a small graph of individuals. This explorer draws those graphs
-          straight from the OWL files.</p>
+          straight from the OWL files, and runs the competency questions against them.</p>
+          <ul class="doors">
+            <li><a href="#/bias/${D.biases[0].id}/walk">Walk through a story</a><span>sentence by sentence, as the graph fills in</span></li>
+            <li><a href="#/compare/gamblers-fallacy/hot-hand-fallacy">Compare two biases</a><span>what two models share</span></li>
+            <li><a href="#/quiz">Which bias is this?</a><span>a short quiz on the stories</span></li>
+          </ul>
         </div>
         <div class="full">
           <div class="stats">
@@ -105,7 +132,7 @@
       </div></section>
 
       <section class="band" aria-labelledby="h-clusters"><div class="grid">
-        <div class="label-col"><p class="kicker" id="h-clusters">01 / The 16 ontologies</p>
+        <div class="label-col"><h2 class="kicker" id="h-clusters">01 / The 16 ontologies</h2>
           <p class="small muted" style="margin-top:8px">${odpOrder.length} content design patterns are reused inside the story graphs. Pick one to see which stories are built on it.</p></div>
         <div class="body-col">
           <div class="filter" role="group" aria-label="Highlight ontologies that use a design pattern">
@@ -117,14 +144,34 @@
         <div class="full">
           ${D.clusters.map((c, ci) => `
             <div class="cluster">
-              <div class="cluster-head"><p class="kicker">Cluster 0${ci + 1} / ${String(c.members.length).padStart(2, "0")} biases</p><h3>${esc(c.name)}</h3></div>
+              <div class="cluster-head"><p class="kicker">Cluster 0${ci + 1} / ${pad(c.members.length)} biases</p><h3>${esc(c.name)}</h3></div>
               <div class="tiles">${c.members.map((id) => tile(byId[id])).join("")}</div>
             </div>`).join("")}
         </div>
       </div></section>
 
+      <section class="band" aria-labelledby="h-tested"><div class="grid">
+        <div class="label-col"><p class="kicker" id="h-tested">02 / Tested</p>
+          <p class="small muted" style="margin-top:8px">Every competency question, run as a SPARQL query against its OWL file.</p></div>
+        <div class="body-col">
+          <h2 style="margin-bottom:12px">Does each ontology answer its own questions?</h2>
+          <p class="lede" style="font-size:19px">The group wrote ${S.total} competency questions and SPARQL for ${S.documented} of them. Run as written,
+          ${S.documented_answer} of those ${S.documented} return an answer. With the queries fixed and the missing ones written,
+          ${S.answered} questions are answered by the files, ${S.partial} only in part, and ${S.unanswerable} not at all.</p>
+          <p><a class="go" href="#/questions">See every question and its query →</a></p>
+        </div>
+        <div class="full">
+          <div class="stats">
+            <div class="stat"><b>${S.total}</b><span>competency questions</span></div>
+            <div class="stat"><b>${S.answered}</b><span>answered by the files</span></div>
+            <div class="stat"><b>${S.partial}</b><span>answered in part</span></div>
+            <div class="stat"><b>${S.unanswerable}</b><span>not in the files</span></div>
+          </div>
+        </div>
+      </div></section>
+
       <section class="band inv" aria-labelledby="h-shared"><div class="grid">
-        <div class="label-col"><p class="kicker" id="h-shared">02 / Shared vocabulary</p>
+        <div class="label-col"><p class="kicker" id="h-shared">03 / Shared vocabulary</p>
           <p class="small muted" style="margin-top:8px">The group reused the same properties across biases on purpose, to keep the modules interchangeable.</p></div>
         <div class="body-col">
           <h2 style="margin-bottom:16px">Properties asserted in more than one user story</h2>
@@ -166,7 +213,7 @@
 
   function tile(b) {
     const so = storyOdps(b);
-    const n = String(D.biases.indexOf(b) + 1).padStart(2, "0");
+    const n = pad(D.biases.indexOf(b) + 1);
     return `<a class="tile" href="#/bias/${b.id}" data-odps="${so.join(" ")}">
       <div class="idx"><span>${n} / 16</span><span>${esc(b.owlFormat)}</span></div>
       <h4>${esc(b.name)}</h4>
@@ -178,13 +225,114 @@
     </a>`;
   }
 
+  // ---------- competency questions: status, queries, running them -------
+  const STATUS = { answered: "Answered", partial: "Answered in part", unanswerable: "Not in the file" };
+  const ORIGIN = { original: "The group's query", fixed: "Group's query, fixed", new: "Query written for the explorer", none: "No query possible" };
+
+  let oxi = null;               // the Oxigraph module, once loaded
+  const stores = {};            // bias id -> Store
+  async function engine() {
+    if (!oxi) { const m = await import(OXIGRAPH); await m.default(); oxi = m; }
+    return oxi;
+  }
+  async function storeFor(id) {
+    if (stores[id]) return stores[id];
+    const m = await engine();
+    const text = await (await fetch(`data/rdf/${id}.nt`)).text();
+    const s = new m.Store();
+    s.load(text, { format: "application/n-triples" });
+    return (stores[id] = s);
+  }
+  // results in the same shape build_cq.py stores: {vars, rows:[[{value,label,literal}]]}
+  async function runLive(id, query) {
+    const s = await storeFor(id);
+    const out = s.query(query);
+    const vars = (query.match(/SELECT\s+([\s\S]*?)\s+WHERE/i) || ["", ""])[1].match(/\?\w+/g).map((v) => v.slice(1));
+    const rows = out.map((m) => vars.map((v) => {
+      const t = m.get(v);
+      if (!t) return null;
+      return t.termType === "Literal" ? { value: t.value, literal: true } : { value: t.value, label: pretty(localName(t.value)) };
+    }));
+    return { ok: true, vars, rows };
+  }
+  function resultTable(r) {
+    if (!r.ok) return `<p class="note">The query does not run: <code>${esc(r.error)}</code></p>`;
+    if (!r.rows.length) return `<p class="note">The query runs, but returns nothing.</p>`;
+    return `<table class="res"><thead><tr>${r.vars.map((v) => `<th scope="col">?${esc(v)}</th>`).join("")}</tr></thead>
+      <tbody>${r.rows.map((row) => `<tr>${row.map((c) => `<td>${c ? (c.literal ? `“${esc(c.value)}”` : esc(c.label || pretty(localName(c.value)))) : "–"}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+  }
+  function cqItem(it, i) {
+    const q = it.query;
+    return `<li id="cq-${i + 1}">
+      <div>
+        <div class="q">${esc(it.question)}</div>
+        ${it.answer ? `<div class="a">Documented answer: ${esc(it.answer)}</div>` : ""}
+        <p class="cq-tags"><span class="tag s-${it.status}">${STATUS[it.status]}</span><span class="tag o">${ORIGIN[it.origin]}</span></p>
+        ${it.note ? `<p class="cq-note">${esc(it.note)}</p>` : ""}
+        ${q ? `<div class="cq-run"><button class="more run" type="button" data-i="${i}">Run the query</button><span class="run-status" role="status"></span></div>
+          <div class="cq-result" id="cq-res-${i}" hidden></div>
+          <details class="sparql"><summary>${it.origin === "original" ? "SPARQL query" : "SPARQL query (explorer)"}</summary><pre><code>${esc(q)}</code></pre></details>` : ""}
+        ${it.original && it.origin !== "original" ? `<details class="sparql orig"><summary>The GitBook query</summary><pre><code>${esc(it.original.query)}</code></pre>
+          <div class="orig-res">${resultTable(it.original.result)}</div></details>` : ""}
+      </div></li>`;
+  }
+
+  // ---------- questions view -------------------------------------------
+  function renderQuestions() {
+    const S = CQ.summary;
+    const ran0 = S.documented_run - S.documented_answer, broken = S.documented - S.documented_run;
+    main.innerHTML = `
+      <section class="band"><div class="grid">
+        <div class="label-col"><p class="kicker">04 / Tested questions</p></div>
+        <div class="body-col">
+          <h2 style="margin-bottom:12px">Does each ontology answer its own questions?</h2>
+          <p class="lede" style="font-size:19px">In eXtreme Design, competency questions are the test suite: an ontology is done when SPARQL
+          queries can answer them from its data. Here every question is run against its OWL file.</p>
+          <p>The GitBook gives SPARQL for ${S.documented} of the ${S.total} questions. Run as written, with only the missing PREFIX
+          declarations added, ${S.documented_answer} return an answer, ${ran0} run but return nothing, and ${broken} do not parse.
+          The fixed versions keep the group's intent and change only what stopped them from working; the original stays visible
+          next to each fix. For the other ${S.total - S.documented} questions, queries were written for this explorer.</p>
+        </div>
+        <div class="full">
+          <div class="stats">
+            <div class="stat"><b>${S.answered}</b><span>answered by the files</span></div>
+            <div class="stat"><b>${S.partial}</b><span>answered in part</span></div>
+            <div class="stat"><b>${S.unanswerable}</b><span>not in the files</span></div>
+            <div class="stat"><b>${S.documented_answer}/${S.documented}</b><span>GitBook queries that work as written</span></div>
+          </div>
+        </div>
+      </div></section>
+      <section class="band"><div class="grid">
+        <div class="full">
+          <div class="filter" role="group" aria-label="Show questions by result">
+            ${[["", "All " + S.total], ["answered", "Answered " + S.answered], ["partial", "In part " + S.partial], ["unanswerable", "Not in the file " + S.unanswerable], ["fixed", "Fixed queries " + S.fixed]]
+              .map(([k, l], i) => `<button class="chip" type="button" data-k="${k}" aria-pressed="${i === 0}">${l}</button>`).join("")}
+          </div>
+          <div class="qtable-wrap"><table class="tri qtable">
+            <caption class="sr">All competency questions, their result and where the query comes from</caption>
+            <thead><tr><th scope="col">Bias</th><th scope="col">Question</th><th scope="col">Result</th><th scope="col">Query</th></tr></thead>
+            <tbody>${D.biases.map((b) => CQ.biases[b.id].map((it, i) => `<tr data-s="${it.status}" data-o="${it.origin}">
+              <td><a href="#/bias/${b.id}/cq-${i + 1}">${esc(b.name)}</a> <span class="t">CQ${i + 1}</span></td>
+              <td>${esc(it.question)}${it.note ? `<span class="t">${esc(it.note)}</span>` : ""}</td>
+              <td><span class="tag s-${it.status}">${STATUS[it.status]}</span></td>
+              <td class="o">${ORIGIN[it.origin]}</td></tr>`).join("")).join("")}</tbody>
+          </table></div>
+          <p class="note" style="margin-top:16px">No reasoner is involved: the queries see only the triples asserted in each file, as the group's own queries assumed.
+          The query definitions are in <code>cq_queries.py</code> in the repository.</p>
+        </div>
+      </div></section>`;
+    main.querySelectorAll(".chip").forEach((btn) => btn.addEventListener("click", () => {
+      main.querySelectorAll(".chip").forEach((x) => x.setAttribute("aria-pressed", String(x === btn)));
+      const k = btn.dataset.k;
+      main.querySelectorAll(".qtable tbody tr").forEach((tr) => { tr.hidden = !!k && tr.dataset.s !== k && tr.dataset.o !== k; });
+    }));
+  }
+
   // ---------- reuse matrix ----------------------------------------------
   function renderPatterns() {
-    // ODP columns
     const odpCount = (o, what) => D.biases.filter((b) => (what === "story" ? storyOdps(b) : docOnlyOdps(b)).includes(o)).length;
     const odpCols = D.odps.map((o) => o.id).filter((o) => odpCount(o, "story") + odpCount(o, "doc") > 0)
       .sort((a, b) => odpCount(b, "story") - odpCount(a, "story") || odpCount(b, "doc") - odpCount(a, "doc"));
-    // Framester columns
     const pageToCurie = (name) => {
       const all = new Set(D.biases.flatMap((b) => b.framesterInStory));
       const hit = [...all].find((c) => c.split(":")[1].toLowerCase() === name.toLowerCase());
@@ -211,7 +359,7 @@
 
     main.innerHTML = `
       <section class="band"><div class="grid">
-        <div class="label-col"><p class="kicker">03 / Reuse matrix</p></div>
+        <div class="label-col"><p class="kicker">08 / Reuse matrix</p></div>
         <div class="body-col">
           <h2 style="margin-bottom:12px">What each ontology borrows</h2>
           <p class="lede" style="font-size:18px">Rows are the 16 bias ontologies, grouped by cluster. Columns are the content ontology design patterns and
@@ -228,9 +376,9 @@
           <table class="matrix">
             <caption class="sr">Design patterns and Framester frames reused by each bias ontology</caption>
             <thead>
-              <tr><th></th><th class="group" colspan="${odpCols.length}" scope="colgroup">Content design patterns</th><td class="gap"></td>
-                  <th class="group" colspan="${fsCols.length}" scope="colgroup">Framester frames and synsets</th><td class="gap"></td><th></th></tr>
-              <tr><th></th>${odpCols.map((o) => `<th scope="col"><span class="vh">${esc(odpById[o].name)}</span></th>`).join("")}<td class="gap"></td>
+              <tr><td></td><th class="group" colspan="${odpCols.length}" scope="colgroup">Content design patterns</th><td class="gap"></td>
+                  <th class="group" colspan="${fsCols.length}" scope="colgroup">Framester frames and synsets</th><td class="gap"></td><td></td></tr>
+              <tr><th scope="col"><span class="sr">Bias ontology</span></th>${odpCols.map((o) => `<th scope="col"><span class="vh">${esc(odpById[o].name)}</span></th>`).join("")}<td class="gap"></td>
                   ${fsCols.map((c) => `<th scope="col" class="fs"><span class="vh">${esc(c)}</span></th>`).join("")}<td class="gap"></td>
                   <th scope="col" class="tot"><span class="vh">Total used</span></th></tr>
             </thead>
@@ -274,26 +422,28 @@
   }
 
   // ---------- bias view -------------------------------------------------
-  let diagramMode = "individuals";
+  let diagramMode = "individuals";   // individuals | classes | story
 
-  function renderBias(b) {
+  function renderBias(b, target) {
     const idx = D.biases.indexOf(b);
     const prev = D.biases[(idx + D.biases.length - 1) % D.biases.length];
     const next = D.biases[(idx + 1) % D.biases.length];
     const so = storyOdps(b), doc = docOnlyOdps(b);
-    const hasSparql = b.competencyQuestions.some((q) => q.sparql);
+    const cqs = CQ.biases[b.id];
+    const nAns = cqs.filter((q) => q.status === "answered").length;
+    if (target === "walk") diagramMode = "story";
 
     main.innerHTML = `
       <section class="bias-head"><div class="grid">
         <div class="label-col">
-          <p class="kicker">${String(D.biases.indexOf(b) + 1).padStart(2, "0")} / 16 · Cluster 0${b.cluster + 1}</p>
+          <p class="kicker">${pad(idx + 1)} / 16 · Cluster 0${b.cluster + 1}</p>
           <p class="small muted" style="margin-top:4px">${esc(clusterName(b))}</p>
         </div>
         <div class="body-col">
           <h1 class="display">${esc(b.name)}</h1>
           <p class="bias-meta">Modelled by ${esc(b.creator.join(", "))} ·
             ${plural(b.instances.nodes.length, "individual")}, ${plural(b.instances.edges.length, "assertion")} ·
-            <a href="${b.owlUrl}">OWL file</a> · <a href="${b.gitbookUrl}">GitBook page</a></p>
+            <a href="${b.owlUrl}">OWL file</a> · <a href="${b.gitbookUrl}">GitBook page</a> · <a href="#/compare/${b.id}/${next.id}">Compare</a></p>
           <p class="bias-def">${esc(b.definition)}</p>
           <p class="small muted">Definition from the ontology's <code>rdfs:comment</code>. The group drafted definitions and scenarios with ChatGPT (sometimes Gemini) as the domain expert, as their documentation explains.</p>
           <nav class="pager" aria-label="Other biases">
@@ -313,9 +463,11 @@
             <div class="toggle" role="group" aria-label="Diagram level">
               <button type="button" data-mode="individuals" aria-pressed="${diagramMode === "individuals"}">Individuals</button>
               <button type="button" data-mode="classes" aria-pressed="${diagramMode === "classes"}">Classes</button>
+              <button type="button" data-mode="story" aria-pressed="${diagramMode === "story"}">Story walk</button>
             </div>
           </div>
           <figure class="diagram">
+            <div class="walk" id="walk" hidden></div>
             <div class="diagram-scroll" id="dg" tabindex="-1"></div>
             <figcaption id="dg-cap"></figcaption>
           </figure>
@@ -334,13 +486,13 @@
             <h2>User story</h2>
             ${b.userStoryTitle ? `<p class="story-title">${esc(b.userStoryTitle)}</p>` : ""}
             <div class="story ${b.userStory.join(" ").length > 900 ? "clamped" : ""}" id="story">${b.userStory.map((p) => `<p>${esc(p)}</p>`).join("")}</div>
-            ${b.userStory.join(" ").length > 900 ? `<button class="more" type="button" aria-controls="story" aria-expanded="false">Read the whole story</button>` : ""}
+            ${b.userStory.join(" ").length > 900 ? `<button class="more" id="story-more" type="button" aria-controls="story" aria-expanded="false">Read the whole story</button>` : ""}
           </div>
           <div class="aside-block">
             <h2>Competency questions</h2>
-            <ol class="cqs">${b.competencyQuestions.map((q) => `<li><div><div class="q">${esc(q.question)}</div>${q.answer ? `<div class="a">${esc(q.answer)}</div>` : ""}</div>
-              ${q.sparql ? `<details class="sparql"><summary>SPARQL query</summary><pre><code>${esc(q.sparql)}</code></pre></details>` : ""}</li>`).join("")}</ol>
-            ${hasSparql ? "" : `<p class="note" style="margin-top:8px">The GitBook page gives these questions in natural language only, without SPARQL queries.</p>`}
+            <p class="small" style="margin-bottom:8px">${plural(cqs.length, "question")}: ${nAns} answered by the file${cqs.length - nAns ? `, ${cqs.length - nAns} not fully` : ""}.
+              Run a query to see its answer, marked on the graph. <a href="#/questions">All questions</a></p>
+            <ol class="cqs">${cqs.map((it, i) => cqItem(it, i)).join("")}</ol>
           </div>
         </aside>
 
@@ -368,19 +520,114 @@
       </div></section>`;
 
     main.querySelector("#jump").addEventListener("change", (e) => { location.hash = "#/bias/" + e.target.value; });
-    const more = main.querySelector(".more");
+    const more = main.querySelector("#story-more");
     if (more) more.addEventListener("click", () => {
       const st = main.querySelector("#story");
       const open = st.classList.toggle("clamped") === false;
       more.setAttribute("aria-expanded", String(open));
       more.textContent = open ? "Show less" : "Read the whole story";
     });
-    main.querySelectorAll(".toggle button").forEach((btn) => btn.addEventListener("click", () => {
-      diagramMode = btn.dataset.mode;
-      main.querySelectorAll(".toggle button").forEach((x) => x.setAttribute("aria-pressed", String(x === btn)));
-      drawDiagram(b);
+    const setMode = (m) => {
+      diagramMode = m;
+      main.querySelectorAll(".toggle button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.mode === m)));
+      return drawBias(b);
+    };
+    main.querySelectorAll(".toggle button").forEach((btn) => btn.addEventListener("click", () => setMode(btn.dataset.mode)));
+
+    // run a competency question: live in the browser, or the build's result if the engine cannot load
+    main.querySelectorAll("button.run").forEach((btn) => btn.addEventListener("click", async () => {
+      const i = +btn.dataset.i, it = cqs[i];
+      const box = main.querySelector(`#cq-res-${i}`), st = btn.nextElementSibling;
+      btn.disabled = true; st.textContent = oxi ? "Running…" : "Loading the SPARQL engine…";
+      let r, live = true;
+      try { r = await runLive(b.id, it.query); }
+      catch (e) { r = it.result; live = false; }
+      btn.disabled = false;
+      st.textContent = r.ok ? `${plural(r.rows.length, "result")}${live ? "" : " (computed when the site was built)"}` : "Error";
+      box.hidden = false;
+      box.innerHTML = resultTable(r);
+      // mark the answer on the graph
+      const hits = new Set(r.ok ? r.rows.flat().filter((c) => c && !c.literal).map((c) => c.value) : []);
+      if (diagramMode !== "individuals") await setMode("individuals");
+      highlight(hits, i + 1);
     }));
-    drawDiagram(b);
+
+    drawBias(b).then(() => {
+      if (!target || target === "walk") return;
+      if (target.startsWith("cq-")) {
+        const li = main.querySelector("#" + CSS.escape(target));
+        if (li) { li.scrollIntoView({ block: "center" }); li.classList.add("flash"); }
+      } else {
+        highlight(new Set([target]));
+        const n = main.querySelector(`.node[data-id="${CSS.escape(target)}"]`);
+        if (n) n.scrollIntoView({ block: "center" });
+      }
+    });
+  }
+
+  // mark the given individuals on the current diagram
+  function highlight(ids, cqNumber) {
+    const svg = main.querySelector("#dg svg");
+    if (!svg) return;
+    svg.querySelectorAll(".node").forEach((n) => n.classList.toggle("answer", ids.has(n.dataset.id)));
+    svg.classList.toggle("answering", ids.size > 0);
+    const cap = main.querySelector("#dg-cap");
+    const n = [...svg.querySelectorAll(".node.answer")].length;
+    if (cap && cqNumber) cap.textContent = n ? `Marked: the ${plural(n, "individual")} returned by CQ${cqNumber}. Hover any box to see its links.` : `CQ${cqNumber} returns values that are not individuals in the graph.`;
+  }
+
+  async function drawBias(b) {
+    const walk = main.querySelector("#walk");
+    const mode = diagramMode === "story" ? "individuals" : diagramMode;
+    await drawDiagram(b, { mode, host: main.querySelector("#dg"), cap: main.querySelector("#dg-cap"), title: main.querySelector("#dg-title") });
+    walk.hidden = diagramMode !== "story";
+    if (diagramMode === "story") storyWalk(b, walk);
+    else walk.innerHTML = "";
+  }
+
+  // ---------- story walkthrough ------------------------------------------
+  function storyWalk(b, box) {
+    const W = WALK[b.id];
+    const svg = main.querySelector("#dg svg");
+    if (!svg) return;
+    main.querySelector("#dg-title").textContent = "The story, sentence by sentence";
+    let step = 0;
+    const draw = () => {
+      const s = W.steps[step];
+      const seen = new Set(W.steps.slice(0, step + 1).flatMap((x) => x.nodes));
+      const now = new Set(s.nodes);
+      svg.classList.add("walking");
+      svg.querySelectorAll(".node").forEach((n) => {
+        n.classList.toggle("ghost", !seen.has(n.dataset.id));
+        n.classList.toggle("now", now.has(n.dataset.id));
+      });
+      svg.querySelectorAll(".edge").forEach((e) => {
+        const both = seen.has(e.dataset.s) && seen.has(e.dataset.t);
+        e.classList.toggle("ghost", !both);
+      });
+      const names = s.nodes.map((id) => pretty(localName(id)));
+      box.innerHTML = `
+        <div class="walk-bar">
+          <button type="button" class="walk-btn" data-d="-1" ${step === 0 ? "disabled" : ""} aria-label="Previous sentence">←</button>
+          <p class="walk-count" aria-live="polite">Sentence ${step + 1} of ${W.steps.length}</p>
+          <button type="button" class="walk-btn" data-d="1" ${step === W.steps.length - 1 ? "disabled" : ""} aria-label="Next sentence">→</button>
+        </div>
+        <blockquote class="walk-text">${esc(s.text)}</blockquote>
+        <p class="walk-nodes">${names.length ? `In the graph: <span class="mono">${names.map(esc).join(" · ")}</span>` : "No individual stands for this sentence."}</p>
+        ${step === W.steps.length - 1 ? `<p class="note walk-end">${W.coverage[0]} of ${W.coverage[1]} individuals are described by the story.${W.note ? " " + esc(W.note) : ""}</p>` : ""}`;
+      box.querySelectorAll(".walk-btn").forEach((btn) => btn.addEventListener("click", () => {
+        step = Math.max(0, Math.min(W.steps.length - 1, step + +btn.dataset.d));
+        draw();
+        const again = box.querySelector(`.walk-btn[data-d="${btn.dataset.d}"]`);
+        (again && !again.disabled ? again : box.querySelector(".walk-btn:not([disabled])")).focus();
+      }));
+    };
+    box.onkeydown = (e) => {
+      if (e.key === "ArrowRight" && step < W.steps.length - 1) { step++; draw(); box.querySelector('.walk-btn[data-d="1"]')?.focus(); }
+      if (e.key === "ArrowLeft" && step > 0) { step--; draw(); box.querySelector('.walk-btn[data-d="-1"]')?.focus(); }
+    };
+    main.querySelector("#dg-cap").textContent = "Faint boxes are individuals the story has not reached yet; boxes with a heavy outline and a shadow are the ones the current sentence describes. The links between sentences and individuals were made by hand, by reading each story against its graph.";
+    draw();
   }
 
   function triples(b) {
@@ -443,18 +690,20 @@
     return `<svg width="34" height="20" viewBox="0 0 34 20" aria-hidden="true" focusable="false">${hatch}<g class="node k-${kind}">
       <rect class="bg" x="1.25" y="1.25" width="31.5" height="17.5"/>${kind === "odp" ? `<rect x="2.5" y="2.5" width="8" height="15" fill="url(#mk-h)"/><line class="strip-edge" x1="11" y1="1.25" x2="11" y2="18.75"/>` : ""}</g></svg>`;
   }
-  let drawToken = 0;
+  const drawTokens = new WeakMap();
+  let svgSeq = 0;
 
-  async function drawDiagram(b) {
-    const token = ++drawToken;
-    const host = document.getElementById("dg");
-    const cap = document.getElementById("dg-cap");
+  // opts: {mode, host, cap, title, caption, shared: {nodes:Set, edges:Set}}
+  async function drawDiagram(b, opts) {
+    const { mode, host, cap, title } = opts;
     if (!host) return;
-    const g = graphFor(b, diagramMode);
-    document.getElementById("dg-title").textContent = diagramMode === "individuals" ? "The user story as a graph" : "Classes the story uses";
-    cap.textContent = diagramMode === "individuals"
+    const token = (drawTokens.get(host) || 0) + 1;
+    drawTokens.set(host, token);
+    const g = graphFor(b, mode);
+    if (title) title.textContent = mode === "individuals" ? "The user story as a graph" : "Classes the story uses";
+    if (cap) cap.textContent = opts.caption || (mode === "individuals"
       ? `Each box is an individual from the OWL file (its name, then its class); each arrow is an object-property assertion between two individuals. ${plural(g.nodes.length, "individual")}, ${plural(g.edges.length, "assertion")}.`
-      : `Derived from the same assertions: an arrow from class A to class B means the story links an A to a B with that property. Dashed arrows with a hollow head are rdfs:subClassOf axioms from the file.`;
+      : `Derived from the same assertions: an arrow from class A to class B means the story links an A to a B with that property. Dashed arrows with a hollow head are rdfs:subClassOf axioms from the file.`);
     if (!window.ELK) { host.innerHTML = `<p class="note">The layout library could not load, so the diagram is missing. The table below lists every assertion.</p>`; return; }
     try { await Promise.all([document.fonts.load("650 14px Archivo"), document.fonts.load('400 11.5px "JetBrains Mono"')]); } catch (e) { /* fonts API not available */ }
 
@@ -492,14 +741,15 @@
       const fit = (r) => Math.min(1, avail / r.width);
       res = fit(r2) > fit(r1) + 0.05 ? r2 : r1;
     } catch (err) { host.innerHTML = `<p class="note">Layout failed: ${esc(err.message)}</p>`; return; }
-    if (token !== drawToken) return;
+    if (drawTokens.get(host) !== token) return;
 
     const W = Math.ceil(res.width), H = Math.ceil(res.height);
     const nodeById = Object.fromEntries(g.nodes.map((n) => [n.id, n]));
     const edgeById = Object.fromEntries(g.edges.map((e) => [e.id, e]));
-    const svgId = "s" + token;
+    const shared = opts.shared || { nodes: new Set(), edges: new Set() };
+    const svgId = "s" + ++svgSeq;
     let s = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-labelledby="${svgId}-t">
-      <title id="${svgId}-t">${esc(b.name)}: ${diagramMode === "individuals" ? "user-story individuals and the object properties between them" : "classes used by the user story"}</title>
+      <title id="${svgId}-t">${esc(b.name)}: ${mode === "individuals" ? "user-story individuals and the object properties between them" : "classes used by the user story"}</title>
       <defs>
         <pattern id="${svgId}-hatch" patternUnits="userSpaceOnUse" width="5" height="5" patternTransform="rotate(45)"><rect class="hatch-bg" width="5" height="5"/><line class="hatch-ln" x1="0" y1="0" x2="0" y2="5"/></pattern>
         <marker id="${svgId}-a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path class="arrow" d="M0,1 L10,5 L0,9 z"/></marker>
@@ -511,7 +761,7 @@
         const pts = [sec.startPoint].concat(sec.bendPoints || [], [sec.endPoint]);
         return "M" + pts.map((p) => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" L");
       }).join(" ");
-      s += `<g class="edge ${meta.sub ? "sub" : ""}" data-s="${esc(meta.source)}" data-t="${esc(meta.target)}">
+      s += `<g class="edge ${meta.sub ? "sub" : ""} ${shared.edges.has(meta.label) ? "shared" : ""}" data-s="${esc(meta.source)}" data-t="${esc(meta.target)}">
         <path d="${d}" marker-end="url(#${svgId}-${meta.sub ? "h" : "a"})"/>`;
       (e.labels || []).forEach((l) => {
         s += `<g class="lbl"><rect x="${l.x.toFixed(1)}" y="${l.y.toFixed(1)}" width="${l.width}" height="${l.height}"/>
@@ -523,11 +773,12 @@
     (res.children || []).forEach((c) => {
       const n = nodeById[c.id];
       const outs = g.edges.filter((e) => e.source === c.id).map((e) => `${e.label} ${(nodeById[e.target] || {}).lines ? nodeById[e.target].lines[0] : ""}`);
-      const aria = n.aria + (outs.length ? ". Links: " + outs.join("; ") : "");
+      const aria = n.aria + (shared.nodes.has(c.id) ? ", shared with the other bias" : "") + (outs.length ? ". Links: " + outs.join("; ") : "");
       const x0 = n.kind === "odp" ? STRIP + 13 : 13;
-      s += `<g class="node k-${n.kind}" tabindex="0" data-id="${esc(c.id)}" transform="translate(${c.x.toFixed(1)},${c.y.toFixed(1)})" role="img" aria-label="${esc(aria)}">
+      s += `<g class="node k-${n.kind} ${shared.nodes.has(c.id) ? "shared" : ""}" tabindex="0" data-id="${esc(c.id)}" transform="translate(${c.x.toFixed(1)},${c.y.toFixed(1)})" role="img" aria-label="${esc(aria)}">
         <rect class="bg" x="1.25" y="1.25" width="${c.width - 2.5}" height="${c.height - 2.5}"/>`;
       if (n.kind === "odp") s += `<rect x="2.5" y="2.5" width="${STRIP}" height="${c.height - 5}" fill="url(#${svgId}-hatch)"/><line class="strip-edge" x1="${STRIP + 3}" y1="1.25" x2="${STRIP + 3}" y2="${c.height - 1.25}"/>`;
+      if (shared.nodes.has(c.id)) s += `<rect class="shared-mark" x="${c.width - 12}" y="-4" width="10" height="10"/>`;
       let y = 8;
       n.lines.forEach((l, i) => { y += LINE[i]; s += `<text class="n${i + 1}" x="${x0}" y="${y - 4}">${esc(l)}</text>`; });
       s += `</g>`;
@@ -564,24 +815,212 @@
       nd.addEventListener("focus", () => on(nd.dataset.id));
       nd.addEventListener("blur", off);
     });
+    return svg;
   }
 
   let resizeTimer, lastW = window.innerWidth;
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
-      const m = location.hash.match(/^#\/bias\/(.+)$/);
-      if (m && byId[m[1]] && Math.abs(window.innerWidth - lastW) > 80) { lastW = window.innerWidth; drawDiagram(byId[m[1]]); }
+      if (Math.abs(window.innerWidth - lastW) <= 80) return;
+      lastW = window.innerWidth;
+      const m = location.hash.match(/^#\/bias\/([^/]+)/);
+      if (m && byId[m[1]]) drawBias(byId[m[1]]);
+      if (/^#\/compare/.test(location.hash)) route();
     }, 200);
   });
+
+  // ---------- compare ---------------------------------------------------
+  function termsOf(b) {
+    return {
+      classes: new Set(graphFor(b, "classes").nodes.map((n) => n.id)),
+      props: new Set(storyProps(b)),
+      patterns: new Set(storyOdps(b).map((o) => odpById[o].name)),
+      frames: new Set(b.framesterInStory),
+    };
+  }
+  function renderCompare(a, c) {
+    const A = byId[a], B = byId[c];
+    const ta = termsOf(A), tb = termsOf(B);
+    const both = (k) => [...ta[k]].filter((x) => tb[k].has(x)).sort();
+    const only = (x, y, k) => [...x[k]].filter((v) => !y[k].has(v)).sort();
+    const KINDS = [["classes", "Classes"], ["props", "Properties"], ["patterns", "Design patterns"], ["frames", "Framester frames"]];
+    const shareN = KINDS.reduce((s, [k]) => s + both(k).length, 0);
+    const list = (xs) => (xs.length ? `<span class="mono">${xs.map(esc).join(" · ")}</span>` : `<span class="muted">none</span>`);
+    const picker = (id, sel) => `<select id="${id}">${D.biases.map((x) => `<option value="${x.id}" ${x.id === sel ? "selected" : ""}>${esc(x.name)}</option>`).join("")}</select>`;
+    const mirror = [a, c].sort().join() === "gamblers-fallacy,hot-hand-fallacy";
+
+    main.innerHTML = `
+      <section class="band"><div class="grid">
+        <div class="label-col"><p class="kicker">05 / Compare</p></div>
+        <div class="body-col">
+          <h2 style="margin-bottom:12px">Two biases, side by side</h2>
+          <p class="lede" style="font-size:19px">Pick any two ontologies to see how differently, or alike, they were modelled. Classes and properties
+          the two share are marked in both graphs.${mirror ? " Gambler's fallacy and the hot-hand fallacy are mirror images: one expects a streak to end, the other expects it to continue." : ""}</p>
+          <div class="pager compare-pick">
+            <label class="sr" for="pa">First bias</label>${picker("pa", a)}
+            <button type="button" class="swap" aria-label="Swap the two biases">⇄ Swap</button>
+            <label class="sr" for="pb">Second bias</label>${picker("pb", c)}
+          </div>
+        </div>
+      </div></section>
+      <section class="band"><div class="grid">
+        <div class="full">
+          <h2 class="kicker" style="margin-bottom:14px">${shareN ? `They share ${plural(shareN, "term")}` : "They share no terms in their stories"}</h2>
+          <div class="qtable-wrap"><table class="tri cmp">
+            <thead><tr><th scope="col"><span class="sr">Kind</span></th><th scope="col">Only in ${esc(A.name)}</th><th scope="col">In both</th><th scope="col">Only in ${esc(B.name)}</th></tr></thead>
+            <tbody>${KINDS.map(([k, l]) => `<tr><th scope="row">${l}</th><td>${list(only(ta, tb, k))}</td><td class="both">${list(both(k))}</td><td>${list(only(tb, ta, k))}</td></tr>`).join("")}</tbody>
+          </table></div>
+        </div>
+        <div class="full cmp-graphs">
+          ${[A, B].map((x, i) => `<div class="diagram-frame">
+            <div class="diagram-bar"><h3 class="kicker cmp-name"><a href="#/bias/${x.id}">${esc(x.name)}</a></h3><p class="kicker cmp-by">${esc(x.creator.join(", "))}</p></div>
+            <figure class="diagram"><div class="diagram-scroll" id="cg${i}" tabindex="-1"></div><figcaption id="cc${i}"></figcaption></figure>
+          </div>`).join("")}
+        </div>
+        <p class="note full" style="margin-top:14px">Class-level views. A box with a small black square is a class the other bias also uses; heavier arrows are properties both use.</p>
+      </div></section>`;
+
+    const go = () => { location.hash = `#/compare/${main.querySelector("#pa").value}/${main.querySelector("#pb").value}`; };
+    main.querySelector("#pa").addEventListener("change", go);
+    main.querySelector("#pb").addEventListener("change", go);
+    main.querySelector(".swap").addEventListener("click", () => { location.hash = `#/compare/${c}/${a}`; });
+    const sharedNodes = new Set(both("classes")), sharedEdges = new Set(both("props"));
+    [A, B].forEach((x, i) => drawDiagram(x, { mode: "classes", host: main.querySelector("#cg" + i), cap: main.querySelector("#cc" + i),
+      caption: `${plural(graphFor(x, "classes").nodes.length, "class", "classes")} and ${plural(storyProps(x).length, "property", "properties")} in the story.`,
+      shared: { nodes: sharedNodes, edges: sharedEdges } }));
+  }
+
+  // ---------- quiz ------------------------------------------------------
+  const ROUND = 6;
+  let quizState = null;
+  const newRound = () => ({ order: shuffle(QUIZ).slice(0, ROUND), i: 0, score: 0, answered: false, options: null });
+  function optionsFor(q) {
+    const pool = shuffle(q.sameCluster.filter((x) => x !== q.mirror));
+    const others = shuffle(D.biases.map((b) => b.id).filter((x) => x !== q.id && x !== q.mirror && !pool.includes(x)));
+    const wrong = (q.mirror ? [q.mirror] : []).concat(pool, others).slice(0, 2);
+    return shuffle([q.id].concat(wrong));
+  }
+  function renderQuiz() {
+    if (!quizState || quizState.done) quizState = newRound();
+    const st = quizState;
+    if (st.i >= st.order.length) {
+      st.done = true;
+      main.innerHTML = `
+        <section class="band"><div class="grid">
+          <div class="label-col"><p class="kicker">06 / Quiz</p></div>
+          <div class="body-col quiz">
+            <h2 class="quiz-q" tabindex="-1">You named ${st.score} of ${st.order.length} biases.</h2>
+            <p class="lede" style="font-size:19px;margin-top:12px">${st.score === st.order.length ? "All of them." : "Several of these biases describe the same mistake from different sides, which is why the group modelled them with shared properties."}</p>
+            <div class="pager" style="margin-top:20px"><button type="button" class="again">Play again</button><a href="#/">Back to the 16 ontologies</a></div>
+          </div>
+        </div></section>`;
+      main.querySelector(".again").addEventListener("click", () => { quizState = newRound(); renderQuiz(); pageHeading("quiz"); main.querySelector(".quiz-q").focus(); });
+      return;
+    }
+    const q = st.order[st.i];
+    st.options = st.options || optionsFor(q);
+    main.innerHTML = `
+      <section class="band"><div class="grid">
+        <div class="label-col"><p class="kicker">06 / Quiz</p>
+          <p class="small muted" style="margin-top:8px">Question ${st.i + 1} of ${st.order.length} · ${st.score} right so far</p></div>
+        <div class="body-col quiz">
+          <h2 class="quiz-q" tabindex="-1">Which bias is this?</h2>
+          <blockquote class="quiz-text">${q.excerpt.map((s) => `<p>${esc(s)}</p>`).join("")}</blockquote>
+          <div class="filter quiz-opts" role="group" aria-label="Choose a bias">
+            ${st.options.map((id) => `<button type="button" class="chip opt" data-id="${id}">${esc(byId[id].name)}</button>`).join("")}
+          </div>
+          <div class="quiz-fb" role="status" aria-live="polite"></div>
+        </div>
+      </div></section>`;
+    main.querySelectorAll(".opt").forEach((btn) => btn.addEventListener("click", () => {
+      if (st.answered) return;
+      st.answered = true;
+      const right = btn.dataset.id === q.id;
+      if (right) st.score++;
+      main.querySelectorAll(".opt").forEach((o) => {
+        o.disabled = true;
+        o.classList.toggle("correct", o.dataset.id === q.id);
+        o.classList.toggle("wrong", o === btn && !right);
+        if (o.dataset.id === q.id) o.insertAdjacentHTML("beforeend", `<span class="sr"> (the right answer)</span>`);
+        else if (o === btn) o.insertAdjacentHTML("beforeend", `<span class="sr"> (your answer)</span>`);
+      });
+      const b = byId[q.id];
+      main.querySelector(".quiz-fb").innerHTML = `
+        <p class="quiz-verdict">${right ? "Right." : `Not quite: it is ${esc(b.name)}.`}</p>
+        <p>${esc(b.definition.split(/(?<=\.)\s/)[0])}</p>
+        <div class="pager"><button type="button" class="next">${st.i + 1 < st.order.length ? "Next question →" : "See your score →"}</button>
+          <a href="#/bias/${b.id}/walk">Walk through its story</a></div>`;
+      main.querySelector(".next").addEventListener("click", () => { st.i++; st.answered = false; st.options = null; renderQuiz(); pageHeading("quiz"); main.querySelector(".quiz-q").focus(); });
+      main.querySelector(".next").focus();
+    }));
+  }
+
+  // ---------- search ----------------------------------------------------
+  let INDEX = null;
+  function buildIndex() {
+    const map = new Map();
+    const add = (kind, label, bias, target) => {
+      const k = kind + "|" + label;
+      if (!map.has(k)) map.set(k, { kind, label, biases: new Map() });
+      const e = map.get(k);
+      if (!e.biases.has(bias)) e.biases.set(bias, target || "");
+    };
+    D.biases.forEach((b) => {
+      add("Bias", b.name, b.id, "");
+      b.instances.nodes.forEach((n) => { add("Individual", pretty(n.label), b.id, n.id); n.types.forEach((t) => add("Class", t, b.id, "")); });
+      storyProps(b).forEach((p) => add("Property", p, b.id, ""));
+      storyOdps(b).forEach((o) => add("Design pattern", odpById[o].name, b.id, ""));
+      b.framesterInStory.forEach((f) => add("Framester frame", f, b.id, ""));
+    });
+    return [...map.values()];
+  }
+  const norm = (s) => pretty(s).toLowerCase().replace(/[^a-z0-9: ]+/g, " ");
+  function renderSearch(q) {
+    INDEX = INDEX || buildIndex();
+    main.innerHTML = `
+      <section class="band"><div class="grid">
+        <div class="label-col"><p class="kicker">07 / Search</p></div>
+        <div class="body-col">
+          <h2 style="margin-bottom:14px">Find a bias, class, property or individual</h2>
+          <form class="search-form" role="search" onsubmit="return false">
+            <label for="q" class="sr">Search the 16 ontologies</label>
+            <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="for example: belief, outcome, puppet" value="${esc(q)}">
+          </form>
+          <p class="search-count" id="search-count" role="status" aria-live="polite"></p>
+          <div id="results"></div>
+        </div>
+      </div></section>`;
+    const input = main.querySelector("#q");
+    const ORDER = ["Bias", "Class", "Property", "Individual", "Design pattern", "Framester frame"];
+    const show = () => {
+      const term = norm(input.value).trim();
+      setHash("#/search/" + encodeURIComponent(input.value));
+      const out = main.querySelector("#results"), count = main.querySelector("#search-count");
+      if (term.length < 2) { out.innerHTML = ""; count.textContent = "Type at least two letters."; return; }
+      const hits = INDEX.filter((e) => norm(e.label).includes(term) || e.label.toLowerCase().includes(term));
+      count.textContent = hits.length ? plural(hits.length, "match", "matches") : "No matches.";
+      out.innerHTML = ORDER.map((k) => {
+        const hs = hits.filter((h) => h.kind === k).sort((a, b) => b.biases.size - a.biases.size || a.label.localeCompare(b.label));
+        if (!hs.length) return "";
+        return `<h3 class="kicker res-kind">${k} <span class="muted">${hs.length}</span></h3><ul class="res-list">${hs.slice(0, 40).map((h) => `<li>
+          <span class="res-label ${k === "Bias" ? "" : "mono"}">${esc(h.label)}</span>
+          <span class="res-in">${h.kind === "Bias" ? "" : (h.biases.size > 1 ? `in ${h.biases.size} biases: ` : "in ")}${[...h.biases].map(([id, target]) =>
+            `<a href="#/bias/${id}${target ? "/" + encodeURIComponent(target) : ""}">${esc(byId[id].name)}</a>`).join(", ")}</span></li>`).join("")}</ul>`;
+      }).join("");
+    };
+    let t;
+    input.addEventListener("input", () => { clearTimeout(t); t = setTimeout(show, 120); });
+    show();
+    if (!q) input.focus();
+  }
 
   // ---------- about -----------------------------------------------------
   function renderAbout() {
     const noSparql = D.biases.filter((b) => !b.competencyQuestions.some((q) => q.sparql)).map((b) => b.name);
-    const noAnswer = D.biases.filter((b) => b.competencyQuestions.some((q) => !q.answer)).map((b) => b.name);
     main.innerHTML = `
       <section class="band"><div class="grid">
-        <div class="label-col"><p class="kicker">04 / About</p></div>
+        <div class="label-col"><p class="kicker">09 / About</p></div>
         <div class="body-col prose">
           <h2 style="margin-bottom:16px">How the ontologies were made</h2>
           <p>The group picked two clusters from the Cognitive Bias Codex: three biases under “${esc(D.clusters[0].name)}”
@@ -602,16 +1041,21 @@
             <li><b>Design patterns</b>: the GitBook “Ontologies Developed” list, each bias page, the <code>hasComponent</code> annotations, and the terms the individuals use.</li>
             <li><b>Clusters</b>: the repository README.</li>
           </ul>
+          <h3>How the questions were tested</h3>
+          <p>Each OWL file was converted to N-Triples (the OWL/XML ones with owlready2) and checked against the explorer's own reading of it: every
+          individual and every assertion matches. Each competency question then runs as SPARQL: in your browser with Oxigraph when you press
+          “Run the query”, and at build time with rdflib, which is what the <a href="#/questions">tested questions</a> page reports. A query counts
+          as answering its question only if it returns what the question asks for; where a file holds part of the answer, or none, the page says so.</p>
           <h3>Why the diagrams show the story, not the full class hierarchy</h3>
           <p>Each OWL file carries domain and range axioms for the whole collective vocabulary, so the same unions of classes
           repeat from file to file. Drawn in full they turn into one dense tangle that looks the same for every bias. What makes each module
           different is how its individuals put the user story together, so the explorer draws that, and derives a class-level view from it.</p>
           <h3>What is missing</h3>
           <ul class="gaps">
-            <li>The GitBook gives no SPARQL for the competency questions of: ${esc(noSparql.join(", "))}.</li>
-            <li>Some competency questions have no written answer: ${esc(noAnswer.join(", "))}.</li>
+            <li>The GitBook gives no SPARQL for the competency questions of: ${esc(noSparql.join(", "))}. The explorer's queries for these are marked “written for the explorer”.</li>
+            <li>${CQ.summary.unanswerable} competency questions ask about things the files do not record, and ${CQ.summary.partial} are answered only in part.</li>
             <li>A few documented patterns never appear in the story graphs (outlined squares in the <a href="#/patterns">reuse matrix</a>).</li>
-            <li>The ontologies were never run against a reasoner here: the explorer shows what is asserted and makes no inferences.</li>
+            <li>No reasoner is run: the explorer shows what is asserted and makes no inferences, as the group's own queries assumed.</li>
           </ul>
         </div>
       </div></section>`;

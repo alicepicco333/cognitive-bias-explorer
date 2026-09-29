@@ -1,0 +1,161 @@
+_:Ne6ac2244bb2d4f84b540410e25eaa47b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Assessing> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome> <http://www.w3.org/2000/01/rdf-schema#range> _:N1b88c2a2aaf64ee8a19025ec3edaa63c .
+_:N31fb83b84002422c8d2fe945d668a341 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+_:N1c1f747b78b641048163fe3cee7657b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+_:N890e726e9b8645f7bb6996f14ec175a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N407e4e87733a4b8fb848883bebea49ad <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N3cfa81850f254289aeb94d9b8c546e63 .
+_:N3cfa81850f254289aeb94d9b8c546e63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne6ac2244bb2d4f84b540410e25eaa47b .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/Event> .
+_:N4f367ace432641cfb998c9a1876e8f9f <http://www.w3.org/2002/07/owl#unionOf> _:Nec477f5b27b641ec82bed46f11d9d931 .
+_:N0d6d295c3ea74dd48fb439e5e503bda3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N890e726e9b8645f7bb6996f14ec175a2 .
+_:Ne38e8b149c904c319a02357b1fc5c23b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N0c94bf0ce8dd4a2fbb898a0107c6d03e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#receives> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/People> .
+_:Nf6d08c2aaee9433391db78b002d55d18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#hascomponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/People> .
+_:N16b86cb6fccf44fcaf536d5156b4307b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nc4d0d6e5d02341dc8112d38be891bcd4 .
+_:N16b86cb6fccf44fcaf536d5156b4307b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://dbpedia.org/resource/Entity> .
+<https://w3id.org/framester/data/framestercore/Deciding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N3cfa81850f254289aeb94d9b8c546e63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+<https://w3id.org/framester/data/framestercore/ExperiencerObj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N3652d200a3dc4dc487f4be1fe77a85d8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Predicting> .
+_:Nf0fcef564eef44ba8a5059864ad35387 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#receives> <http://www.w3.org/2000/01/rdf-schema#comment> "denotes the capability of an entity to accept or obtain information, data, or objects from another source." .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N4ed9afe9160649e1b20cea6ba994e3a4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+_:N5a176b1c0b3b48298e5daf2e4cf54fd0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism> <http://purl.org/dc/terms/title> "Naive Cynicism Ontology" .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/Assistance> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nebb6d734cab740ed88ec315938b98611 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs> .
+_:N5a176b1c0b3b48298e5daf2e4cf54fd0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na353b74c85464129830ff20165a04315 .
+_:Ne38e8b149c904c319a02357b1fc5c23b <http://www.w3.org/2002/07/owl#unionOf> _:Nb3edd1bd72ee4b45b4034112f0d37111 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/2000/01/rdf-schema#range> _:N501d9b065f1a41e5959d205c3a112a32 .
+_:Ne0977db3a9714793b07e3aa4f722aa93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Deciding> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#misjudges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#range> _:N96c6c849439846689fbf3b7b5b6f889d .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism> <https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#hascomponent> "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/2000/01/rdf-schema#domain> _:Ne38e8b149c904c319a02357b1fc5c23b .
+_:Nb3edd1bd72ee4b45b4034112f0d37111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://dbpedia.org/page/Illusion> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion> <https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N07e8567ed56745afaa47cfb2957e415e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+_:Nc4d0d6e5d02341dc8112d38be891bcd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> .
+_:N96c6c849439846689fbf3b7b5b6f889d <http://www.w3.org/2002/07/owl#unionOf> _:N6d0ac1fe139442c28f5dc4e920ca40e4 .
+_:Nc4d0d6e5d02341dc8112d38be891bcd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N8a20c5b28d094563a6c555d760a2ea30 .
+<https://w3id.org/framester/data/framestersyn/Belief.n.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N303176eb28254022acbfcab3f888d2df <http://www.w3.org/2002/07/owl#unionOf> _:Nb1fbbb27dd1f434c903faad4accc2e8e .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Nf6d08c2aaee9433391db78b002d55d18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestersyn/Belief.n.1> .
+<https://w3id.org/framester/data/framestercore/Assistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/2000/01/rdf-schema#comment> "This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming babyyesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "A property linking an entity that produces an Outcome." .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris> <http://modellingdh.github.io/ont/odp/term/isEngagedIn> <https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge> .
+<https://w3id.org/framester/data/framestercore/Sequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N8a20c5b28d094563a6c555d760a2ea30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding> .
+_:N1b88c2a2aaf64ee8a19025ec3edaa63c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism> <https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#userstory> "Sarah, having experienced similar challenges in the past, approaches Alex and offers her assistance. She suggests collaborating on specific tasks, sharing resources, and even providing guidance to ease the workload. Her intention is rooted in empathy and a desire to foster teamwork within the department.\nHowever, due to his naive cynicism, Alex, already stressed by the demanding project, interprets Sarah's generous offer with suspicion. He questions her motives, wondering if she's attempting to showcase her skills to gain favor with their manager or if there's an underlying agenda that might compromise his position on the project.\nDespite Sarah's genuine intentions, Alex's naive cynicism leads him to decline her offer, assuming that there must be hidden motives behind her willingness to help. This scenario illustrates how naive cynicism can hinder collaboration and prevent the positive outcomes that could arise from genuine acts of assistance and teamwork." .
+_:Nebb6d734cab740ed88ec315938b98611 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/People> .
+_:Na353b74c85464129830ff20165a04315 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Sequence> .
+_:Nf69cbb152cea4917bc75bfc13a173594 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> .
+<https://w3id.org/framester/data/framestercore/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nbb34eaa8cf114e538c7ddef3320c8735 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty> .
+_:N8a20c5b28d094563a6c555d760a2ea30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N0d6d295c3ea74dd48fb439e5e503bda3 .
+_:N6d0ac1fe139442c28f5dc4e920ca40e4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.se/odp/content/owl/Action.owl#Action> .
+_:N4f367ace432641cfb998c9a1876e8f9f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism> <http://purl.org/dc/terms/description> "Naive Cynicism specification of the Cognitive Bias Ontology" .
+<https://w3id.org/framester/data/framestercore/Assessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome> <https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer> .
+_:N501d9b065f1a41e5959d205c3a112a32 <http://www.w3.org/2002/07/owl#unionOf> _:N16b86cb6fccf44fcaf536d5156b4307b .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N1b88c2a2aaf64ee8a19025ec3edaa63c <http://www.w3.org/2002/07/owl#unionOf> _:Nf69cbb152cea4917bc75bfc13a173594 .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism> <https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#misjudges> <https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help> .
+_:N1c1f747b78b641048163fe3cee7657b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N23c397b8fde446e0913f635fd052c670 .
+_:N3652d200a3dc4dc487f4be1fe77a85d8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nb1fbbb27dd1f434c903faad4accc2e8e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N07e8567ed56745afaa47cfb2957e415e .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#misjudges> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/framester/data/framestercore/Assistance> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs> <http://www.w3.org/2000/01/rdf-schema#comment> "a property that links the cognitive process of perceiving something in a specific way. E.g. a person being aware of a trend in an activity that is perceived as a pattern in that activity. E.g. an assistance process being perceived as Malicious." .
+_:N0d6d295c3ea74dd48fb439e5e503bda3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Assistance> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism> <https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#hascomponent> "https://w3id.org/framester/data/framestercore/" .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#receives> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/framester/data/framestercore/Assistance> .
+_:N890e726e9b8645f7bb6996f14ec175a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/ExperiencerObj> .
+<https://w3id.org/framester/data/framestercore/Importance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N07e8567ed56745afaa47cfb2957e415e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Na353b74c85464129830ff20165a04315 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Malicious> <http://www.w3.org/2000/01/rdf-schema#domain> _:Nebb6d734cab740ed88ec315938b98611 .
+<http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N5f7030ef94b142eda82bca26388323e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N5a176b1c0b3b48298e5daf2e4cf54fd0 .
+_:Nb1fbbb27dd1f434c903faad4accc2e8e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#misjudges> <http://www.w3.org/2000/01/rdf-schema#comment> "a property that links the cognitive process of misinterpreting information" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion> <http://www.w3.org/2000/01/rdf-schema#range> _:N303176eb28254022acbfcab3f888d2df .
+_:N23c397b8fde446e0913f635fd052c670 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N3652d200a3dc4dc487f4be1fe77a85d8 .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism> <http://purl.org/dc/terms/creator> "Alice Picco" .
+<http://www.ontology.se/odp/content/owl/Action.owl#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Predicting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs> <http://www.w3.org/2000/01/rdf-schema#domain> _:N4f367ace432641cfb998c9a1876e8f9f .
+_:N87b10884dac44e56895e94e08741c504 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help> .
+_:N19af0b56b1d3494083bc23046c0cb9c4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Importance> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne0977db3a9714793b07e3aa4f722aa93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N1c1f747b78b641048163fe3cee7657b8 .
+_:N31fb83b84002422c8d2fe945d668a341 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nf6d08c2aaee9433391db78b002d55d18 .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#misjudges> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias> .
+_:N96c6c849439846689fbf3b7b5b6f889d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N4ed9afe9160649e1b20cea6ba994e3a4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nf0fcef564eef44ba8a5059864ad35387 .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#receives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> .
+_:N5f7030ef94b142eda82bca26388323e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding> .
+_:Nec477f5b27b641ec82bed46f11d9d931 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N31fb83b84002422c8d2fe945d668a341 .
+<https://dbpedia.org/page/Illusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris> <https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#receives> <https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias> .
+_:N77cd49058a024bd8b3c3ab33ee417a86 <http://www.w3.org/2002/07/owl#unionOf> _:Nbb34eaa8cf114e538c7ddef3320c8735 .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nebb6d734cab740ed88ec315938b98611 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> .
+_:N303176eb28254022acbfcab3f888d2df <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne6ac2244bb2d4f84b540410e25eaa47b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N87b10884dac44e56895e94e08741c504 .
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> _:N77cd49058a024bd8b3c3ab33ee417a86 .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/People> .
+_:Nec477f5b27b641ec82bed46f11d9d931 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Assistance> .
+_:Nb3edd1bd72ee4b45b4034112f0d37111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4ed9afe9160649e1b20cea6ba994e3a4 .
+<https://w3id.org/framester/data/framestercore/Assistance> <http://www.w3.org/2000/01/rdf-schema#comment> "A Helper benefits a Benefited_party by enabling the culmination of a Goal that the Benefited_party has. A Focal_entity that is involved in reaching the Goal may stand in for it. Will you help the Government find your brother? Maybe Stephen should assist him with the last manuscript. They helped me psychologically to overcome the physical loss I had suffered. You have helped him tremendously by showing him how to stand up for himself and by being his friend. By bringing assistance to his troops wherever they were in trouble he aided them greatly." .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism> <http://purl.org/dc/terms/created> "20/03/2024" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/2000/01/rdf-schema#comment> "a property connecting an entity to any kind of thing that is related to that Entity" .
+<https://dbpedia.org/resource/Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/PerceptionExperience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N0c94bf0ce8dd4a2fbb898a0107c6d03e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the result, effect, or consequence of a particular action, event, process, or situation" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion> <http://www.w3.org/2000/01/rdf-schema#comment> "a property connecting a Person who has a biased opinion about something eg the possible outcome of an Event such as a Random or Chance-based Occurrence  or a person who has a biased Opinion about a Bias." .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Malicious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:N77cd49058a024bd8b3c3ab33ee417a86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#userstory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias> <http://www.w3.org/2000/01/rdf-schema#comment> "a class for defining any kind of bias" .
+_:N6d0ac1fe139442c28f5dc4e920ca40e4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N407e4e87733a4b8fb848883bebea49ad .
+_:N23c397b8fde446e0913f635fd052c670 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:N87b10884dac44e56895e94e08741c504 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne0977db3a9714793b07e3aa4f722aa93 .
+_:N407e4e87733a4b8fb848883bebea49ad <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty> .
+_:Nbb34eaa8cf114e538c7ddef3320c8735 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N5f7030ef94b142eda82bca26388323e1 .
+_:Nf69cbb152cea4917bc75bfc13a173594 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N19af0b56b1d3494083bc23046c0cb9c4 .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nf0fcef564eef44ba8a5059864ad35387 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N0c94bf0ce8dd4a2fbb898a0107c6d03e .
+<https://w3id.org/framester/data/framestercore/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "An Event takes place at a Place and Time. Big earthquakes only happen along plate boundaries.INI The party will take place on Sunday in the all-you-can-eat buffet." .
+_:N501d9b065f1a41e5959d205c3a112a32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/BecomingAware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism> <http://www.w3.org/2000/01/rdf-schema#comment> "Naive cynicism is a cognitive bias characterized by the tendency to doubt others' intentions and perceive actions as driven by selfish motives or ulterior motives, even in the absence of concrete evidence supporting such skepticism. Individuals exhibiting naive cynicism often display a general distrust of others, assuming that individuals or groups have hidden agendas, leading to a distorted and overly negative interpretation of people's behaviors or actions. This bias can hinder effective communication, collaboration, and relationship-building, as it contributes to an unwarranted suspicion of others' motives." .
+<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism> <https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#hascomponent> "http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation" .
+_:N19af0b56b1d3494083bc23046c0cb9c4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

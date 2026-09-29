@@ -1,0 +1,295 @@
+_:N7b62d56491b442f2bc520a6b05fcc9e4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nca512c32caae4c99b1ea8bce029b24a6 .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#range> _:N8d758f3ec4ec42728faf29c9b018188e .
+<https://w3id.org/framester/data/framestercore/Pattern> <http://purl.org/dc/terms/description> "This frame describes the interrelation of a collection of Entities; they may be physical entities or shapes in a recognizable configuration, a pattern of events, or a relation among abstract entities. The pattern is not the individual Entities nor the set of Entities, but an abstraction of their interrelations, as a gestalt. The Cougers are playing in a Wing-T formation tonight. The auditors noticed a suspicious pattern of withdrawals from the maintenance account . The digits of irrational numbers do not repeat in any kind of pattern." .
+_:N946f1c724d1a42d2892eadbb9e763728 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/ExperiencerObj> .
+_:N8d758f3ec4ec42728faf29c9b018188e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ncf9422c740674317b89d7ca951bc2951 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+<https://w3id.org/framester/data/framestercore/Pattern> <http://www.w3.org/2000/01/rdf-schema#label> "Pattern" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk> <http://modellingdh.github.io/ont/odp/term/includes> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N803d6d21f5164e22bbe2a3f3d7b53837 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+_:N33b47d1707724348b483d0f94b32ea08 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ncf9422c740674317b89d7ca951bc2951 .
+_:N66e4bf75f5794dca959dfb70511ea681 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N4cbbafb148544e6fa912e8edc20111f5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/framester/data/framestercore/Pattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl> <http://purl.org/dc/terms/description> "The Pareidolia Bias module of the Cognitive Bias Ontology" .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N860df2d4e7084673ab5b88b0db4e0409 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Sequence> .
+_:Ne3489d60019d4ea7a621b6fca24594d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/ExperiencerObj> .
+_:Ndf55d6af91044fad8d4865d8e470c263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N69a2180fc73a423182dab4d23eddd701 .
+<https://w3id.org/framester/data/framestercore/ExperiencerObj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N8d758f3ec4ec42728faf29c9b018188e <http://www.w3.org/2002/07/owl#unionOf> _:N6fba1253ff3a4292952e89a150b390c6 .
+_:Ne3489d60019d4ea7a621b6fca24594d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nfcaba9c8659b44e7ba74d35b00851f9b <http://www.w3.org/2002/07/owl#unionOf> _:N8ef845771ebf4d0aa7f86eb00ac9e8e4 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N783ec147b4a44f83b47b13fc18490323 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N11df1a8aa6f54c99949dffff4a2753f7 .
+_:Nfc9b2bb92be04050b67b18b600c2f7f0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N4a4733bacc89452f96a0826cf9cb71a3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N6ee00396089b4a0d97b69d5a461b77f3 .
+_:Ndcee7e6b7c234d25821fcfe33478bacc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Naa0d001cc80e40169ab269dd914a6c4f .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/Activity> .
+<http://modellingdh.github.io/ont/odp/term/includes> <http://www.w3.org/2000/01/rdf-schema#domain> _:N66e4bf75f5794dca959dfb70511ea681 .
+_:N6f1f3052bc3446f2a764877555d8a9f4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N021eb6a5752c4ddb9111c577e7b64a1c .
+_:N1dcdc6fff60740e6b5f83a03afd931ce <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N25f07f6530b844daa5c6dd68ca53567a .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasEffect> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion> .
+_:Nca512c32caae4c99b1ea8bce029b24a6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na47bfdefb0e0407a9808c85aa9200a2b .
+_:N6fba1253ff3a4292952e89a150b390c6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ndb70fcf85b8c4f18a7b64a6314e9c45d .
+<https://w3id.org/framester/data/framestersyn/Hiker.n.1> <http://www.w3.org/2000/01/rdf-schema#label> "Hiker" .
+_:Nd5258a33f9f540ca8cd8411413ba08e8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4d96d246a09e4eb793703388890d5c4a .
+_:N7cb4b3d7ce604d3c9cd3b71541bb3669 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nbd25f4e09cd34733824ef3c2e2087611 .
+_:Naa0d001cc80e40169ab269dd914a6c4f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N8c61948da3134d828b9011106cf73855 .
+_:Na19f1da5d10544f3b07f5833206b9da3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N783ec147b4a44f83b47b13fc18490323 .
+_:N1238db157df34459adf4bf14317033d5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Sequence> .
+<http://modellingdh.github.io/ont/odp/term/inActivity> <http://www.w3.org/2000/01/rdf-schema#domain> _:N8ef44296f1494c99b3b19e39430de0cc .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <https://dbpedia.org/ontology/> .
+<https://dbpedia.org/page/Illusion> <http://purl.org/dc/terms/description> "An illusion is a distortion of the senses, which can reveal how the mind normally organizes and interprets sensory stimulation. Although illusions distort the human perception of reality, they are generally shared by most people. Illusions may occur with any of the human senses, but visual illusions (optical illusions) are the best-known and understood. The emphasis on visual illusions occurs because vision often dominates the other senses. For example, individuals watching a ventriloquist will perceive the voice is coming from the dummy since they are able to see the dummy mouth the words." .
+_:Ndd1d46a20b8044be987f3c62fcf7f319 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://dbpedia.org/page/Illusion> .
+_:Na47bfdefb0e0407a9808c85aa9200a2b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Predicting> .
+<https://w3id.org/framester/data/framestercore/Assistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N0898e7446d3b4a5f98a1983dc053fc35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nedf36f15b6d3431e9694b92620b0c600 <http://www.w3.org/2002/07/owl#unionOf> _:Ndf55d6af91044fad8d4865d8e470c263 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#weather-beaten_tree_trunk> <http://www.w3.org/2000/01/rdf-schema#label> "weather beaten tree trunk" .
+_:Ndb70fcf85b8c4f18a7b64a6314e9c45d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb6fef3eb3b434de09477d3ebba61e870 .
+_:Na19f1da5d10544f3b07f5833206b9da3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/2000/01/rdf-schema#range> _:Nf387306d673045719b8b792b37f00025 .
+_:Ne90516e3676d43f2a6dc0a0d5df3a14b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+<https://w3id.org/framester/data/framestersyn/Hiker.n.1> <http://purl.org/dc/terms/description> "A class for people that go hiking or go for a walk." .
+_:Nda59cc4683414c49b47ed21e0cf69dd5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence> <http://www.w3.org/2000/01/rdf-schema#comment> "A property connecting an Entity (Pattern) that affects in different ways another entity (PerceptionExperience)." .
+_:Ndcee7e6b7c234d25821fcfe33478bacc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+_:N70a9e43b96a74b228ae021d51ea46833 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+_:Nd5258a33f9f540ca8cd8411413ba08e8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> .
+<https://w3id.org/framester/data/framestercore/People> <http://purl.org/dc/terms/description> "This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming baby yesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man." .
+_:N69a2180fc73a423182dab4d23eddd701 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isBiasedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "a property that connect a Person that is biased by the idea of seeing a Pattern such as meaningful shapes made by a visual stimulus" .
+_:Nfc9b2bb92be04050b67b18b600c2f7f0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Probability> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VisualStimulus> <http://www.w3.org/2000/01/rdf-schema#label> "Visual Stimulus" .
+_:Na26014252a2c4b45ad9d7eea32187892 <http://www.w3.org/2002/07/owl#unionOf> _:Nc08c011119c846c999ea5b8a635f8846 .
+_:Ndb70fcf85b8c4f18a7b64a6314e9c45d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty> .
+<https://w3id.org/framester/data/framestersyn/Hiker.n.1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/framester/data/framestercore/People> .
+<https://w3id.org/framester/data/framestercore/Assessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N946f1c724d1a42d2892eadbb9e763728 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N70a9e43b96a74b228ae021d51ea46833 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ndcee7e6b7c234d25821fcfe33478bacc .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Naa0d001cc80e40169ab269dd914a6c4f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/People> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecognizablePattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception> <http://www.w3.org/2000/01/rdf-schema#label> "Sensorial Perception" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion> <http://www.w3.org/2000/01/rdf-schema#label> "FacialShapeIllusion" .
+_:N021eb6a5752c4ddb9111c577e7b64a1c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Probability> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence> <http://www.w3.org/2000/01/rdf-schema#range> _:Nfcaba9c8659b44e7ba74d35b00851f9b .
+_:N8c61948da3134d828b9011106cf73855 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:N8ef44296f1494c99b3b19e39430de0cc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Na26014252a2c4b45ad9d7eea32187892 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N6f1f3052bc3446f2a764877555d8a9f4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:Nc8d45faa18de4eac97310742be069687 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Assistance> .
+<https://w3id.org/framester/data/framestercore/PerceptionExperience> <http://purl.org/dc/terms/description> "This frame contains perception words whose Perceivers have perceptual experiences that they do not necessarily intend to. For this reason we call the Perceiver role Perceiver_passive. Comparing the Perception_experience frame to the Perception_active frame, we note that for some modalities there are different lexical items in each frame. For instance, whereas Perception_experience has see, Perception_active has look at. For other sense modalities, we find the same lexical items in both frames. To illustrate, consider the verb smell where I smell something rotten exemplifies its Perception_experience use and Smell this to see if it's fresh exemplifies its Perception_active sense. This frame also includes words which are not specific to any sense modality, including detect, perceive, perception, sense." .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#park_hiker> <http://modellingdh.github.io/ont/odp/term/isEngagedIn> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception> .
+_:Naec698b573eb4b5dac30b9f6034becdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N70a9e43b96a74b228ae021d51ea46833 .
+<https://w3id.org/affectedBy#influencedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:Na26014252a2c4b45ad9d7eea32187892 .
+_:N851f20b89bf142c5b26a3d638ec9ce5f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N6ee00396089b4a0d97b69d5a461b77f3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nf17afb80bea6414ba9658b68255cd96b .
+<http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:N4d96d246a09e4eb793703388890d5c4a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nc8d45faa18de4eac97310742be069687 .
+_:Nc31f2081af5f4ebbb7678df23aedf5e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne3489d60019d4ea7a621b6fca24594d1 .
+_:N870f9282ec5543c5b2798b9b3ff0ede2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+_:N476abf7bdbaf4fffa01e3b4f768fb617 <http://www.w3.org/2002/07/owl#unionOf> _:Ne8c01cd40f644968831d699f864c7c0a .
+_:N6ea8e91fa8c94a6dac975c61869c138b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N860df2d4e7084673ab5b88b0db4e0409 .
+_:Nd1323e45c316434790407221f31dfa98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore> .
+_:Naf292b20a9344bc397a47e95b7e053af <http://www.w3.org/2002/07/owl#members> _:N84e9c7dedf7244f4b4cde24188803500 .
+<http://modellingdh.github.io/ont/odp/term/inActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/affectedBy#influencedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:N851f20b89bf142c5b26a3d638ec9ce5f .
+_:Nc31f2081af5f4ebbb7678df23aedf5e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> .
+_:Nf17afb80bea6414ba9658b68255cd96b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecognizablePattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N9c4a01ba1a954b56b204f03677a4ef3b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap> .
+<https://w3id.org/framester/data/framestercore/Predicting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N9f2e7442da724561bc2489c7d2874105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb05e212df02a44a0ba88c36f4447bed5 .
+_:N870f9282ec5543c5b2798b9b3ff0ede2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N8c61948da3134d828b9011106cf73855 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N803d6d21f5164e22bbe2a3f3d7b53837 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/affectedBy#influencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N11df1a8aa6f54c99949dffff4a2753f7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nfc9b2bb92be04050b67b18b600c2f7f0 .
+_:N4cbbafb148544e6fa912e8edc20111f5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/2000/01/rdf-schema#label> "People" .
+_:N1ed185a1322341a986f67d043f92f713 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Assessing> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N6faec79b32554ab3bf050bc88246d742 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N7b62d56491b442f2bc520a6b05fcc9e4 .
+_:Na61c0623d44b4384beaf2a4d2c00c161 <http://www.w3.org/2002/07/owl#unionOf> _:Ndd1d46a20b8044be987f3c62fcf7f319 .
+_:N57faa6cc078a42c4a73ebca48fc4ac5d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd5258a33f9f540ca8cd8411413ba08e8 .
+_:N68bf6eb471e84908a0447fc134c09fb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/2000/01/rdf-schema#comment> "a property connecting an entity such as Activity to any kind of thing that is involved during the execution of that Activity." .
+<https://dbpedia.org/page/Illusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne8c01cd40f644968831d699f864c7c0a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> .
+_:N6689db022f654b808a1f1209770324c5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Assessing> .
+<https://w3id.org/framester/data/framestercore/Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N9f2e7442da724561bc2489c7d2874105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Evidence> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#weather-beaten_tree_trunk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VisualStimulus> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/People> .
+<https://w3id.org/framester/data/framestercore/PerceptionExperience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ncaee41193cfd4a4491eaa94e8f5a1852 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+<https://dbpedia.org/resource/Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VisualStimulus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> .
+_:N68bf6eb471e84908a0447fc134c09fb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N1238db157df34459adf4bf14317033d5 .
+_:N865ab979fedc4f69aae94db83f96f613 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N7cb4b3d7ce604d3c9cd3b71541bb3669 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/affectedBy#influencedBy> .
+_:N1dcdc6fff60740e6b5f83a03afd931ce <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasEffect> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/page/Illusion> .
+_:N4a4733bacc89452f96a0826cf9cb71a3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature> .
+_:Nc5cf1511bcdc4c63867679b652d06546 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+<https://w3id.org/framester/data/framestercore/CognitiveConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#park_hiker> <http://www.w3.org/2000/01/rdf-schema#comment> "an individual representing a person such as an hiker who goes for a walk in a park." .
+_:Ncf9422c740674317b89d7ca951bc2951 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N0c82152adc33484ea7b2c888c05540dc .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N783ec147b4a44f83b47b13fc18490323 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing> .
+_:Nda59cc4683414c49b47ed21e0cf69dd5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nc31f2081af5f4ebbb7678df23aedf5e1 .
+<http://modellingdh.github.io/ont/odp/term/includes> <http://www.w3.org/2000/01/rdf-schema#range> _:N0898e7446d3b4a5f98a1983dc053fc35 .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk> <http://www.w3.org/2000/01/rdf-schema#label> "Walk" .
+_:N360e19dcca5d43c0befe88b36c363baf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+<https://dbpedia.org/page/Illusion> <http://www.w3.org/2000/01/rdf-schema#label> "Illusion" .
+_:N865ab979fedc4f69aae94db83f96f613 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+_:N84e9c7dedf7244f4b4cde24188803500 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://dbpedia.org/page/Illusion> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecognizablePattern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence> <http://www.w3.org/2000/01/rdf-schema#domain> _:Nedf36f15b6d3431e9694b92620b0c600 .
+_:N9c113916cc2a4ef3a3528b2cacd76b4c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nc08c011119c846c999ea5b8a635f8846 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd1323e45c316434790407221f31dfa98 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://modellingdh.github.io/ont/odp/term/includes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N9c113916cc2a4ef3a3528b2cacd76b4c <http://www.w3.org/2002/07/owl#unionOf> _:N507ee35a882f4c39823d82a81f9013ff .
+_:Ncaee41193cfd4a4491eaa94e8f5a1852 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N865ab979fedc4f69aae94db83f96f613 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "hasEffect: a property linking an Entity (a perceived correlation between two variables in a pattern or a perceived pattern due to any kind of external stimulus) and the illusory effect that this Entity produce." .
+_:N7b62d56491b442f2bc520a6b05fcc9e4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+_:N8ef845771ebf4d0aa7f86eb00ac9e8e4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N65616389a0284120b11384f7be50d7b6 .
+_:N25f07f6530b844daa5c6dd68ca53567a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne90516e3676d43f2a6dc0a0d5df3a14b .
+_:Ne98dfb7c48094f848e49c9e3108ff264 <http://www.w3.org/2002/07/owl#unionOf> _:Nb758d885ad7d44de8a52912535516c11 .
+_:N4d96d246a09e4eb793703388890d5c4a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Deciding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape> <http://purl.org/dc/terms/description> "this individual represent the pattern, such as familiar shapes of faces or objects, recognized by the mind and caused by the visual stimulus." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#weather-beaten_tree_trunk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nfcaba9c8659b44e7ba74d35b00851f9b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N0898e7446d3b4a5f98a1983dc053fc35 <http://www.w3.org/2002/07/owl#unionOf> _:N9c4a01ba1a954b56b204f03677a4ef3b .
+_:N6faec79b32554ab3bf050bc88246d742 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Deciding> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isBiasedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nb6fef3eb3b434de09477d3ebba61e870 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N1ed185a1322341a986f67d043f92f713 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VisualStimulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nd1323e45c316434790407221f31dfa98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N68bf6eb471e84908a0447fc134c09fb5 .
+_:N360e19dcca5d43c0befe88b36c363baf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N6ee00396089b4a0d97b69d5a461b77f3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/CognitiveConnection> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> "Seeing Faces in Inanimate Objects: Perceiving faces in items like electrical sockets, rocks, or tree bark due to the arrangement of patterns or shapes." .
+_:Nb05e212df02a44a0ba88c36f4447bed5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+_:N021eb6a5752c4ddb9111c577e7b64a1c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nca512c32caae4c99b1ea8bce029b24a6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception> <http://www.w3.org/2000/01/rdf-schema#comment> "The perception experience in which is involed a person: it can be sensorial but not only." .
+_:Nb05e212df02a44a0ba88c36f4447bed5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N360e19dcca5d43c0befe88b36c363baf .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne98dfb7c48094f848e49c9e3108ff264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne8c01cd40f644968831d699f864c7c0a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nda59cc4683414c49b47ed21e0cf69dd5 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VisualStimulus> <http://purl.org/dc/terms/description> "A class for visual stimuli, namely anything that involves the use of sight." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus> <http://www.w3.org/2000/01/rdf-schema#label> "Random Stimulus" .
+_:Na0b5dfca6f4e42a0a16b5e9bab1d80d0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/CognitiveConnection> .
+<http://modellingdh.github.io/ont/odp/term/producedObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://modellingdh.github.io/ont/odp/term/producedObservation> <http://www.w3.org/2000/01/rdf-schema#domain> _:N476abf7bdbaf4fffa01e3b4f768fb617 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception> <http://modellingdh.github.io/ont/odp/term/inActivity> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk> .
+<http://modellingdh.github.io/ont/odp/term/inActivity> <http://www.w3.org/2000/01/rdf-schema#range> _:N9c113916cc2a4ef3a3528b2cacd76b4c .
+_:N69a2180fc73a423182dab4d23eddd701 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N6ea8e91fa8c94a6dac975c61869c138b .
+_:N6689db022f654b808a1f1209770324c5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ncaee41193cfd4a4491eaa94e8f5a1852 .
+_:N860df2d4e7084673ab5b88b0db4e0409 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nf387306d673045719b8b792b37f00025 <http://www.w3.org/2002/07/owl#unionOf> _:N57faa6cc078a42c4a73ebca48fc4ac5d .
+_:Nf17afb80bea6414ba9658b68255cd96b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N11df1a8aa6f54c99949dffff4a2753f7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:Nb758d885ad7d44de8a52912535516c11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/CognitiveConnection> .
+_:N851f20b89bf142c5b26a3d638ec9ce5f <http://www.w3.org/2002/07/owl#unionOf> _:Na19f1da5d10544f3b07f5833206b9da3 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception> .
+_:N6fba1253ff3a4292952e89a150b390c6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.se/odp/content/owl/Action.owl#Action> .
+_:N0c82152adc33484ea7b2c888c05540dc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N075a7a92038945bfbfcd86f939647b1a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation> .
+<https://w3id.org/framester/data/framestercore/Sequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape> <http://www.w3.org/2000/01/rdf-schema#label> "Facial Shape" .
+<https://w3id.org/framester/data/framestercore/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nedf36f15b6d3431e9694b92620b0c600 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N7cb4b3d7ce604d3c9cd3b71541bb3669 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/People> .
+_:N507ee35a882f4c39823d82a81f9013ff <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N870f9282ec5543c5b2798b9b3ff0ede2 .
+_:Nbd25f4e09cd34733824ef3c2e2087611 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl> <http://purl.org/dc/terms/title> "The Pareidolias Bias Ontology" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion> <http://www.w3.org/2000/01/rdf-schema#comment> "The actual illusion effect of seeing a facial shape in a weather-beaten tree trunk." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isBiasedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing any kind of Random Stimulus that can involve a sensorial perception." .
+<https://w3id.org/framester/data/framestercore/Activity> <http://purl.org/dc/terms/description> "This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent's Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame." .
+_:Nb758d885ad7d44de8a52912535516c11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N803d6d21f5164e22bbe2a3f3d7b53837 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/framester/data/framestercore/Probability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity" .
+_:N075a7a92038945bfbfcd86f939647b1a <http://www.w3.org/2002/07/owl#unionOf> _:N4a4733bacc89452f96a0826cf9cb71a3 .
+_:N9c4a01ba1a954b56b204f03677a4ef3b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na0b5dfca6f4e42a0a16b5e9bab1d80d0 .
+_:Ndd1d46a20b8044be987f3c62fcf7f319 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N33b47d1707724348b483d0f94b32ea08 .
+_:N6ea8e91fa8c94a6dac975c61869c138b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dbpedia.org/page/Illusion> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasEffect> <http://www.w3.org/2000/01/rdf-schema#domain> _:Ne98dfb7c48094f848e49c9e3108ff264 .
+_:N8ef44296f1494c99b3b19e39430de0cc <http://www.w3.org/2002/07/owl#unionOf> _:N6689db022f654b808a1f1209770324c5 .
+_:Ne90516e3676d43f2a6dc0a0d5df3a14b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4cbbafb148544e6fa912e8edc20111f5 .
+_:Ndf55d6af91044fad8d4865d8e470c263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> .
+_:N1ed185a1322341a986f67d043f92f713 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nc5cf1511bcdc4c63867679b652d06546 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> .
+_:N84e9c7dedf7244f4b4cde24188803500 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Naec698b573eb4b5dac30b9f6034becdf .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/2000/01/rdf-schema#domain> _:Na61c0623d44b4384beaf2a4d2c00c161 .
+_:Naf292b20a9344bc397a47e95b7e053af <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl> <http://purl.org/dc/terms/creator> "Corrado Consiglio"@en .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.se/odp/content/owl/Action.owl#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N25f07f6530b844daa5c6dd68ca53567a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> .
+_:Nc8d45faa18de4eac97310742be069687 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N946f1c724d1a42d2892eadbb9e763728 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Na47bfdefb0e0407a9808c85aa9200a2b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#weather-beaten_tree_trunk> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass individual  involving a visual stimuli  that can stimulate a process of association with familiar patterns such as facial shapes." .
+_:Na0b5dfca6f4e42a0a16b5e9bab1d80d0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9f2e7442da724561bc2489c7d2874105 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#park_hiker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestersyn/Hiker.n.1> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N1238db157df34459adf4bf14317033d5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Naec698b573eb4b5dac30b9f6034becdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> .
+<http://modellingdh.github.io/ont/odp/term/producedObservation> <http://www.w3.org/2000/01/rdf-schema#range> _:N075a7a92038945bfbfcd86f939647b1a .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "Pareidolia bias is a psychological phenomenon in which individuals perceive familiar patterns, shapes, or meaningful images, such as faces or objects, where none actually exist. This tendency leads people to interpret ambiguous stimuli as something recognizable and significant, even when there is no intentional design or pattern present. Pareidolia bias can occur in various sensory modalities, including visual, auditory, and tactile, and it often influences how individuals interpret stimuli in their environment, such as seeing shapes in clouds or faces in inanimate objects. This bias reflects the brain's natural inclination to organize and make sense of sensory information, sometimes leading to the perception of patterns or meanings that are not objectively there." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#park_hiker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N476abf7bdbaf4fffa01e3b4f768fb617 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Na61c0623d44b4384beaf2a4d2c00c161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N33b47d1707724348b483d0f94b32ea08 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#park_hiker> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isBiasedBy> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nc08c011119c846c999ea5b8a635f8846 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> .
+<https://w3id.org/framester/data/framestersyn/Hiker.n.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nb6fef3eb3b434de09477d3ebba61e870 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl> <http://purl.org/dc/terms/created> "February 2024" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk> <http://www.w3.org/2000/01/rdf-schema#comment> "the activity  (such a walk in a park) ih which a perception experience is involved." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#park_hiker> <http://www.w3.org/2000/01/rdf-schema#label> "Park hiker" .
+_:N65616389a0284120b11384f7be50d7b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> <http://purl.org/dc/terms/description> "A class for colleting different kinds of random stimuli that can involve a sensorial perception." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N507ee35a882f4c39823d82a81f9013ff <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> .
+_:N0c82152adc33484ea7b2c888c05540dc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:N57faa6cc078a42c4a73ebca48fc4ac5d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://dbpedia.org/resource/Entity> .
+_:Nf387306d673045719b8b792b37f00025 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/framester/data/framestercore/PerceptionExperience> <http://www.w3.org/2000/01/rdf-schema#label> "Perception Experience" .
+_:N66e4bf75f5794dca959dfb70511ea681 <http://www.w3.org/2002/07/owl#unionOf> _:N1dcdc6fff60740e6b5f83a03afd931ce .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#weather-beaten_tree_trunk> <http://modellingdh.github.io/ont/odp/term/producedObservation> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape> .
+_:Nc5cf1511bcdc4c63867679b652d06546 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N6faec79b32554ab3bf050bc88246d742 .
+_:N65616389a0284120b11384f7be50d7b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N6f1f3052bc3446f2a764877555d8a9f4 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isBiasedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/People> .
+<https://w3id.org/framester/data/framestercore/BecomingAware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> <http://www.w3.org/2000/01/rdf-schema#label> "Ambiguos Stimuli" .
+_:Nbd25f4e09cd34733824ef3c2e2087611 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:N8ef845771ebf4d0aa7f86eb00ac9e8e4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> .

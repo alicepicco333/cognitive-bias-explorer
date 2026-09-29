@@ -1,0 +1,256 @@
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perceived_validity> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#supports> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Scenarios> "A man enters a local jazz club and is told that the great saxophonist John Smith will play that night. It happens to be also the name of a local talented surgeon. Immediately he refuses to believe that they are the same person, in his biased reasoning someone can't excel in two such diverse professions."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Ncb067832d4be4920ab58d5aa9f5f2750 <http://www.w3.org/2002/07/owl#Prefix> _:Nea6434e7e1ab454999488180870d3b17 .
+_:N1f96c1aeca924ef9a2cc7b7d351f15ec <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> .
+_:N60030af010cb4a2fa6e7bde949fc7969 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N157fe13fab494f108f640f9b8b47cb53 .
+_:Nc082d70301194c66aba4d96358856fa6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4971e35e99c048548dc94c062a35767c .
+_:Ne9eae7b142c64bde82cbdbadbdbb8096 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Deciding> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N6367ea2295e3455b9200dfdcefa4213d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://dbpedia.org/resource/Knowledge> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perception_experience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:Nc9122012085f4991b9100eb003a687bf <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/IRI> "http://www.w3.org/2001/XMLSchema#" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#supports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nae4d728d52dd4be59b750fd2aeb986ec <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Neb24019e4ff046bbacbda47b246e5767 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#KnownFeature> <http://www.w3.org/2000/01/rdf-schema#label> "Known feature"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ncb067832d4be4920ab58d5aa9f5f2750 <http://www.w3.org/2002/07/owl#Prefix> _:N5f4fa725f7b04f3b8d3abb4b49b1bd97 .
+<https://w3id.org/framester/data/framestercore/ExperiencerObj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.fao.org/aims/aos/aos.owl#affects> <http://www.w3.org/2000/01/rdf-schema#domain> _:Nff7988f7494b4480a116ae805e9a51ff .
+_:Nea6434e7e1ab454999488180870d3b17 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/IRI> "http://www.fao.org/aims/aos/aos.owl#" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#supports> <http://www.w3.org/2000/01/rdf-schema#comment> "The act of confirming a particular intention at the expense of one or more others."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Knowledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N4971e35e99c048548dc94c062a35767c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> .
+_:Ncb067832d4be4920ab58d5aa9f5f2750 <http://www.w3.org/2002/07/owl#Prefix> _:N791672b13d1042408f61e22358c2128d .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "http://ontologydesignpatterns.org/wiki/Submissions:AOS_AGROVOC_Concept_Server_fundation_ontology_model"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perceived_validity> <http://www.w3.org/2000/01/rdf-schema#comment> "The perceived validity towards the known feature at the expense of the unknown one"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nea6434e7e1ab454999488180870d3b17 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/name> "fao" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N23751292501a480cb09bf097a4316fe5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+_:N0baa72cdfdc84e55869f0649b733c145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Memory> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecentMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N96218cec736442c099c4b31eaee0c6d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+_:N157fe13fab494f108f640f9b8b47cb53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Predicting> .
+<https://dbpedia.org/resource/Knowledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nc44fc5e976324d51944b69c33aaeb58e <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/IRI> "http://modellingdh.github.io/ont/odp/term/" .
+_:N59850615a1dd45328f8c7a3fd070c175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nce06b4a45ddd416eb99ce6eacf1aaca2 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasFeature> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Feature> .
+<https://dbpedia.org/ontology/produces> <http://www.w3.org/2000/01/rdf-schema#domain> _:Na9933daa5b494f4984526e9de6cb1e6e .
+_:N0eba939fc54e447da582a53167cdb9e9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Knowledge> <http://www.w3.org/2000/01/rdf-schema#comment> "The biased individual knowledge about an entity that leads him to associate to it only a particular intention."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nbb3ee46b64954412b6f184ac2c8c239f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Assistance> .
+<http://www.fao.org/aims/aos/aos.owl#affects> <http://www.w3.org/2000/01/rdf-schema#comment> "X <affects> Y. Agent X acts on object Y in such a way that Y changes state or location."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ncb067832d4be4920ab58d5aa9f5f2750 <http://www.w3.org/2002/07/owl#Prefix> _:Nc9122012085f4991b9100eb003a687bf .
+<http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl#owns> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/People> .
+_:Ne3343c8ccf9245e38e3a5a39418c141d <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/IRI> "http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#" .
+_:Nff7988f7494b4480a116ae805e9a51ff <http://www.w3.org/2002/07/owl#unionOf> _:N51091d25b6e147ecbd8767f2cb296322 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/framester/data/framestercore/Assistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nb58cbbfbe55f482db2c4f196a12343bb <http://www.w3.org/2002/07/owl#unionOf> _:N59850615a1dd45328f8c7a3fd070c175 .
+_:Ncb067832d4be4920ab58d5aa9f5f2750 <http://www.w3.org/2002/07/owl#Prefix> _:Nd7d748780dfd4bc8b8c376ce60f39526 .
+_:N60030af010cb4a2fa6e7bde949fc7969 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:Nf8f9b7cd671342f7a3de325bd21c8123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N3a20a679139942eebb51a872916614d8 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perception_experience> <https://dbpedia.org/ontology/produces> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perceived_validity> .
+_:N0919db771d3a4f279ac5963822674169 <http://www.w3.org/2002/07/owl#unionOf> _:Nc082d70301194c66aba4d96358856fa6 .
+_:Ne4537ae875ba46c99b013e459c3b618d <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/IRI> "http://www.w3.org/XML/1998/namespace" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Un-knownFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Feature> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual> <http://modellingdh.github.io/ont/odp/term/isEngagedIn> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perception_experience> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Knowledge> <http://www.fao.org/aims/aos/aos.owl#affects> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perception_experience> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N6240b1bea8b24ef1a7cf044abc481cc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding> .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/2000/01/rdf-schema#comment> "This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nd7a4fb18d94841e99555159878861381 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N60030af010cb4a2fa6e7bde949fc7969 .
+_:N791672b13d1042408f61e22358c2128d <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/IRI> "https://dbpedia.org/resource/" .
+<https://w3id.org/framester/data/framestercore/Assessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N5f4fa725f7b04f3b8d3abb4b49b1bd97 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/name> "" .
+_:Nff7988f7494b4480a116ae805e9a51ff <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:Nf6dcbbd132c6466cbf8f7f1b0cbff941 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:Nc082d70301194c66aba4d96358856fa6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> .
+_:N30d152b897414c989421c93c4f1fd752 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> .
+_:N85cab76308ac4d64b4f62f3eda8d680e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist> <http://www.w3.org/2000/01/rdf-schema#comment> "The feature that characterizes John Smith (the entity) and is un-known to the biased individual."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "The Masked Man fallacy, also known as the Illicit Substitution of Identicals, is a cognitive bias where people mistakenly reject two names as referring to the same person or thing if one of the names involves a description or characteristic. This occurs because people tend to treat names as rigid designators and fail to recognize that a masked or described name can refer to the same entity."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual> <http://www.w3.org/2000/01/rdf-schema#comment> "A masked man fallacy biased individual"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#rejects> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Un-knownFeature> .
+_:Ncb067832d4be4920ab58d5aa9f5f2750 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:N9722ac31d18d4d3ea9c0ec20df6b4dd5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#John_Smith> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasFeature> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon> .
+<http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Un-knownFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nd575993705bb4c2f9f349d6f7639a40a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N6299e65814ff48989c5bd4907ff78c8e .
+_:N6299e65814ff48989c5bd4907ff78c8e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N5d3c6ccbd5f244acbf66735c8a45b937 .
+_:N919d724fa96f4a04966d405f3c40b14b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+_:Ne7ca7b7451db41bca054fe370218e44c <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/name> "news" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#John_Smith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Un-knownFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "The feature, description or title used to refer to an entity but not aknowledged by the individual."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/framester/data/framestercore/Predicting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/ontology/produces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Neb24019e4ff046bbacbda47b246e5767 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ndad2d3df615440458f94a17741f5152b .
+_:N9f384d7626a0400ca41380a38c782322 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N96218cec736442c099c4b31eaee0c6d2 .
+_:Nf17be02dd6aa443d9ba1acdba372ceda <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Memory> .
+_:Ncb067832d4be4920ab58d5aa9f5f2750 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/ontologyIRI> "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl" .
+_:N30d152b897414c989421c93c4f1fd752 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd61d19f5f5244a71bb74d724f2fc2e4d .
+_:N5d3c6ccbd5f244acbf66735c8a45b937 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+_:Ncb067832d4be4920ab58d5aa9f5f2750 <http://www.w3.org/2002/07/owl#Prefix> _:Ne7ca7b7451db41bca054fe370218e44c .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual> <http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl#owns> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Knowledge> .
+<https://dbpedia.org/resource/Knowledge> <http://www.w3.org/2000/01/rdf-schema#label> "Knowledge"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Neb24019e4ff046bbacbda47b246e5767 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Evidence> .
+_:N1f96c1aeca924ef9a2cc7b7d351f15ec <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb471d7c2cfcc40939d8482aa6fc6b159 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#supports> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#KnownFeature> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#John_Smith> <http://www.w3.org/2000/01/rdf-schema#comment> "John Smith, both a talented local surgeon and a great jazz saxophonist"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N0baa72cdfdc84e55869f0649b733c145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://dbpedia.org/page/Illusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N3a20a679139942eebb51a872916614d8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+_:Ne4537ae875ba46c99b013e459c3b618d <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/name> "xml" .
+_:Nf8f9b7cd671342f7a3de325bd21c8123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://dbpedia.org/page/Illusion> .
+<http://www.fao.org/aims/aos/aos.owl#affects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/framester/data/framestercore/Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#KnownFeature> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/People> .
+_:Ne9eae7b142c64bde82cbdbadbdbb8096 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N919d724fa96f4a04966d405f3c40b14b .
+<https://w3id.org/framester/data/framestercore/PerceptionExperience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/resource/Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an entity to its relative feature or intention."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ncb067832d4be4920ab58d5aa9f5f2750 <http://www.w3.org/2002/07/owl#Prefix> _:N04efb5e309e54255b8b35019b9d6dddf .
+_:N04efb5e309e54255b8b35019b9d6dddf <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/name> "rdfs" .
+<https://dbpedia.org/ontology/produces> <http://www.w3.org/2000/01/rdf-schema#comment> "Define the relation between an entity (activity or event) and its produced outcome."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N6240b1bea8b24ef1a7cf044abc481cc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9f384d7626a0400ca41380a38c782322 .
+_:Nce06b4a45ddd416eb99ce6eacf1aaca2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd575993705bb4c2f9f349d6f7639a40a .
+<http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl#owns> <http://www.w3.org/2000/01/rdf-schema#range> _:Ne0d17ef4e3ff4f30aab287a95db1d77b .
+_:Nae4d728d52dd4be59b750fd2aeb986ec <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> .
+<http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl#owns> <http://www.w3.org/2000/01/rdf-schema#comment> "This property can be used to link a certain NewsProvider with a Media that the NewsProvider ows, e.g. Fox News Channel is owned by Fox Entertainment Group, which also owns other Media (FXX Channel, etc.).\nThis is an universal property, it can be also used in different context (e.g. Ruslana owns a Persian cat)."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Knowledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dbpedia.org/resource/Knowledge> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#KnownFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Feature> .
+<https://w3id.org/framester/data/framestercore/Expectation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#rejects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#KnownFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/resource/Knowledge> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perception_experience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl> <http://purl.org/dc/terms/title> "Masked Man Fallacy ontology"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N101c8eb3e75b4a61a9200c3aa7f3ff42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> <http://www.w3.org/2000/01/rdf-schema#comment> "It assess the perceived validity of an object due to a perception activity"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#John_Smith> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasFeature> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist> .
+_:N5d3c6ccbd5f244acbf66735c8a45b937 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne9eae7b142c64bde82cbdbadbdbb8096 .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Ne0d17ef4e3ff4f30aab287a95db1d77b <http://www.w3.org/2002/07/owl#unionOf> _:N6367ea2295e3455b9200dfdcefa4213d .
+_:Nabfe79fee5c347bfb8798e93b6168f53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N04efb5e309e54255b8b35019b9d6dddf <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/IRI> "http://www.w3.org/2000/01/rdf-schema#" .
+_:N4187bf95329146bc8276046110b95cb1 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/name> "cbo" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "http://ontologydesignpatterns.org/wiki/Submissions:NewsReportingEvent"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Na9933daa5b494f4984526e9de6cb1e6e <http://www.w3.org/2002/07/owl#unionOf> _:N6240b1bea8b24ef1a7cf044abc481cc3 .
+<https://w3id.org/framester/data/framestercore/PerceptionExperience> <http://www.w3.org/2000/01/rdf-schema#comment> "This frame contains perception words whose Perceivers have perceptual experiences that they do not necessarily intend to. For this reason we call the Perceiver role Perceiver_passive. Comparing the Perception_experience frame to the Perception_active frame, we note that for some modalities there are different lexical items in each frame. For instance, whereas Perception_experience has see, Perception_active has look at. For other sense modalities, we find the same lexical items in both frames. To illustrate, consider the verb smell where I smell something rotten exemplifies its Perception_experience use and Smell this to see if it's fresh exemplifies its Perception_active sense. This frame also includes words which are not specific to any sense modality, including detect, perceive, perception, sense."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N59850615a1dd45328f8c7a3fd070c175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.se/odp/content/owl/Action.owl#Action> .
+<https://w3id.org/framester/data/framestercore/Deciding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.fao.org/aims/aos/aos.owl#affects> <http://www.w3.org/2000/01/rdf-schema#range> _:N9722ac31d18d4d3ea9c0ec20df6b4dd5 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Un-knownFeature> <http://www.w3.org/2000/01/rdf-schema#label> "Un-known feature"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N85cab76308ac4d64b4f62f3eda8d680e <http://www.w3.org/2002/07/owl#unionOf> _:N50afea651a504f8ebbe656ba3bf8d3b6 .
+_:N35fd5d0d8d7546c2aa81fac7fc928274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/ExperiencerObj> .
+_:N35fd5d0d8d7546c2aa81fac7fc928274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl> <http://purl.org/dc/terms/creator> "Marco Lamorte"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nbb3ee46b64954412b6f184ac2c8c239f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N35fd5d0d8d7546c2aa81fac7fc928274 .
+_:N0eba939fc54e447da582a53167cdb9e9 <http://www.w3.org/2002/07/owl#unionOf> _:Nf8f9b7cd671342f7a3de325bd21c8123 .
+_:N51091d25b6e147ecbd8767f2cb296322 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://dbpedia.org/resource/Knowledge> .
+_:N6367ea2295e3455b9200dfdcefa4213d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N0baa72cdfdc84e55869f0649b733c145 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perceived_validity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasFeature> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/resource/Entity> .
+_:Nc9122012085f4991b9100eb003a687bf <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/name> "xsd" .
+<https://dbpedia.org/ontology/produces> <http://www.w3.org/2000/01/rdf-schema#range> _:N0919db771d3a4f279ac5963822674169 .
+_:Ncb067832d4be4920ab58d5aa9f5f2750 <http://www.w3.org/2002/07/owl#Prefix> _:Nc44fc5e976324d51944b69c33aaeb58e .
+_:Nce06b4a45ddd416eb99ce6eacf1aaca2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty> .
+_:Ne3343c8ccf9245e38e3a5a39418c141d <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/name> "activitypattern" .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/2000/01/rdf-schema#label> "People"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nd7a4fb18d94841e99555159878861381 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/People> .
+_:N50afea651a504f8ebbe656ba3bf8d3b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N30d152b897414c989421c93c4f1fd752 .
+<http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl#owns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/2000/01/rdf-schema#range> _:N85cab76308ac4d64b4f62f3eda8d680e .
+<https://dbpedia.org/resource/Knowledge> <http://www.w3.org/2000/01/rdf-schema#comment> "Knowledge can be defined as awareness of facts or as practical skills, and may also refer to familiarity with objects or situations. Knowledge of facts, also called propositional knowledge, is often defined as true belief that is distinct from opinion or guesswork by virtue of justification."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nf17be02dd6aa443d9ba1acdba372ceda <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#rejects> <http://www.w3.org/2000/01/rdf-schema#comment> "The act of denying a particular intention in favour of one or more others."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ncb067832d4be4920ab58d5aa9f5f2750 <http://www.w3.org/2002/07/owl#Prefix> _:N8e186cf9f3ec4eceb5f3ecdd55160f0c .
+_:Nd575993705bb4c2f9f349d6f7639a40a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nd61d19f5f5244a71bb74d724f2fc2e4d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding> .
+_:N9ef3fd674de24841a08e095b1157e913 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N65e974a907e940b7b77342a783d2eaf6 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#KnownFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ndad2d3df615440458f94a17741f5152b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Expectation> .
+<https://dbpedia.org/resource/Entity> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity is something that exists as itself, as a subject or as an object, actually or potentially, concretely or abstractly, physically or not. It need not be of material existence. In particular, abstractions and legal fictions are usually regarded as entities. In general, there is also no presumption that an entity is animate, or present. The adjectival form is entitative."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N51091d25b6e147ecbd8767f2cb296322 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nabfe79fee5c347bfb8798e93b6168f53 .
+<https://w3id.org/framester/data/framestercore/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N96218cec736442c099c4b31eaee0c6d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd7a4fb18d94841e99555159878861381 .
+_:Nb58cbbfbe55f482db2c4f196a12343bb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nc44fc5e976324d51944b69c33aaeb58e <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/name> "term" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Ncb067832d4be4920ab58d5aa9f5f2750 <http://www.w3.org/2002/07/owl#Prefix> _:N4187bf95329146bc8276046110b95cb1 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl> <http://purl.org/dc/terms/created> "01/03/24"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N53e28d1f6c034255bea3f90f44b62aae <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/IRI> "http://purl.org/dc/terms/created" .
+_:Nd7d748780dfd4bc8b8c376ce60f39526 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/name> "rdf" .
+_:Ne0d17ef4e3ff4f30aab287a95db1d77b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/2000/01/rdf-schema#domain> _:N0eba939fc54e447da582a53167cdb9e9 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perception_experience> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#John_Smith> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perception_experience> <http://www.w3.org/2000/01/rdf-schema#comment> "The perception experience of the individual when he discovers that the name of the musician is the same of a local surgeon."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N3a20a679139942eebb51a872916614d8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N23751292501a480cb09bf097a4316fe5 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects entites such as an activity to other entities involved in it"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N101c8eb3e75b4a61a9200c3aa7f3ff42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:N65e974a907e940b7b77342a783d2eaf6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#range> _:Nb58cbbfbe55f482db2c4f196a12343bb .
+_:N5f4fa725f7b04f3b8d3abb4b49b1bd97 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/IRI> "http://www.semanticweb.org/user/ontologies/2024/2/untitled-ontology-23/" .
+_:N919d724fa96f4a04966d405f3c40b14b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9ef3fd674de24841a08e095b1157e913 .
+_:N157fe13fab494f108f640f9b8b47cb53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N8e186cf9f3ec4eceb5f3ecdd55160f0c <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/name> "owl" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Un-knownFeature> .
+_:Nabfe79fee5c347bfb8798e93b6168f53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecentMemory> .
+_:N23751292501a480cb09bf097a4316fe5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N101c8eb3e75b4a61a9200c3aa7f3ff42 .
+_:N9722ac31d18d4d3ea9c0ec20df6b4dd5 <http://www.w3.org/2002/07/owl#unionOf> _:N1f96c1aeca924ef9a2cc7b7d351f15ec .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/People> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#John_Smith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dbpedia.org/resource/Entity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#KnownFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "The feature, description or title used to refer to an entity and aknowledged by the individual."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N8e186cf9f3ec4eceb5f3ecdd55160f0c <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/IRI> "http://www.w3.org/2002/07/owl#" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon> <http://www.w3.org/2000/01/rdf-schema#comment> "The feature that characterizes John Smith (the entity) and is known to the biased individual."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.ontology.se/odp/content/owl/Action.owl#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N65e974a907e940b7b77342a783d2eaf6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Predicting> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ncb067832d4be4920ab58d5aa9f5f2750 <http://www.w3.org/2002/07/owl#Prefix> _:Ne3343c8ccf9245e38e3a5a39418c141d .
+_:Nd7d748780dfd4bc8b8c376ce60f39526 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/IRI> "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "The feature, description or title used to refer to an entity."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Scenarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Nb471d7c2cfcc40939d8482aa6fc6b159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nf6dcbbd132c6466cbf8f7f1b0cbff941 .
+_:Na9933daa5b494f4984526e9de6cb1e6e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perceived_validity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nb471d7c2cfcc40939d8482aa6fc6b159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Deciding> .
+_:Ndad2d3df615440458f94a17741f5152b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nf17be02dd6aa443d9ba1acdba372ceda .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/framester/data/framestercore/PerceptionExperience> <http://www.w3.org/2000/01/rdf-schema#label> "Perception experience"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N791672b13d1042408f61e22358c2128d <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/name> "dbr" .
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N4971e35e99c048548dc94c062a35767c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nae4d728d52dd4be59b750fd2aeb986ec .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N9ef3fd674de24841a08e095b1157e913 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#rejects> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> .
+_:Nd61d19f5f5244a71bb74d724f2fc2e4d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nbb3ee46b64954412b6f184ac2c8c239f .
+_:N53e28d1f6c034255bea3f90f44b62aae <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> <http://www.w3.org/2000/01/rdf-schema#label> "Perceived validity"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl> <http://purl.org/dc/terms/description> "The Masked man fallacy module of the cognitive bias ontology"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ne7ca7b7451db41bca054fe370218e44c <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/IRI> "http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl#" .
+_:N9f384d7626a0400ca41380a38c782322 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Deciding> .
+_:N50afea651a504f8ebbe656ba3bf8d3b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://dbpedia.org/resource/Entity> .
+_:N3f48863c71f847cf93fce4969a3b2f82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Literal> .
+_:N6299e65814ff48989c5bd4907ff78c8e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Assessing> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perceived_validity> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#rejects> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/description> .
+_:N4187bf95329146bc8276046110b95cb1 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/IRI> "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#supports> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity> .
+_:Ncb067832d4be4920ab58d5aa9f5f2750 <http://www.w3.org/2002/07/owl#Prefix> _:Ne4537ae875ba46c99b013e459c3b618d .
+<https://w3id.org/framester/data/framestercore/Memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/BecomingAware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nf6dcbbd132c6466cbf8f7f1b0cbff941 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N0919db771d3a4f279ac5963822674169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

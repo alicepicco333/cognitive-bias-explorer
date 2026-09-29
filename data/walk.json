@@ -1,0 +1,1156 @@
+{
+ "bias-blind-spot": {
+  "steps": [
+   {
+    "text": "As a product manager, Emily was tasked with prioritizing features for the upcoming software update.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Decision",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Emily"
+    ]
+   },
+   {
+    "text": "Wanting to ensure an objective and user-centric approach, she initiated a team discussion to gather input.",
+    "nodes": []
+   },
+   {
+    "text": "Emily noticed that her colleague, Chris, passionately advocated for a feature related to data visualization, emphasizing its impact on user engagement.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Chris",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Emily"
+    ]
+   },
+   {
+    "text": "As the discussion progressed, Emily felt increasingly convinced that Chris's viewpoint was swayed by his personal interest in data visualization.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Biased_Opinion",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Chris",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Emily"
+    ]
+   },
+   {
+    "text": "However, during a later discussion, when Emily found herself advocating for a feature that streamlined workflow processes—a functionality she personally valued—she realized the potential bias in her own decision-making.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Decision",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Emily",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Realization_of_bias",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Superiority_of_one's_idea"
+    ]
+   },
+   {
+    "text": "It struck her that, just like Chris, her preferences and experiences were influencing her choices.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Chris",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Superiority_of_one's_idea"
+    ]
+   },
+   {
+    "text": "Reflecting on this realization, Emily became more mindful of her own bias blind spot.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Emily",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Realization_of_bias"
+    ]
+   },
+   {
+    "text": "She acknowledged the need to consider a broader range of user perspectives and experiences, recognizing that her personal preferences might not align with the diverse needs of the entire user base.",
+    "nodes": []
+   },
+   {
+    "text": "This awareness prompted her to implement a more inclusive decision-making process for feature prioritization, ensuring a balanced consideration of different user needs and preferences.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Decision"
+    ]
+   }
+  ],
+  "coverage": [
+   6,
+   6
+  ],
+  "note": "",
+  "unmentioned": []
+ },
+ "naive-cynicism": {
+  "steps": [
+   {
+    "text": "Meet Alex, a software developer working on a tight deadline for a project at his company.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge"
+    ]
+   },
+   {
+    "text": "The workload is overwhelming, and he's feeling the pressure.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge"
+    ]
+   },
+   {
+    "text": "Enter Sarah, a seasoned colleague who notices Alex's struggle and genuinely wants to help.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"
+    ]
+   },
+   {
+    "text": "Sarah, having experienced similar challenges in the past, approaches Alex and offers her assistance.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"
+    ]
+   },
+   {
+    "text": "She suggests collaborating on specific tasks, sharing resources, and even providing guidance to ease the workload.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"
+    ]
+   },
+   {
+    "text": "Her intention is rooted in empathy and a desire to foster teamwork within the department.",
+    "nodes": []
+   },
+   {
+    "text": "However, due to his naive cynicism, Alex, already stressed by the demanding project, interprets Sarah's generous offer with suspicion.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"
+    ]
+   },
+   {
+    "text": "He questions her motives, wondering if she's attempting to showcase her skills to gain favor with their manager or if there's an underlying agenda that might compromise his position on the project.",
+    "nodes": []
+   },
+   {
+    "text": "Despite Sarah's genuine intentions, Alex's naive cynicism leads him to decline her offer, assuming that there must be hidden motives behind her willingness to help.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism"
+    ]
+   },
+   {
+    "text": "This scenario illustrates how naive cynicism can hinder collaboration and prevent the positive outcomes that could arise from genuine acts of assistance and teamwork.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism"
+    ]
+   }
+  ],
+  "coverage": [
+   5,
+   5
+  ],
+  "note": "The story calls the developer Alex; the ontology names the same person Chris. Sarah, who offers help, has no individual of her own.",
+  "unmentioned": []
+ },
+ "naive-realism": {
+  "steps": [
+   {
+    "text": "Meet Maria, a software engineer, and Akio, a colleague from Japan, working together on an international project.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Akio",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Maria"
+    ]
+   },
+   {
+    "text": "As part of the project, the team is tasked with organizing a cultural event to celebrate diversity.",
+    "nodes": []
+   },
+   {
+    "text": "Maria, rooted in her cultural traditions, suggests a lively and dynamic event featuring music and dance styles typical of her background.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Maria"
+    ]
+   },
+   {
+    "text": "She believes her proposal perfectly represents the essence of cultural celebration.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own's_belief"
+    ]
+   },
+   {
+    "text": "However, her perspective is influenced by naive realism, as she assumes that her cultural traditions are universally appealing and should be the focal point of the event.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Underlying_belief_(cultural_universality)"
+    ]
+   },
+   {
+    "text": "Akio, on the other hand, proposes a more serene and contemplative event that aligns with traditional Japanese cultural practices.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Akio",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective"
+    ]
+   },
+   {
+    "text": "He believes this approach would better capture the spirit of diversity and inclusivity.",
+    "nodes": []
+   },
+   {
+    "text": "Akio, too, is influenced by naive realism, as he assumes that his cultural traditions represent an objective and superior choice for the event.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Akio",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own's_belief"
+    ]
+   },
+   {
+    "text": "As the two colleagues engage in discussions about the cultural event, their naive realism becomes apparent.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism"
+    ]
+   },
+   {
+    "text": "Maria and Akio struggle to appreciate the validity of each other's cultural traditions, assuming that their own perspectives represent an objective and universal truth.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Akio",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Maria",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Underlying_belief_(cultural_universality)"
+    ]
+   },
+   {
+    "text": "The clash of cultural traditions highlights how naive realism can hinder the understanding and acceptance of diverse viewpoints.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism"
+    ]
+   },
+   {
+    "text": "In the end, the team realizes the importance of embracing various cultural traditions.",
+    "nodes": []
+   },
+   {
+    "text": "Through open dialogue and compromise, they develop an event that incorporates elements from different cultures, fostering a more inclusive and enriching celebration of diversity.",
+    "nodes": []
+   },
+   {
+    "text": "The user story underscores the impact of naive realism on intercultural communication and the importance of recognizing and valuing diverse perspectives.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism"
+    ]
+   }
+  ],
+  "coverage": [
+   6,
+   6
+  ],
+  "note": "",
+  "unmentioned": []
+ },
+ "confabulation": {
+  "steps": [
+   {
+    "text": "Meet Sarah, a college student living with her family.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Sarah"
+    ]
+   },
+   {
+    "text": "One weekend, she decides to spend the night out with friends, attending a late-night event without informing her family.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Night_Out"
+    ]
+   },
+   {
+    "text": "Sarah, eager to enjoy a spontaneous night with friends, attends a concert that extends well into the early morning hours.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Night_Out",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Sarah"
+    ]
+   },
+   {
+    "text": "However, mindful of her family's expectations and knowing that she didn't inform them of her plans, she faces a dilemma.",
+    "nodes": []
+   },
+   {
+    "text": "The next morning, Sarah returns home, realizing she needs to explain her late-night absence.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Sarah"
+    ]
+   },
+   {
+    "text": "Feeling the pressure of potential consequences, she succumbs to confabulation bias.",
+    "nodes": []
+   },
+   {
+    "text": "When her concerned family asks about her whereabouts, Sarah, without a clear memory of the night's events, fabricates a story about unexpectedly meeting an old friend who needed emotional support.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Fabricated_story",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Memory_gap",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Sarah",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Telling_parents_fabricated_evidence"
+    ]
+   },
+   {
+    "text": "In her confabulated narrative, Sarah embellishes details about the encounter, creating a plausible and emotionally charged scenario to justify her late return.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Fabricated_story",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Sarah"
+    ]
+   },
+   {
+    "text": "Unaware of the confabulation bias at play, she confidently shares this story with her family, believing it to be a genuine account of the night.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Fabricated_story",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Telling_parents_fabricated_evidence"
+    ]
+   },
+   {
+    "text": "This user story highlights how confabulation bias can emerge in situations where individuals feel the need to explain their actions, especially when faced with potential scrutiny or consequences.",
+    "nodes": []
+   },
+   {
+    "text": "Sarah's fabricated story, influenced by the desire to maintain coherence in her personal narrative, exemplifies the impact of confabulation on memory and communication.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Fabricated_story",
+     "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Sarah"
+    ]
+   }
+  ],
+  "coverage": [
+   5,
+   5
+  ],
+  "note": "",
+  "unmentioned": []
+ },
+ "clustering-illusion": {
+  "steps": [
+   {
+    "text": "Sarah, a regular lottery who enjoys testing her luck with weekly ticket purchases.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Lottery"
+    ]
+   },
+   {
+    "text": "Over the past month, Sarah notices a curious pattern emerging in the winning numbers of the local lottery.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Lottery",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Pattern_lottery_numbers"
+    ]
+   },
+   {
+    "text": "She observes that the winning numbers often consist of consecutive digits, such as 12, 13, 14, or alternating pairs like 5 and 7.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Consecutive_digits"
+    ]
+   },
+   {
+    "text": "Excited by this apparent pattern, Sarah starts to develop a theory that the lottery draws are not entirely random.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Illusion_pattern",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Lottery"
+    ]
+   },
+   {
+    "text": "She begins meticulously analysing past winning numbers, searching for more evidence to support her hypothesis.",
+    "nodes": []
+   },
+   {
+    "text": "With each new draw, Sarah eagerly checks the results, hoping to uncover additional patterns or trends.",
+    "nodes": []
+   },
+   {
+    "text": "As the weeks pass, Sarah becomes increasingly convinced that she has cracked the code to winning the lottery.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Illusion_pattern",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Lottery"
+    ]
+   },
+   {
+    "text": "She starts sharing her findings with friends and family, boasting about her newfound strategy for picking winning numbers.",
+    "nodes": []
+   },
+   {
+    "text": "Some of her acquaintances start to believe in Sarah's theory, intrigued by the apparent predictability of the lottery draws.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Lottery"
+    ]
+   },
+   {
+    "text": "Sarah decides to invest more money into buying lottery tickets, confident that her strategy will lead to big wins.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Lottery"
+    ]
+   },
+   {
+    "text": "However, despite her efforts, Sarah's luck doesn't seem to improve.",
+    "nodes": []
+   },
+   {
+    "text": "She continues to match only a few numbers here and there, never coming close to hitting the jackpot.",
+    "nodes": []
+   },
+   {
+    "text": "Disheartened and perplexed by her lack of success, she decides to seek advice from a statistician friend.",
+    "nodes": []
+   },
+   {
+    "text": "With a patient explanation, her friend helps Sarah understand the concept of randomness and the clustering illusion bias.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Illusion_pattern"
+    ]
+   },
+   {
+    "text": "Sarah realizes that the apparent patterns she observed in the lottery numbers were merely coincidences, and the draws are indeed purely random events.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Illusion_pattern",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Lottery",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Pattern_lottery_numbers"
+    ]
+   },
+   {
+    "text": "Though initially disappointed by the revelation, Sarah learns an important lesson about probability and cognitive biases.",
+    "nodes": []
+   },
+   {
+    "text": "She continues to play the lottery for fun, but now with a more realistic understanding of the odds and a healthy skepticism towards perceived patterns in random data.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Lottery"
+    ]
+   },
+   {
+    "text": "We see how the clustering illusion bias can lead individuals to misinterpret randomness and attribute significance to chance occurrences, ultimately influencing their behaviour and decisions.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Illusion_pattern"
+    ]
+   }
+  ],
+  "coverage": [
+   4,
+   4
+  ],
+  "note": "Sarah is in the file, but no property links her to the rest of the graph, so the walkthrough cannot show her.",
+  "unmentioned": []
+ },
+ "insensitivity-to-sample-size": {
+  "steps": [
+   {
+    "text": "I'm excited for the upcoming release of \"Nova Odyssey,\" an RPG lauded by several popular streamers I follow.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Me"
+    ]
+   },
+   {
+    "text": "Their glowing reviews have me hyped, but I'm worried about potentially overhyping the game based on a limited perspective.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_review"
+    ]
+   },
+   {
+    "text": "I don't want to be disappointed if the gameplay doesn't match my expectations or there are hidden issues not mentioned in the reviews.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_review"
+    ]
+   },
+   {
+    "text": "I want to avoid falling prey to insensitivity to sample size bias and make a well-rounded decision about \"Nova Odyssey.\" I need tools and information that help me consider diverse perspectives, analyse gameplay beyond streamer opinions, and understand the potential for bias in early reviews.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_bought",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_review",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Me"
+    ]
+   },
+   {
+    "text": "On the Reviewer, I find a mix of professional reviews and player feedback, offering diverse perspectives beyond the streamer hype.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_review"
+    ]
+   },
+   {
+    "text": "While some praise the game's visuals and story, others point out bugs and repetitive gameplay mechanics.",
+    "nodes": []
+   },
+   {
+    "text": "This balanced view helps me manage my expectations.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_choice"
+    ]
+   }
+  ],
+  "coverage": [
+   4,
+   4
+  ],
+  "note": "The story never says the game was bought; Game_bought stands for the decision the narrator is working towards.",
+  "unmentioned": []
+ },
+ "neglect-of-probability": {
+  "steps": [
+   {
+    "text": "The world whizzed by Amelia in a blur of emails, meetings, and looming deadlines.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Amelia",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Deadline"
+    ]
+   },
+   {
+    "text": "Each day felt like a sprint, with tasks piling up like dominoes ready to topple into chaos.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Task_management"
+    ]
+   },
+   {
+    "text": "But Amelia had a secret weapon - procrastination.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Amelia",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Procrastinate"
+    ]
+   },
+   {
+    "text": "While others fretted, she'd glide through her mornings, savoring a leisurely coffee, lost in the latest meme video.",
+    "nodes": []
+   },
+   {
+    "text": "\"There's plenty of time,\" she'd reassure herself, \"the deadline is ages away.\"",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Deadline",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Procrastinate"
+    ]
+   },
+   {
+    "text": "But deadlines, like mythical dragons, had a way of sneaking up unexpectedly.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Deadline"
+    ]
+   },
+   {
+    "text": "One morning, the notification popped up - her major presentation, the one she'd been casually pushing off like a dusty book, was due tomorrow.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Job_presentation",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Procrastinate"
+    ]
+   },
+   {
+    "text": "Panic clawed at her throat.",
+    "nodes": []
+   },
+   {
+    "text": "The Improbable Dragon, as she'd named her tendency to underestimate the urgency of tasks, had finally caught her.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Task_management"
+    ]
+   },
+   {
+    "text": "Frantic typing filled the night, fuelled by cold pizza and desperation.",
+    "nodes": []
+   },
+   {
+    "text": "The once manageable presentation morphed into a monster, swallowing her confidence and sleep.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Job_presentation"
+    ]
+   },
+   {
+    "text": "By morning, she was a hollow shell, her eyes bloodshot, her voice hoarse.",
+    "nodes": []
+   },
+   {
+    "text": "The presentation stumbled, riddled with errors and apologies.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Job_presentation"
+    ]
+   },
+   {
+    "text": "The consequences, once improbable, materialized - a lost opportunity, a damaged reputation, and a mountain of work to fix the mess.",
+    "nodes": []
+   }
+  ],
+  "coverage": [
+   5,
+   5
+  ],
+  "note": "",
+  "unmentioned": []
+ },
+ "anecdotal-fallacy": {
+  "steps": [
+   {
+    "text": "As a health-conscious individual, I want to adopt a new diet plan, so that I can achieve my weight loss goals.",
+    "nodes": [
+     "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Losing_weight",
+     "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Subject"
+    ]
+   },
+   {
+    "text": "I will start researching different diet plans available in the market.",
+    "nodes": []
+   },
+   {
+    "text": "I come across a testimonial from a friend who claims to have lost a significant amount of weight using the \"SuperShred\" diet plan.",
+    "nodes": [
+     "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Friend_lost_weight",
+     "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#friend_losing_weight"
+    ]
+   },
+   {
+    "text": "Intrigued by the success story, I decide to follow the \"SuperShred\" diet plan based on my friend's positive experience.",
+    "nodes": [
+     "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Friend_lost_weight",
+     "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Subject",
+     "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Working_diet"
+    ]
+   },
+   {
+    "text": "I diligently adhere to the diet plan for a month, documenting my meals and progress.",
+    "nodes": []
+   },
+   {
+    "text": "At the end of the month, I notice a minimal change in my weight, and I share my experience with others, advocating for the effectiveness of the \"SuperShred\" diet.",
+    "nodes": [
+     "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Diet_works",
+     "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Losing_weight",
+     "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Working_diet"
+    ]
+   },
+   {
+    "text": "However, I fail to consider that individual responses to diet plans can vary, and factors such as metabolism, lifestyle, and overall health play a significant role.",
+    "nodes": []
+   },
+   {
+    "text": "Without consulting broader nutritional guidelines or seeking professional advice, I continue promoting the \"SuperShred\" diet solely based on my personal experience.",
+    "nodes": [
+     "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Diet_works",
+     "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Subject"
+    ]
+   },
+   {
+    "text": "Over time, I encounter challenges or negative effects that were not apparent in the short term, but I attribute these solely to individual variations rather than considering a more comprehensive understanding of nutrition.",
+    "nodes": []
+   }
+  ],
+  "coverage": [
+   6,
+   6
+  ],
+  "note": "",
+  "unmentioned": []
+ },
+ "illusion-of-validity": {
+  "steps": [
+   {
+    "text": "As an experienced investor, John has a track record of making successful stock picks over the past few years.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Expert_investor",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investorship_knowledge"
+    ]
+   },
+   {
+    "text": "Inspired by his previous triumphs, he believes in the reliability of his judgment and wants to leverage his past successes to inform future investment decisions.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_PerceivedValidity",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_predicting",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investorship_knowledge"
+    ]
+   },
+   {
+    "text": "The outcome sees John continuing  to invest based on his overconfident strategy, relying on the Illusion of Validity bias.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Biased_investement",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Expert_investor",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Positive_outcome"
+    ]
+   },
+   {
+    "text": "Despite occasional market fluctuations, he attributes any success to his perceived expertise rather than considering the role of unpredictable factors or external influences.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_PerceivedValidity",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Negative_outcome"
+    ]
+   },
+   {
+    "text": "There are many elements that could help John avoid falling in this bias like having a comprehensive historical overview of his successful stock picks, including details on stock names, purchase dates, and returns.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Expert_investor"
+    ]
+   },
+   {
+    "text": "An in-depth analysis of patterns and trends in John's past stock performance and the access to relevant financial data, market analyses, and news to support his investment decisions, could help him identify new potential indicators of success and their variability and finally validate his confidence in his ability to predict market movements.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Expert_investor",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_predicting"
+    ]
+   }
+  ],
+  "coverage": [
+   7,
+   8
+  ],
+  "note": "Identicality_aspect (the expectation and the outcome are not identical) is not described in any sentence of the story.",
+  "unmentioned": [
+   "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Identicality_aspect"
+  ]
+ },
+ "masked-man-fallacy": {
+  "steps": [
+   {
+    "text": "As a curious individual attending a local jazz club, a man overheard a conversation about a great saxophonist named John Smith that played there just the day before.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perception_experience",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#John_Smith"
+    ]
+   },
+   {
+    "text": "He notices that that’s also the name of his heart surgeon so he asks more information about this person and they reply him that they’re talking about the same person.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perception_experience",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Knowledge"
+    ]
+   },
+   {
+    "text": "The man continues expressing its disbelief that someone could excel in two vastly different professions and argues that the heart surgeon and the saxophonist must be different individuals, as such diverse roles seemed incompatible.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual_perceived_validity",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist"
+    ]
+   },
+   {
+    "text": "The individual has fallen victim to the Masked Man fallacy.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Individual"
+    ]
+   },
+   {
+    "text": "John Smith seamlessly juggled his roles as a prominent heart surgeon in their local hospital and a skilled jazz musician performing in their very own jazz club.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#John_Smith"
+    ]
+   }
+  ],
+  "coverage": [
+   7,
+   7
+  ],
+  "note": "",
+  "unmentioned": []
+ },
+ "recency": {
+  "steps": [
+   {
+    "text": "In the midst of a job interview, a human resources manager faces challenges as the job applicant encounters difficulties in responding to his questions.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interview_perception_experience",
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer",
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"
+    ]
+   },
+   {
+    "text": "However, as the interview progresses, the applicant gradually gains confidence and delivers strong responses, leaving a positive impression on the manager.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer",
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding",
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"
+    ]
+   },
+   {
+    "text": "Despite the initial setbacks, when the applicant excels in answering the final two questions, the manager succumbs to the Recency Bias.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer",
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory",
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"
+    ]
+   },
+   {
+    "text": "In the final stages of a job interview, the candidate has demonstrated exceptional skills and knowledge, leaving a lasting impression on the interviewer.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interview_perception_experience",
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer",
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding",
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl#Memory"
+    ]
+   },
+   {
+    "text": "As a result, the interviewer may unintentionally assign greater significance to the final part of the interview, potentially overshadowing or overlooking the candidate's performance in the earlier stages.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer",
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl#High_importance",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl#Importance",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl#Low_importance"
+    ]
+   },
+   {
+    "text": "This bias can impact the overall evaluation process and influence the final decision-making regarding the candidate's suitability for the job.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision",
+     "https://w3id.org/framester/data/framestercore/Deciding"
+    ]
+   }
+  ],
+  "coverage": [
+   11,
+   11
+  ],
+  "note": "",
+  "unmentioned": []
+ },
+ "gamblers-fallacy": {
+  "steps": [
+   {
+    "text": "As a participant in a captivating lottery draw game, I find myself seated before a numbered board, where each draw was shrouded in expectation and uncertainty.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Player"
+    ]
+   },
+   {
+    "text": "The board adorned with a spectrum of numbers, half of them coloured in black and the other half red, has been the focal point of my attention; during each round only one number could be drawn and that would be the winning number for that round.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Next_Number_Draw",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number"
+    ]
+   },
+   {
+    "text": "I observe that red numbers have conspicuously eluded the winning draw for a considerable period of time, and a notion begins to take hold in my mind.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number"
+    ]
+   },
+   {
+    "text": "As I watch draw after draw, I can't help but notice the absence of any red number after a sequence of four consecutive black numbers.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number"
+    ]
+   },
+   {
+    "text": "It feels as if they are overdue, as if the board owes them a turn in the spotlight.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ProbabilityLevel"
+    ]
+   },
+   {
+    "text": "In the midst of this observation, a peculiar belief emerges—an echo of the gambler's fallacy.",
+    "nodes": []
+   },
+   {
+    "text": "I believe that there will be a change in the pattern and a red number has now more probability to make an appearance.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Player",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ProbabilityLevel",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number"
+    ]
+   },
+   {
+    "text": "I'm convinced that on one of these red numbers will be the key to a substantial win.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number"
+    ]
+   },
+   {
+    "text": "My heart races with excitement as the numbers were shuffled inside the sphere from which they were drawn, and I watch with bated breath, hoping to witness the long-awaited appearance of one of these red numbers.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number"
+    ]
+   },
+   {
+    "text": "The sphere comes to a halt, and the result is in.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Next_Number_Draw"
+    ]
+   },
+   {
+    "text": "But the outcome is not as I had expected.",
+    "nodes": []
+   },
+   {
+    "text": "It's not one of the red \"due\" numbers but another black number.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number"
+    ]
+   },
+   {
+    "text": "The wave of disappointment washes over me as I realize that my belief in the gambler's fallacy has led me astray.",
+    "nodes": []
+   },
+   {
+    "text": "As I reflect on this experience, I begin to contemplate the role of randomness and probability that characterize games of chance such as a Lottery draw.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"
+    ]
+   },
+   {
+    "text": "I remind myself that each draw is an independent event, and the outcome of the game is not influenced by the sequence of past draws.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series"
+    ]
+   },
+   {
+    "text": "I now grasp the importance of understanding the gambler's fallacy and recognizing its influence on decision-making and how it can cloud your judgement.",
+    "nodes": []
+   },
+   {
+    "text": "This experience serves as a compelling reminder of the biases that can affect our choices in games of chance.",
+    "nodes": []
+   }
+  ],
+  "coverage": [
+   7,
+   7
+  ],
+  "note": "",
+  "unmentioned": []
+ },
+ "hot-hand-fallacy": {
+  "steps": [
+   {
+    "text": "As an avid sports bettor, I'm constantly seeking ways to increase my chances of winning and make more informed betting decisions, especially when it comes to wagering on my favorite football team matches.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet"
+    ]
+   },
+   {
+    "text": "One challenge I've faced is falling prey to the Hot Hand Fallacy Bias, a cognitive bias that has led me to make impulsive and less rational bets.",
+    "nodes": []
+   },
+   {
+    "text": "I often found myself in situations where I believed that, after betting for my favorite football team victory, which happened several times in a row, then even the next time it would be much more likely to win the bet again by always betting on the team's victory; but on some occasions this did not come true: my team lost the match and I lost my bet.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet"
+    ]
+   },
+   {
+    "text": "This happened because in those situations I did not consider a wide range of factors, such as player statistics, team dynamics, historical matchups, and the current conditions (injuries, home or away games, etc.).",
+    "nodes": []
+   },
+   {
+    "text": "Each match also is an independent event and the result of a single match is not influenced by the previous game sequences.",
+    "nodes": []
+   },
+   {
+    "text": "This means that this bias can cloud my judgment and influence my betting decisions, as I become overly optimistic about the team's prospects based solely on their recent success.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets"
+    ]
+   },
+   {
+    "text": "To avoid this bias and enhance my sports betting strategy, I should have sought solutions that allow me to analyze teams' performance in a more objective and data-driven manner.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets"
+    ]
+   },
+   {
+    "text": "By doing so, I would probably have been able to base my bets on a comprehensive assessment of the situation rather than relying on streaks alone.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets"
+    ]
+   }
+  ],
+  "coverage": [
+   6,
+   6
+  ],
+  "note": "",
+  "unmentioned": []
+ },
+ "illusory-correlation": {
+  "steps": [
+   {
+    "text": "As a dedicated baseball player, I've noticed a peculiar trend during our winning streaks: I consistently wear a specific pair of socks adorned with my team's colors.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Player",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks"
+    ]
+   },
+   {
+    "text": "Over time, I've come to associate these socks with our victories, believing they possess some kind of lucky charm.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks"
+    ]
+   },
+   {
+    "text": "Despite knowing deep down that winning in baseball is about skill, teamwork, and strategy, I find myself attributing our success to the socks.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks"
+    ]
+   },
+   {
+    "text": "Even when we win on days I forget to wear them, I still cling to the notion that they play a significant role in our performance.",
+    "nodes": []
+   },
+   {
+    "text": "The more wins we accumulate while I'm wearing the socks, the stronger my belief becomes in their magical influence.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks"
+    ]
+   },
+   {
+    "text": "Teammates and coaches have noticed my attachment and joke about their mystical powers, but for me, it's more than just a superstition—it's become a deeply ingrained belief.",
+    "nodes": []
+   },
+   {
+    "text": "I'm starting to realize that my conviction in the socks' luckiness might be more about my mind's tendency to find patterns where none exist.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks"
+    ]
+   },
+   {
+    "text": "It's as if my brain is creating an illusory correlation between wearing the socks and winning games, despite the lack of any real causal relationship.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks"
+    ]
+   },
+   {
+    "text": "Nevertheless, the socks provide a sense of comfort and confidence, a psychological boost that helps me perform at my best when the pressure is on.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks"
+    ]
+   },
+   {
+    "text": "Even as I acknowledge the irrationality of my belief, I can't seem to shake the feeling that those socks hold the key to our success on the field.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks"
+    ]
+   }
+  ],
+  "coverage": [
+   8,
+   8
+  ],
+  "note": "",
+  "unmentioned": []
+ },
+ "pareidolia": {
+  "steps": [
+   {
+    "text": "As someone intrigued by the mysteries of perception and cognition, I often find myself drawn to the curious phenomenon of pareidolia bias.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#park_hiker"
+    ]
+   },
+   {
+    "text": "During one of my walks in the local park, my attention is captured by a weather-beaten tree trunk adorned with layers of textured bark, standing proudly amidst the foliage.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#park_hiker",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#weather-beaten_tree_trunk"
+    ]
+   },
+   {
+    "text": "Intrigued by the interplay of light and shadow, I notice a peculiar arrangement of knots and ridges that seem to form the semblance of a face.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception"
+    ]
+   },
+   {
+    "text": "The patterns etched into the bark evoke a sense of familiarity, as if nature itself is playing a game of hide-and-seek with my perception.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception"
+    ]
+   },
+   {
+    "text": "Despite my rational understanding of pareidolia bias, I can't help but marvel at how effortlessly my mind constructs meaningful shapes from random stimuli.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus"
+    ]
+   },
+   {
+    "text": "The face staring back at me from the tree trunk is a testament to the power of human cognition to find order in chaos, to see the familiar in the abstract.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#weather-beaten_tree_trunk"
+    ]
+   },
+   {
+    "text": "Captivated by this moment of cognitive trickery, I snap a photograph, eager to capture the ephemeral beauty of pareidolia in nature.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion"
+    ]
+   },
+   {
+    "text": "As I continue my stroll through the park, I'm reminded that the world around us is filled with hidden wonders, waiting to be revealed to those who dare to see beyond the surface.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk"
+    ]
+   }
+  ],
+  "coverage": [
+   7,
+   7
+  ],
+  "note": "",
+  "unmentioned": []
+ },
+ "anthropomorphism": {
+  "steps": [
+   {
+    "text": "A parent raising a young child, notices an endearing tendency in his child's behaviour.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child"
+    ]
+   },
+   {
+    "text": "He has a beloved puppet named Mr. Whiskers, and in his imaginative world, Mr. Whiskers is not just a puppet but a sentient being with thoughts and feelings.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child_perception_experience",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Puppet"
+    ]
+   },
+   {
+    "text": "In the child's world, Anthropomorphism is at play.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child"
+    ]
+   },
+   {
+    "text": "The child attributes human characteristics to the puppet, firmly believing that the puppet experiences emotions and intentions.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child_perception_experience",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Puppet"
+    ]
+   },
+   {
+    "text": "When playing with Mr. Whiskers, the child engages in conversations, genuinely believing that the puppet responds in its own unique way and may interpret expressions, assuming joy during playtime and perhaps even sadness when left untouched.",
+    "nodes": [
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Joy",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Puppet",
+     "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Sadness"
+    ]
+   }
+  ],
+  "coverage": [
+   5,
+   5
+  ],
+  "note": "",
+  "unmentioned": []
+ }
+}

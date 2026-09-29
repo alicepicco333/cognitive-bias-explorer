@@ -1,0 +1,221 @@
+_:N77540fb8e5534e2da2c76d4fdccd4ab0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/ExperiencerObj> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/2000/01/rdf-schema#domain> _:N57233892e77b41159196f2563de16b01 .
+_:N0591bdf74660416a97f38cb2fa213f59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N303c9a02b3fd4302b7992e3e1fe2aa96 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/IRI> "http://modellingdh.github.io/ont/odp/term/" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Sadness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N528f1618d88442a3ae89aeeb0c34708c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na5075f9ee5544280846ab3f1abc4d2da .
+_:Na5075f9ee5544280846ab3f1abc4d2da <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb5d65edd94234ddc80c921c78e5cffe6 .
+_:N08bfc15537fd49858a4a6887ede81e8f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+_:Nb6548a5577834aea95454c42dbfeabb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Sadness> <http://modellingdh.github.io/ont/odp/term/isReflectionOn> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child_perception_experience> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child_perception_experience> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Puppet> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N652ff1740a0f4eb689138dceaf78f7bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N2f50c81abdae4770b4c4b1f92cd50200 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines a feature of a human being"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N1062502b2c154168b42dd81d32159290 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nee86f1c4b40143759c70c987d93c2b3c .
+<https://w3id.org/framester/data/framestercore/PerceptionExperience> <http://www.w3.org/2000/01/rdf-schema#comment> "This frame contains perception words whose Perceivers have perceptual experiences that they do not necessarily intend to. For this reason we call the Perceiver role Perceiver_passive. Comparing the Perception_experience frame to the Perception_active frame, we note that for some modalities there are different lexical items in each frame. For instance, whereas Perception_experience has see, Perception_active has look at. For other sense modalities, we find the same lexical items in both frames. To illustrate, consider the verb smell where I smell something rotten exemplifies its Perception_experience use and Smell this to see if it's fresh exemplifies its Perception_active sense. This frame also includes words which are not specific to any sense modality, including detect, perceive, perception, sense."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ne86372a37a5e424cbf9b3b1639cc32e6 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/IRI> "http://www.w3.org/2001/XMLSchema#" .
+_:Nb233a849a0cc4537a4d406456fc45bf6 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/name> "fs" .
+_:N672735951ff9494eaad47aaba3c2ffdc <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/name> "terms" .
+_:N244a47e7322148e88824b8f6374ab3a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding> .
+_:Ne7b613bc7dab48e2a48e9f848b5b096d <http://www.w3.org/2002/07/owl#Prefix> _:N4bcf54d0d65041d3bc30274d7942e530 .
+_:N2f50c81abdae4770b4c4b1f92cd50200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+<https://w3id.org/framester/data/framestercore/Pattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nbff17c45f50e4293b02654cde97a79bb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb6548a5577834aea95454c42dbfeabb7 .
+_:N2992ff8210264613b7624e49e8f75660 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.se/odp/content/owl/Action.owl#Action> .
+<http://www.ontologydesignpatterns.org/cp/owl/move.owl#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises items of a material nature that are units for documentation and have physical boundaries that separate them completely in an objective way from other objects."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N68ebbb93abf2464f8a93862ba188a326 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N244a47e7322148e88824b8f6374ab3a2 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Deciding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne7b613bc7dab48e2a48e9f848b5b096d <http://www.w3.org/2002/07/owl#Prefix> _:Nf6d40062aba94f239a2871366fdf8a05 .
+_:Nd0ac8bd098d343bcbf7e4a1039435623 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+<https://dbpedia.org/resource/Plant> <http://www.w3.org/2000/01/rdf-schema#label> "Plant"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Feature> .
+_:N4bcf54d0d65041d3bc30274d7942e530 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/IRI> "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#" .
+<https://dbpedia.org/resource/Entity> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity is something that exists as itself, as a subject or as an object, actually or potentially, concretely or abstractly, physically or not. It need not be of material existence. In particular, abstractions and legal fictions are usually regarded as entities. In general, there is also no presumption that an entity is animate, or present. The term is broad in scope and may refer to animals; natural features such as mountains; inanimate objects such as tables; numbers or sets as symbols written on a paper; human contrivances such as laws, corporations and academic disciplines; or supernatural beings such as gods and spirits. The adjectival form is entitative. (en)"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N68ebbb93abf2464f8a93862ba188a326 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> .
+<https://w3id.org/framester/data/framestercore/ExperiencerObj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "Anthropomorphism is a cognitive bias where people attribute human characteristics, emotions, or intentions to non-human entities, objects, or animals. It is a form of personification where human traits are projected onto things that do not possess them."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#scenarios> "A young child attributes human emotions and intentions to his beloved puppet, Mr. Whiskers, engaging in conversations and interpreting its expressions."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nf3aeb0a4f2974095a3ea93246d76f6a9 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/IRI> "http://www.w3.org/2000/01/rdf-schema#" .
+<http://www.ontologydesignpatterns.org/cp/owl/move.owl#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Puppet> <http://modellingdh.github.io/ont/odp/term/producedObservation> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Sadness> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#scenarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://dbpedia.org/resource/Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity> .
+<http://modellingdh.github.io/ont/odp/term/isReflectionOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to connect the subjective elements of an experience with the corresponding observation, which is extrapolated from the content being interacted with and in itself may not be including a critique."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VisualStimulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N8b15671e5e0d4bafa60c5c9382333747 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/IRI> "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
+<http://modellingdh.github.io/ont/odp/term/isReflectionOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N303c9a02b3fd4302b7992e3e1fe2aa96 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/name> "term" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl> <http://purl.org/dc/terms/description> "The Anthropomorphism module of the cognitive bias ontology"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N4bcf54d0d65041d3bc30274d7942e530 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/name> "cbo" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne7b613bc7dab48e2a48e9f848b5b096d <http://www.w3.org/2002/07/owl#Prefix> _:N936f6c4893194a70bf175da2a84d5e36 .
+_:Nf6d40062aba94f239a2871366fdf8a05 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/IRI> "http://www.w3.org/2002/07/owl#" .
+_:Ne366ead6c26a4c91af466750497720d3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty> .
+_:N8b77694659db4ef288a0e66cae74dfeb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N68ebbb93abf2464f8a93862ba188a326 .
+_:Nb6f80cc2e4084a15b607f6b0260fa717 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nec3d24e546574ba7b3a8d778d0241e5e .
+_:N1af3312ca4f545cda18fe6c044a28aca <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nf466163f1d6644398c8b9bfb2687930d .
+_:Nec3d24e546574ba7b3a8d778d0241e5e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N77540fb8e5534e2da2c76d4fdccd4ab0 .
+_:Na135e42b5fb04668bafcfdbf51d093eb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.ontologydesignpatterns.org/cp/owl/move.owl#PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N56d32abee2d9431c9723e172850d5229 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/abbreviatedIRI> "terms:created" .
+<https://dbpedia.org/resource/Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nd0ac8bd098d343bcbf7e4a1039435623 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na135e42b5fb04668bafcfdbf51d093eb .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl> <http://purl.org/dc/terms/created> "01/03/24"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl> <http://purl.org/dc/terms/creator> "Marco Lamorte"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N57233892e77b41159196f2563de16b01 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child_perception_experience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:Ne7b613bc7dab48e2a48e9f848b5b096d <http://www.w3.org/2002/07/owl#Prefix> _:Nb233a849a0cc4537a4d406456fc45bf6 .
+_:N6df588bffd6d4b8db5d444d065f266b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature> .
+_:N88a51db66a74417c91deb880eab3ddb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+<http://modellingdh.github.io/ont/odp/term/producedObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Na5075f9ee5544280846ab3f1abc4d2da <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Deciding> .
+<http://modellingdh.github.io/ont/odp/term/producedObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "This property can be used to denote that something is (even indirectly, not necessary through direct reflection) responsible for the existence of an observation."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/2000/01/rdf-schema#label> "People"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ne7b613bc7dab48e2a48e9f848b5b096d <http://www.w3.org/2002/07/owl#Prefix> _:Ndb1b65cd31d046208ca5581478618819 .
+_:N8b15671e5e0d4bafa60c5c9382333747 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/name> "rdf" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Joy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Puppet> <http://modellingdh.github.io/ont/odp/term/producedObservation> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Joy> .
+_:N1062502b2c154168b42dd81d32159290 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Sadness> <http://www.w3.org/2000/01/rdf-schema#comment> "The emotion the child assumes Mr. Whiskers is feeling when left alone."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N8b77694659db4ef288a0e66cae74dfeb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://dbpedia.org/resource/Entity> .
+_:Ne7b613bc7dab48e2a48e9f848b5b096d <http://www.w3.org/2002/07/owl#Prefix> _:N672735951ff9494eaad47aaba3c2ffdc .
+_:Nee86f1c4b40143759c70c987d93c2b3c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Joy> <http://modellingdh.github.io/ont/odp/term/isReflectionOn> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child_perception_experience> .
+_:N56d32abee2d9431c9723e172850d5229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Nf466163f1d6644398c8b9bfb2687930d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/ExperiencerObj> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/framester/data/framestercore/Assistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne86372a37a5e424cbf9b3b1639cc32e6 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/name> "xsd" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Naa664c52db43470baf971ad140116076 <http://www.w3.org/2002/07/owl#unionOf> _:N195faf3a79b64e968ab47a743e8d115a .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N244a47e7322148e88824b8f6374ab3a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N1af3312ca4f545cda18fe6c044a28aca .
+<https://dbpedia.org/resource/Animal> <http://www.w3.org/2000/01/rdf-schema#label> "Animal"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ndb1b65cd31d046208ca5581478618819 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/name> "xml" .
+<http://modellingdh.github.io/ont/odp/term/producedObservation> <http://www.w3.org/2000/01/rdf-schema#range> _:Naa664c52db43470baf971ad140116076 .
+_:Ne7b613bc7dab48e2a48e9f848b5b096d <http://www.w3.org/2002/07/owl#Prefix> _:N8521bb2289194906ae338babec0e3813 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Joy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature> .
+<http://www.ontologydesignpatterns.org/cp/owl/move.owl#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Physical object"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Na559f0c1a21c4c369fdb64c27fe8cfa5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+<https://w3id.org/framester/data/framestercore/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child_perception_experience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#hasComponent> "http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ne7b613bc7dab48e2a48e9f848b5b096d <http://www.w3.org/2002/07/owl#Prefix> _:Ne86372a37a5e424cbf9b3b1639cc32e6 .
+<http://modellingdh.github.io/ont/odp/term/producedObservation> <http://www.w3.org/2000/01/rdf-schema#domain> _:Na44b5330c1cf47fcb351729481b74c33 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "The feature, description or title used to refer to an entity"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/2000/01/rdf-schema#comment> "This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N195faf3a79b64e968ab47a743e8d115a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature> .
+_:N27fa1fe70c45486c9632412181873ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Puppet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N4ccd175c63d64196b87a25ec3aa15465 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb6f80cc2e4084a15b607f6b0260fa717 .
+_:N469f16736f154021ae6936e8a7ec3c8b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Literal> .
+_:Na44b5330c1cf47fcb351729481b74c33 <http://www.w3.org/2002/07/owl#unionOf> _:N4ccd175c63d64196b87a25ec3aa15465 .
+_:N4ccd175c63d64196b87a25ec3aa15465 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> .
+<https://dbpedia.org/resource/Plant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity> .
+_:N77540fb8e5534e2da2c76d4fdccd4ab0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/framester/data/framestercore/Assessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects entites such as an activity to other entities involved in it"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N2f50c81abdae4770b4c4b1f92cd50200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nfd43f143d7d24394890aee2561539c22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Na44b5330c1cf47fcb351729481b74c33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Na559f0c1a21c4c369fdb64c27fe8cfa5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N1062502b2c154168b42dd81d32159290 .
+_:N528f1618d88442a3ae89aeeb0c34708c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+<https://dbpedia.org/resource/Plant> <http://www.w3.org/2000/01/rdf-schema#comment> "Plants are predominantly photosynthetic eukaryotes of the kingdom Plantae. Historically, the plant kingdom encompassed all living things that were not animals, and included algae and fungi; however, all current definitions of Plantae exclude the fungi and some algae, as well as the prokaryotes (the archaea and bacteria)."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Non-human entity"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ne7b613bc7dab48e2a48e9f848b5b096d <http://www.w3.org/2002/07/owl#Prefix> _:N8b15671e5e0d4bafa60c5c9382333747 .
+_:Ndb1b65cd31d046208ca5581478618819 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/IRI> "http://www.w3.org/XML/1998/namespace" .
+<https://dbpedia.org/resource/Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ne366ead6c26a4c91af466750497720d3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N88a51db66a74417c91deb880eab3ddb7 .
+_:Nbff17c45f50e4293b02654cde97a79bb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/CognitiveConnection> .
+_:N6df588bffd6d4b8db5d444d065f266b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na566f97c716a4c75b4bdfc52573b431e .
+_:Ne7b613bc7dab48e2a48e9f848b5b096d <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/ontologyIRI> "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl" .
+_:N195faf3a79b64e968ab47a743e8d115a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nbff17c45f50e4293b02654cde97a79bb .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Joy> <http://www.w3.org/2000/01/rdf-schema#comment> "The emotion the child assumes Mr. Whiskers is feeling during playtime."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Na135e42b5fb04668bafcfdbf51d093eb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Predicting> .
+_:N936f6c4893194a70bf175da2a84d5e36 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/IRI> "https://dbpedia.org/resource/" .
+<http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/resource/Entity> .
+<http://modellingdh.github.io/ont/odp/term/isReflectionOn> <http://www.w3.org/2000/01/rdf-schema#range> _:N76fb8c109b3341d89cc8f053fdbfc0be .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child> <http://modellingdh.github.io/ont/odp/term/isEngagedIn> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child_perception_experience> .
+_:N76fb8c109b3341d89cc8f053fdbfc0be <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne7b613bc7dab48e2a48e9f848b5b096d <http://www.w3.org/2002/07/owl#Prefix> _:Nf3aeb0a4f2974095a3ea93246d76f6a9 .
+_:N76fb8c109b3341d89cc8f053fdbfc0be <http://www.w3.org/2002/07/owl#unionOf> _:N08bfc15537fd49858a4a6887ede81e8f .
+<https://dbpedia.org/resource/Animal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity> .
+_:N285976cd538b465ebf727d7aa8c24bd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://dbpedia.org/page/Illusion> .
+_:N936f6c4893194a70bf175da2a84d5e36 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/name> "dbr" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecognizablePattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.se/odp/content/owl/Action.owl#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Predicting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://modellingdh.github.io/ont/odp/term/isReflectionOn> <http://www.w3.org/2000/01/rdf-schema#domain> _:N13e2358fb51747ffbfedb10df1de42af .
+_:N2992ff8210264613b7624e49e8f75660 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne366ead6c26a4c91af466750497720d3 .
+_:Nf3aeb0a4f2974095a3ea93246d76f6a9 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/name> "rdfs" .
+_:Nec3d24e546574ba7b3a8d778d0241e5e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> .
+_:Na566f97c716a4c75b4bdfc52573b431e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/CognitiveConnection> .
+_:N4ce1579c0bfe4079b9c835d84e02f435 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Assessing> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any entity that isn't human"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne7b613bc7dab48e2a48e9f848b5b096d <http://www.w3.org/2002/07/owl#Prefix> _:N303c9a02b3fd4302b7992e3e1fe2aa96 .
+_:N4ce1579c0bfe4079b9c835d84e02f435 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N528f1618d88442a3ae89aeeb0c34708c .
+<https://dbpedia.org/resource/Animal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://dbpedia.org/resource/Animal> <http://www.w3.org/2000/01/rdf-schema#comment> "Animals are multicellular, eukaryotic organisms in the biological kingdom Animalia. With few exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce sexually, and go through an ontogenetic stage in which their body consists of a hollow sphere of cells, the blastula, during embryonic development."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N285976cd538b465ebf727d7aa8c24bd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na559f0c1a21c4c369fdb64c27fe8cfa5 .
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N88a51db66a74417c91deb880eab3ddb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4ce1579c0bfe4079b9c835d84e02f435 .
+_:N13e2358fb51747ffbfedb10df1de42af <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nb5d65edd94234ddc80c921c78e5cffe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd0ac8bd098d343bcbf7e4a1039435623 .
+_:Nf6d40062aba94f239a2871366fdf8a05 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/name> "owl" .
+<https://dbpedia.org/page/Illusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nf466163f1d6644398c8b9bfb2687930d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Naa664c52db43470baf971ad140116076 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N57233892e77b41159196f2563de16b01 <http://www.w3.org/2002/07/owl#unionOf> _:N285976cd538b465ebf727d7aa8c24bd9 .
+_:Nb6f80cc2e4084a15b607f6b0260fa717 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity> .
+<https://w3id.org/framester/data/framestercore/PerceptionExperience> <http://www.w3.org/2000/01/rdf-schema#label> "Perception experience"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl> <http://purl.org/dc/terms/title> "Anthropomorphism ontology"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Nf957d2d460a14b0f8e83e7b240d57626 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/name> "" .
+_:Nf957d2d460a14b0f8e83e7b240d57626 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/IRI> "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism/" .
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/People> .
+_:Nfd43f143d7d24394890aee2561539c22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://dbpedia.org/resource/Plant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Sadness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature> .
+<https://dbpedia.org/resource/Concept> <http://www.w3.org/2000/01/rdf-schema#comment> "Concepts are defined as abstract ideas. They are understood to be the fundamental building blocks of the concept behind principles, thoughts and beliefs.They play an important role in all aspects of cognition."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N27fa1fe70c45486c9632412181873ffb <http://www.w3.org/2002/07/owl#unionOf> _:N8b77694659db4ef288a0e66cae74dfeb .
+<https://w3id.org/framester/data/framestercore/PerceptionExperience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/resource/Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N13e2358fb51747ffbfedb10df1de42af <http://www.w3.org/2002/07/owl#unionOf> _:N6df588bffd6d4b8db5d444d065f266b4 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N0591bdf74660416a97f38cb2fa213f59 <http://www.w3.org/2002/07/owl#unionOf> _:N2992ff8210264613b7624e49e8f75660 .
+_:Ne7b613bc7dab48e2a48e9f848b5b096d <http://www.w3.org/2002/07/owl#Prefix> _:Nf957d2d460a14b0f8e83e7b240d57626 .
+_:Nee86f1c4b40143759c70c987d93c2b3c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:Nb6548a5577834aea95454c42dbfeabb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/framester/data/framestercore/CognitiveConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N8521bb2289194906ae338babec0e3813 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/name> "move" .
+_:N672735951ff9494eaad47aaba3c2ffdc <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/IRI> "http://purl.org/dc/terms/" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves> <http://www.w3.org/2000/01/rdf-schema#range> _:N27fa1fe70c45486c9632412181873ffb .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/description> .
+_:Nb233a849a0cc4537a4d406456fc45bf6 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/IRI> "https://w3id.org/framester/data/framestercore/" .
+_:N8521bb2289194906ae338babec0e3813 <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/IRI> "http://www.ontologydesignpatterns.org/cp/owl/move.owl#" .
+_:N1af3312ca4f545cda18fe6c044a28aca <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Assistance> .
+_:Nb5d65edd94234ddc80c921c78e5cffe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#range> _:N0591bdf74660416a97f38cb2fa213f59 .
+_:N652ff1740a0f4eb689138dceaf78f7bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+_:Ne7b613bc7dab48e2a48e9f848b5b096d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#hasComponent> "http://ontologydesignpatterns.org/wiki/Submissions:Move"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N08bfc15537fd49858a4a6887ede81e8f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N652ff1740a0f4eb689138dceaf78f7bc .
+<https://w3id.org/framester/data/framestercore/BecomingAware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Puppet> <http://www.w3.org/2000/01/rdf-schema#comment> "Mr Whiskers, the child's puppet."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Puppet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/cp/owl/move.owl#PhysicalObject> .
+_:Na566f97c716a4c75b4bdfc52573b431e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nfd43f143d7d24394890aee2561539c22 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child> <http://www.w3.org/2000/01/rdf-schema#comment> "The child experiencing anthropomorphism bias."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/People> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature> <http://www.w3.org/2000/01/rdf-schema#label> "Human feature"^^<http://www.w3.org/2001/XMLSchema#string> .

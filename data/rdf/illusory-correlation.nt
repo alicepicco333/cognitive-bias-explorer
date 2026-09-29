@@ -1,0 +1,320 @@
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/CognitiveConnection> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity1> .
+<https://w3id.org/framester/data/framestercore/Pattern> <http://purl.org/dc/terms/description> "This frame describes the interrelation of a collection of Entities; they may be physical entities or shapes in a recognizable configuration, a pattern of events, or a relation among abstract entities. The pattern is not the individual Entities nor the set of Entities, but an abstraction of their interrelations, as a gestalt. The Cougers are playing in a Wing-T formation tonight. The auditors noticed a suspicious pattern of withdrawals from the maintenance account . The digits of irrational numbers do not repeat in any kind of pattern." .
+_:N04efd521d8084fe8a680f589459d1c50 <http://www.w3.org/2002/07/owl#unionOf> _:Nbb8d772ba39b4d689ed32e1870fa9e3c .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N18c57b2e988141999b2381f62c7307f0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Pattern> <http://www.w3.org/2000/01/rdf-schema#label> "Pattern" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl> <http://purl.org/dc/terms/description> "The Illusory of Correlation module of the Cognitive Bias Ontology" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://modellingdh.github.io/ont/odp/term/producedObservation> <http://www.w3.org/2000/01/rdf-schema#range> _:N23e7e36d097842b4a7a57d53ba6083a1 .
+_:N413ca3ce086d43cebdd67fafe3ba0af3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+_:N680b2d86ea2f4769ac41fc410dfc8b3e <http://www.w3.org/2002/07/owl#unionOf> _:Nd7ec20a8be1e4373b420fe9012c21995 .
+_:N3b01857fc6c441288072e6a9832a835c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature> .
+_:N3b01857fc6c441288072e6a9832a835c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nac19cdbebad44244a133e6b732ac1477 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match> <http://modellingdh.github.io/ont/odp/term/includes> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation> .
+<https://w3id.org/framester/data/framestercore/Pattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://modellingdh.github.io/ont/odp/term/isReflectionOn> <http://www.w3.org/2000/01/rdf-schema#domain> _:N680b2d86ea2f4769ac41fc410dfc8b3e .
+_:Nbd7bc930f88a4bb1991d46e9a616d931 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> .
+<https://w3id.org/framester/data/framestersyn/Player.n.1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/framester/data/framestercore/People> .
+_:N37578f723d2747d38cc929cabcea929e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N57d9d10c93f34507a332540f53e47714 .
+_:Nbd7bc930f88a4bb1991d46e9a616d931 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariablesPattern> .
+<https://w3id.org/framester/data/framestercore/ExperiencerObj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N1c9e574024964cafb67ea574dbad4edf .
+_:N22f6fbd7f5104cc9901a590bd053f94a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N8a3200a4514f4edf9988fd6145ba46ee .
+_:Nbc81462985a14f49bd3c894660f33cbc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nfe4b5e6b085c46dcbc39fbd6a5e3206d .
+_:N382693e515e64d57a5f241508a1c4a8f <http://www.w3.org/2002/07/owl#unionOf> _:Na4f44d85eae346098c8877fa12bc2b3c .
+_:Nd5db46f6ae2a4cc1b1e5cabb998a9ecb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> .
+_:N25c2b27149854df29fb10a58cbc1b1da <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/People> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/CognitiveConnection> .
+_:N2cceb0672ae7408f9d2140f50dc07a7b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/ExperiencerObj> .
+_:N8a3200a4514f4edf9988fd6145ba46ee <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+_:N5dafe828d7e34c14963af87e6a4deb92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9909b0f0520e4a498346ce129d05a1bd .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/People> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "Illusory correlation bias refers to the tendency of individuals to perceive a relationship between two variables even when no such relationship exists or when the relationship is much weaker than assumed. This bias often occurs when people incorrectly associate two events or characteristics because they occur together in a particular pattern or sequence, leading to the erroneous belief that there is a causal connection between them."@en .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the person's cognitive process of becoming aware of something." .
+_:Ndaf3b8bfa97a48fdbc6688e5a367d30e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9a0b873e0f6d48ea9152997d2236ed3b .
+_:N2cceb0672ae7408f9d2140f50dc07a7b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> "Superstitions: A baseball player believes that wearing a specific pair of socks during a winning game brings good luck. However, the socks have no impact on the game's outcome, yet the player associates wearing them with success." .
+_:Nd78cde62ec1040fe8f7fe1f3ffc3ba0b <http://www.w3.org/2002/07/owl#unionOf> _:Nbc81462985a14f49bd3c894660f33cbc .
+_:Ndaf7811de4104cfa8588b1902da8de4c <http://www.w3.org/2002/07/owl#unionOf> _:Nd5db46f6ae2a4cc1b1e5cabb998a9ecb .
+_:Ncc2c941f26a348db880fb3cdd8a9e8c8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ndf27c35bb16c4180a0e5fc131b24b1f8 .
+_:N1c988854b62b4e8bbfc2834bb0259285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N1c9e574024964cafb67ea574dbad4edf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://modellingdh.github.io/ont/odp/term/inActivity> <http://www.w3.org/2000/01/rdf-schema#domain> _:N05d763e615984062a40e6f10515dcd0d .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:N22f6fbd7f5104cc9901a590bd053f94a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty> .
+<https://dbpedia.org/page/Illusion> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the possible correlation between the variables of the pattern detected as part of a trend." .
+_:N1e6b9833dd1a4770ba3119c81e76bd71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na1fc5103a0564322b4751c83d504532a .
+_:Na10ce53c2afb46b182818687208e6118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N20cdb044edda4413ba4cfb8b984da39e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+<https://w3id.org/framester/data/framestersyn/Belief.n.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nd5db46f6ae2a4cc1b1e5cabb998a9ecb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nbf0ca63994c749b59feaba90cde1e833 .
+<https://dbpedia.org/page/Illusion> <http://purl.org/dc/terms/description> "An illusion is a distortion of the senses, which can reveal how the mind normally organizes and interprets sensory stimulation. Although illusions distort the human perception of reality, they are generally shared by most people. Illusions may occur with any of the human senses, but visual illusions (optical illusions) are the best-known and understood. The emphasis on visual illusions occurs because vision often dominates the other senses. For example, individuals watching a ventriloquist will perceive the voice is coming from the dummy since they are able to see the dummy mouth the words." .
+_:N3295f0d9f02c4e54a17e4e139815038e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/framester/data/framestercore/Assistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ndaf3b8bfa97a48fdbc6688e5a367d30e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity2> <http://purl.org/dc/terms/description> "A class for one one of the two variables that are perceived as correlated." .
+_:N67c274d10b6e4e15ad7f5f6e6752567a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd6f3fa21116343488f36a61598165b12 .
+_:Nd3a9e48ae11a45a5b34ebbf65c2641cf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na224b2d67fb141358bc047e04783c85d .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern> .
+_:Nfe4b5e6b085c46dcbc39fbd6a5e3206d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na98318db64f04f29987e28a2b5683b5a .
+<https://w3id.org/framester/data/framestersyn/Player.n.1> <http://www.w3.org/2000/01/rdf-schema#label> "Player" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories> <http://www.w3.org/2000/01/rdf-schema#label> "Victories" .
+<https://w3id.org/framester/data/framestercore/People> <http://purl.org/dc/terms/description> "This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming baby yesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories> <http://modellingdh.github.io/ont/odp/term/producedObservation> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation> .
+_:N1e6b9833dd1a4770ba3119c81e76bd71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+_:Ndcc5e7c4e5c7480b85e7f61d2b1ce430 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+_:N3fdabce5162543658649254f833e06e0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ndaf3b8bfa97a48fdbc6688e5a367d30e .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs> <http://www.w3.org/2000/01/rdf-schema#domain> _:Nd78cde62ec1040fe8f7fe1f3ffc3ba0b .
+<https://w3id.org/framester/data/framestersyn/Player.n.1> <http://purl.org/dc/terms/description> "A class for a player such as a Baseball_Player engaged in a cognitive process during an Activity." .
+_:N4e9e1ccd36fe482c96554d123108df45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart> .
+_:N23e7e36d097842b4a7a57d53ba6083a1 <http://www.w3.org/2002/07/owl#unionOf> _:N3b01857fc6c441288072e6a9832a835c .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl> <http://purl.org/dc/terms/title> "Illusory of Correlation Bias Ontology" .
+<https://w3id.org/framester/data/framestercore/Assessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks> <http://modellingdh.github.io/ont/odp/term/producedObservation> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation> .
+_:N3c239f30a84b4109b907748a94cc54ab <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+_:Nd3a9e48ae11a45a5b34ebbf65c2641cf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Evidence> .
+_:Nb3ff4b25d05d4c7a9e5aac055261062c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+_:Nd019b9bbbc50453399779f329db91ae4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N67c274d10b6e4e15ad7f5f6e6752567a .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N680b2d86ea2f4769ac41fc410dfc8b3e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nbf0ca63994c749b59feaba90cde1e833 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity> .
+_:Nf401cd4df5cd48e995cc8ba8591193f8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N5dafe828d7e34c14963af87e6a4deb92 .
+_:N57d9d10c93f34507a332540f53e47714 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart> .
+_:N9a7920aad25044dc9c11ef199855e8b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity1> <http://www.w3.org/2002/07/owl#disjointWith> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity2> .
+_:N4e09e9cb0bc94cc7b7b8d4eabd70f0ef <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N2cceb0672ae7408f9d2140f50dc07a7b .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dbpedia.org/page/Illusion> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/framester/data/framestercore/BecomingAware> <http://www.w3.org/2000/01/rdf-schema#label> "Becoming Aware" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N81d66d2d735f4e0d9da4fc626e93a9bf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N4e9e1ccd36fe482c96554d123108df45 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> <http://www.w3.org/2000/01/rdf-schema#label> "Variables" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "A property linking an Entity (a perceived correlation between two variables in a pattern or a perceived pattern due to any kind of external stimulus) and the illusory effect that this Entity produce." .
+_:N1c9e574024964cafb67ea574dbad4edf <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> .
+<http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N0abbd92e269a4001ae54b1f8f066e2ba <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd3a9e48ae11a45a5b34ebbf65c2641cf .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasEffect> <http://www.w3.org/2000/01/rdf-schema#domain> _:Nf40c79233ae64b7a9aaaafdf98152c48 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N05d763e615984062a40e6f10515dcd0d <http://www.w3.org/2002/07/owl#unionOf> _:Nd019b9bbbc50453399779f329db91ae4 .
+_:N9a7920aad25044dc9c11ef199855e8b9 <http://www.w3.org/2002/07/owl#unionOf> _:Ne7c4018294a44d68aa5f4ffb3cceb8a6 .
+<http://modellingdh.github.io/ont/odp/term/inActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecognizablePattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness> <http://modellingdh.github.io/ont/odp/term/inActivity> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match> .
+_:N8b4b4bff85ea4f4695379cfe57cc5f6d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Predicting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N9a0b873e0f6d48ea9152997d2236ed3b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N100777930443428ca6bbdaa6cc0f6117 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/framester/data/framestercore/Pattern> .
+_:Nbb8d772ba39b4d689ed32e1870fa9e3c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N5a1cf493e980419c91ed5dd96efeffb9 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <https://dbpedia.org/ontology/> .
+<https://w3id.org/framester/data/framestercore/People> <http://www.w3.org/2000/01/rdf-schema#label> "People" .
+_:N413ca3ce086d43cebdd67fafe3ba0af3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nad9766dbbaef4375a2a197018e65c80a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.se/odp/content/owl/Action.owl#Action> .
+_:N185cd0368d8b452b923433c51ff7c9c9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+_:N4e9e1ccd36fe482c96554d123108df45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N5d25f84bcc784a53830c4a1ac4dae6c9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestersyn/Player.n.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nfa217308fa174aa2bf8309b8aaac9f07 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/CognitiveConnection> .
+<https://dbpedia.org/page/Illusion> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Activity> .
+_:N57d9d10c93f34507a332540f53e47714 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity1> .
+<http://modellingdh.github.io/ont/odp/term/isReflectionOn> <http://www.w3.org/2000/01/rdf-schema#range> _:Nf49a020130d045709869cd1ede96b0b3 .
+_:Nf49a020130d045709869cd1ede96b0b3 <http://www.w3.org/2002/07/owl#unionOf> _:N20cdb044edda4413ba4cfb8b984da39e .
+<http://modellingdh.github.io/ont/odp/term/producedObservation> <http://www.w3.org/2000/01/rdf-schema#domain> _:Ndaf7811de4104cfa8588b1902da8de4c .
+<https://dbpedia.org/page/Illusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://ontologydesignpatterns.org/wiki/Submissions:PartOf> .
+<https://w3id.org/framester/data/framestercore/Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nfa217308fa174aa2bf8309b8aaac9f07 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N2665129525f34875b059ee0fdc93e670 .
+<https://dbpedia.org/page/Illusion> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/People> .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/framester/data/framestercore/People> .
+_:N37578f723d2747d38cc929cabcea929e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N81d66d2d735f4e0d9da4fc626e93a9bf .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> _:N902282f61b6949e995545b9b2dc798ec .
+_:Na10ce53c2afb46b182818687208e6118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:N0abbd92e269a4001ae54b1f8f066e2ba <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/CognitiveConnection> .
+_:Nf401cd4df5cd48e995cc8ba8591193f8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl> <http://purl.org/dc/terms/creator> "Corrado Consiglio" .
+<https://w3id.org/framester/data/framestercore/PerceptionExperience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N81d66d2d735f4e0d9da4fc626e93a9bf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N05d763e615984062a40e6f10515dcd0d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness> <http://www.w3.org/2000/01/rdf-schema#label> "Trend Awareness" .
+_:Na4f44d85eae346098c8877fa12bc2b3c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match> <http://www.w3.org/2000/01/rdf-schema#label> "Baseball Match" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasEffect> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/page/Illusion> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Player> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestersyn/Player.n.1> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Activity> .
+_:Nf49a020130d045709869cd1ede96b0b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity2> .
+<https://dbpedia.org/page/Illusion> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://w3id.org/framester/data/framestercore/CognitiveConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nac19cdbebad44244a133e6b732ac1477 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd742fbb974a1411b8c1da404ba093ea7 .
+_:N0055c859a23346d98ab9d97f07959892 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+_:N9a0b873e0f6d48ea9152997d2236ed3b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+_:Na224b2d67fb141358bc047e04783c85d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na10ce53c2afb46b182818687208e6118 .
+_:Nd742fbb974a1411b8c1da404ba093ea7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> _:N382693e515e64d57a5f241508a1c4a8f .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Nbd7bc930f88a4bb1991d46e9a616d931 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Nbf0ca63994c749b59feaba90cde1e833 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4e09e9cb0bc94cc7b7b8d4eabd70f0ef .
+_:Na4f44d85eae346098c8877fa12bc2b3c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N413ca3ce086d43cebdd67fafe3ba0af3 .
+_:Nd6f3fa21116343488f36a61598165b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+_:N0055c859a23346d98ab9d97f07959892 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity1> <http://purl.org/dc/terms/description> "A class for one one of the two variables that are perceived as correlated." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://dbpedia.org/page/Illusion> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/CognitiveConnection> .
+_:Ne7c4018294a44d68aa5f4ffb3cceb8a6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N0abbd92e269a4001ae54b1f8f066e2ba .
+<https://dbpedia.org/page/Illusion> <http://www.w3.org/2000/01/rdf-schema#label> "Illusion" .
+<https://w3id.org/framester/data/framestercore/BecomingAware> <http://purl.org/dc/terms/description> "Words in this frame have to do with a Cognizer adding some Phenomenon to their model of the world. They are similar to Coming-to-believe words, except the latter generally involve reasoning from Evidence. The words in this frame take direct objects that denote entities in the world, and indicate awareness of those entities, without necessarily giving any information about the content of the Cognizer's belief or knowledge. These words also resemble perception words, since creatures often become aware of things by perceiving them. Later that night, they found the barely-alive victim inside the Red Hall estate flat. Almost immediately, the police discovered the wrought-iron crypt gate swinging open. In the bag on the tableI could vaguely discern two bottles of wine and several cartons of cakes and other goodies. People passing through recognize it from afar, by the clouds of coal dust darkening the air. General Grammatical Observations: Passive forms of the verbs in this frame can occur with extraposed clauses expressing Phenomenon: That year it was discovered that consumers preferred the older model. It is not always recognized how much work goes into a dinner party." .
+<https://w3id.org/framester/data/framestercore/CognitiveConnection> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/People> .
+<http://modellingdh.github.io/ont/odp/term/inActivity> <http://www.w3.org/2000/01/rdf-schema#range> _:Nf7dc0cd060a84246a8c31c3cb73b83cd .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariablesPattern> <http://purl.org/dc/terms/description> "An class and its individual representing the type of pattern recognized by an human agent as part of a trend, in this case a pattern where two elements often appear together." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariablesPattern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecognizablePattern> .
+_:Nd742fbb974a1411b8c1da404ba093ea7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+_:Nf7dc0cd060a84246a8c31c3cb73b83cd <http://www.w3.org/2002/07/owl#unionOf> _:N3295f0d9f02c4e54a17e4e139815038e .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation> .
+_:N20cdb044edda4413ba4cfb8b984da39e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ndcc5e7c4e5c7480b85e7f61d2b1ce430 .
+<http://modellingdh.github.io/ont/odp/term/includes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Ndaf7811de4104cfa8588b1902da8de4c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N5d25f84bcc784a53830c4a1ac4dae6c9 <http://www.w3.org/2002/07/owl#unionOf> _:Nad9766dbbaef4375a2a197018e65c80a .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> <http://purl.org/dc/terms/description> "A class representing all the possible variables or attributes that individuals mistakenly perceive to be correlated." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasEffect> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect> .
+<https://w3id.org/framester/data/framestercore/Deciding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/CognitiveConnection> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/CognitiveConnection> .
+_:Ndcc5e7c4e5c7480b85e7f61d2b1ce430 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N1c988854b62b4e8bbfc2834bb0259285 .
+_:N3c239f30a84b4109b907748a94cc54ab <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N185cd0368d8b452b923433c51ff7c9c9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N37578f723d2747d38cc929cabcea929e .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VisualStimulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://modellingdh.github.io/ont/odp/term/isReflectionOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N5dafe828d7e34c14963af87e6a4deb92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Activity> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories> <http://www.w3.org/2000/01/rdf-schema#comment> "One of the variables that occur together as part of a pattern." .
+_:N15f6ef2742164f24b6a9048363eb2cad <http://www.w3.org/2002/07/owl#unionOf> _:N1f6b672d592f41988085d37e9444a0b4 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ncb73337c2adc4484ae0079c561cebcba <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N57d9d10c93f34507a332540f53e47714 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Nd7ec20a8be1e4373b420fe9012c21995 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature> .
+_:Na224b2d67fb141358bc047e04783c85d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+_:N04efd521d8084fe8a680f589459d1c50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks> <http://www.w3.org/2000/01/rdf-schema#comment> "One of the variables that occur together as part of a pattern." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern> <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories> .
+_:N67c274d10b6e4e15ad7f5f6e6752567a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+<http://modellingdh.github.io/ont/odp/term/producedObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> _:N18c57b2e988141999b2381f62c7307f0 .
+_:N3fdabce5162543658649254f833e06e0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Deciding> .
+_:Na1fc5103a0564322b4751c83d504532a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs> <http://www.w3.org/2000/01/rdf-schema#comment> "a property that links a person 's cognitive process of being aware of something like a trend while he/she is doing an activity and what is perceived as part of the trend." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks> <http://www.w3.org/2000/01/rdf-schema#label> "Pair of socks" .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl> <http://purl.org/dc/terms/created> "February 2024" .
+_:Nf40c79233ae64b7a9aaaafdf98152c48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nd019b9bbbc50453399779f329db91ae4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Assessing> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Ne7c4018294a44d68aa5f4ffb3cceb8a6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap> .
+_:Ndf27c35bb16c4180a0e5fc131b24b1f8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N3fdabce5162543658649254f833e06e0 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Illusion> <http://www.w3.org/2002/07/owl#disjointWith> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> .
+_:N100777930443428ca6bbdaa6cc0f6117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N5a1cf493e980419c91ed5dd96efeffb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+<https://w3id.org/framester/data/framestercore/CognitiveConnection> <http://www.w3.org/2000/01/rdf-schema#label> "Cognitive Connection" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation> <http://modellingdh.github.io/ont/odp/term/isReflectionOn> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness> .
+<https://w3id.org/framester/data/framestercore/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+_:N18c57b2e988141999b2381f62c7307f0 <http://www.w3.org/2002/07/owl#unionOf> _:N1e6b9833dd1a4770ba3119c81e76bd71 .
+_:N8b4b4bff85ea4f4695379cfe57cc5f6d <http://www.w3.org/2002/07/owl#intersectionOf> _:N185cd0368d8b452b923433c51ff7c9c9 .
+_:Nf40c79233ae64b7a9aaaafdf98152c48 <http://www.w3.org/2002/07/owl#unionOf> _:Nfa217308fa174aa2bf8309b8aaac9f07 .
+_:N8b7e3d0e628f4637ab68e2cd6ef64e63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N3c239f30a84b4109b907748a94cc54ab .
+_:N902282f61b6949e995545b9b2dc798ec <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:N04efd521d8084fe8a680f589459d1c50 .
+<https://w3id.org/framester/data/framestercore/Activity> <http://purl.org/dc/terms/description> "This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent's Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame.  In this case is a class representing an activity affected by a certain cognitive process (Becoming Aware of something)." .
+_:Nac19cdbebad44244a133e6b732ac1477 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/CognitiveConnection> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity" .
+_:N15f6ef2742164f24b6a9048363eb2cad <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Na98318db64f04f29987e28a2b5683b5a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestersyn/Belief.n.1> .
+_:N9909b0f0520e4a498346ce129d05a1bd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Event> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Player> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nbb8d772ba39b4d689ed32e1870fa9e3c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> .
+<https://w3id.org/framester/data/framestercore/BecomingAware> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/People> .
+_:N1f6b672d592f41988085d37e9444a0b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nf401cd4df5cd48e995cc8ba8591193f8 .
+<http://modellingdh.github.io/ont/odp/term/includes> <http://www.w3.org/2000/01/rdf-schema#range> _:N9a7920aad25044dc9c11ef199855e8b9 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariablesPattern> <http://www.w3.org/2000/01/rdf-schema#label> "Variables Pattern" .
+_:Ncb73337c2adc4484ae0079c561cebcba <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb3ff4b25d05d4c7a9e5aac055261062c .
+_:N8a3200a4514f4edf9988fd6145ba46ee <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ncc2c941f26a348db880fb3cdd8a9e8c8 .
+<http://modellingdh.github.io/ont/odp/term/includes> <http://www.w3.org/2000/01/rdf-schema#domain> _:N15f6ef2742164f24b6a9048363eb2cad .
+_:N4e09e9cb0bc94cc7b7b8d4eabd70f0ef <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables> .
+_:N9909b0f0520e4a498346ce129d05a1bd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ndf27c35bb16c4180a0e5fc131b24b1f8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+_:Ncc2c941f26a348db880fb3cdd8a9e8c8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Assessing> .
+<https://w3id.org/framester/data/framestercore/BecomingAware> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity2> <http://www.w3.org/2000/01/rdf-schema#label> "Variable Entity 2" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern> <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Player> <http://www.w3.org/2000/01/rdf-schema#comment> "an individual representing the type of person involved in the Illusory Correlation Bias, in this case a baseball player." .
+_:N1c9e574024964cafb67ea574dbad4edf <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariablesPattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariablesPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N1f6b672d592f41988085d37e9444a0b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias> .
+<http://www.ontology.se/odp/content/owl/Action.owl#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/data/framestercore/Activity> .
+_:N5a1cf493e980419c91ed5dd96efeffb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nfd135c43639b411d8761827be7e0da12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N23e7e36d097842b4a7a57d53ba6083a1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/BecomingAware> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/CognitiveConnection> .
+_:Nad9766dbbaef4375a2a197018e65c80a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N22f6fbd7f5104cc9901a590bd053f94a .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity1> <http://www.w3.org/2000/01/rdf-schema#label> "Variable Entity 1" .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the activity in which the person's cognitive process of becoming aware takes place." .
+_:N25c2b27149854df29fb10a58cbc1b1da <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nfd135c43639b411d8761827be7e0da12 .
+_:Nd6f3fa21116343488f36a61598165b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N25c2b27149854df29fb10a58cbc1b1da .
+_:N2665129525f34875b059ee0fdc93e670 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nd7ec20a8be1e4373b420fe9012c21995 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N8b7e3d0e628f4637ab68e2cd6ef64e63 .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual representing the conseguent illusory effect made by the correlation perceived between the variables." .
+_:Nf7dc0cd060a84246a8c31c3cb73b83cd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N100777930443428ca6bbdaa6cc0f6117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Predicting> .
+_:N4e9e1ccd36fe482c96554d123108df45 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity2> .
+_:Nfd135c43639b411d8761827be7e0da12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariablesPattern> <http://www.w3.org/2002/07/owl#equivalentClass> _:N8b4b4bff85ea4f4695379cfe57cc5f6d .
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N1c988854b62b4e8bbfc2834bb0259285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/PerceptionExperience> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nb3ff4b25d05d4c7a9e5aac055261062c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N2665129525f34875b059ee0fdc93e670 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Pattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariablesPattern> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VariableEntity1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Nbd7bc930f88a4bb1991d46e9a616d931 .
+_:Nbc81462985a14f49bd3c894660f33cbc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/Assistance> .
+_:N3295f0d9f02c4e54a17e4e139815038e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N0055c859a23346d98ab9d97f07959892 .
+_:Nfe4b5e6b085c46dcbc39fbd6a5e3206d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/BecomingAware> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Player> <http://modellingdh.github.io/ont/odp/term/isEngagedIn> <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness> .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation> <http://www.w3.org/2000/01/rdf-schema#label> "Variables Correlation" .
+_:N382693e515e64d57a5f241508a1c4a8f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/data/framestercore/CognitiveConnection> <http://purl.org/dc/terms/description> "A concept, Concept_1, is related causally or collocationally to another concept, Concept_2, by means of some Evidence. They may be related only under certain Circumstances or from a certain Point_of_view. The two concepts may be expressed collectively as associated Concepts. Any cognizer is deprofiled." .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Player> <http://www.w3.org/2000/01/rdf-schema#label> "Baseball Player" .
+<https://w3id.org/framester/data/framestercore/Pattern> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/People> .
+_:N8b7e3d0e628f4637ab68e2cd6ef64e63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/data/framestercore/CognitiveConnection> .
+_:Nd78cde62ec1040fe8f7fe1f3ffc3ba0b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N902282f61b6949e995545b9b2dc798ec <http://www.w3.org/2002/07/owl#unionOf> _:Ncb73337c2adc4484ae0079c561cebcba .
+<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect> <http://www.w3.org/2000/01/rdf-schema#label> "Illusion Effect" .
+<http://modellingdh.github.io/ont/odp/term/isEngagedIn> <http://www.w3.org/2000/01/rdf-schema#range> _:N5d25f84bcc784a53830c4a1ac4dae6c9 .
+<https://w3id.org/framester/data/framestercore/BecomingAware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Na1fc5103a0564322b4751c83d504532a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Na98318db64f04f29987e28a2b5683b5a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/framester/data/framestercore/Activity> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/framester/data/framestercore/People> .

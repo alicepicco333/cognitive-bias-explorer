@@ -1,0 +1,1548 @@
+{
+ "summary": {
+  "answered": 37,
+  "partial": 7,
+  "unanswerable": 3,
+  "original": 12,
+  "fixed": 12,
+  "new": 20,
+  "none": 3,
+  "documented": 24,
+  "documented_run": 21,
+  "documented_answer": 12,
+  "total": 47
+ },
+ "biases": {
+  "bias-blind-spot": [
+   {
+    "question": "What was Emily tasked with?",
+    "answer": null,
+    "status": "answered",
+    "origin": "new",
+    "note": "Emily is the agent; the task she is engaged in is modelled as a decision.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX term: <http://modellingdh.github.io/ont/odp/term/>\nSELECT ?task WHERE { ?person a cbo:Agent ; term:isEngagedIn ?task . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "task"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Decision",
+        "label": "Decision",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Decision>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "What did she advocate for?",
+    "answer": null,
+    "status": "answered",
+    "origin": "new",
+    "note": "What Emily focuses on: the superiority of her own idea.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nSELECT ?idea WHERE { ?person a cbo:Agent ; cbo:focusesOn ?idea . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "idea"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Superiority_of_one's_idea",
+        "label": "Superiority of one's idea",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Superiority_of_one's_idea>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "What did Chris advocate for?",
+    "answer": null,
+    "status": "partial",
+    "origin": "new",
+    "note": "The file only records that Chris holds a biased opinion, not what he proposed.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX fs: <https://w3id.org/framester/data/framestercore/>\nSELECT ?opinion WHERE { ?person a fs:People ; cbo:hasBiasedOpinion ?opinion . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "opinion"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Biased_Opinion",
+        "label": "Biased Opinion",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Biased_Opinion>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "What is Emily’s opinion about Chris’ proposal?",
+    "answer": null,
+    "status": "partial",
+    "origin": "new",
+    "note": "The file gives Emily's belief in the superiority of her own idea, but nothing links it to Chris's proposal.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX cco: <http://purl.org/ontology/cco/core#>\nSELECT ?belief WHERE { ?person a cbo:Agent ; cco:belief ?belief . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "belief"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Superiority_of_one's_idea",
+        "label": "Superiority of one's idea",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Superiority_of_one's_idea>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "What did Emily eventually realize?",
+    "answer": null,
+    "status": "answered",
+    "origin": "new",
+    "note": "The outcome of Emily's decision: realising her bias.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX term: <http://modellingdh.github.io/ont/odp/term/>\nSELECT ?outcome WHERE { ?person a cbo:Agent ; term:isEngagedIn ?decision . ?decision cbo:hasOutcome ?outcome . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "outcome"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Realization_of_bias",
+        "label": "Realization of bias",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Realization_of_bias>"
+       }
+      ]
+     ]
+    }
+   }
+  ],
+  "naive-cynicism": [
+   {
+    "question": "What did Sarah propose to Alex?",
+    "answer": null,
+    "status": "answered",
+    "origin": "new",
+    "note": "The offer of help. The file calls the person who receives it Chris, not Alex, and has no individual for Sarah.",
+    "query": "PREFIX nc: <https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#>\nSELECT ?offer WHERE { ?person nc:receives ?offer . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "offer"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help",
+        "label": "Offered help",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "What was Sarah’s true intention?",
+    "answer": null,
+    "status": "unanswerable",
+    "origin": "none",
+    "note": "Sarah's intention is not modelled: the file has no individual or property for it."
+   },
+   {
+    "question": "How did Alex interpret Sarah’s willingness to help him?",
+    "answer": null,
+    "status": "answered",
+    "origin": "new",
+    "note": "Naive cynicism misjudges the offered help, and the outcome is that the offer is declined.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX nc: <https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#>\nSELECT ?bias ?outcome WHERE { ?bias nc:misjudges ?help . ?event cbo:involves ?help ; cbo:hasOutcome ?outcome . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "bias",
+      "outcome"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism",
+        "label": "Naive Cynicism",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism>"
+       },
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer",
+        "label": "Decline of offer",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer>"
+       }
+      ]
+     ]
+    }
+   }
+  ],
+  "naive-realism": [
+   {
+    "question": "What event does Maria suggest?",
+    "answer": null,
+    "status": "unanswerable",
+    "origin": "none",
+    "note": "The events the two colleagues suggest are not in the file."
+   },
+   {
+    "question": "What event does Akio suggest?",
+    "answer": null,
+    "status": "partial",
+    "origin": "new",
+    "note": "The file records Akio's perspective as a statement, but not which event he suggests.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nSELECT ?perspective WHERE { ?person cbo:hasPerspective ?perspective . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "perspective"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective",
+        "label": "Target Perspective",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "What are their decisions influenced by?",
+    "answer": null,
+    "status": "answered",
+    "origin": "new",
+    "note": "Maria's belief in cultural universality, itself affected by how she perceives her own beliefs.",
+    "query": "PREFIX aff: <https://w3id.org/affectedBy#>\nPREFIX cco: <http://purl.org/ontology/cco/core#>\nSELECT ?belief ?source WHERE { ?person cco:belief ?belief . OPTIONAL { ?belief aff:affectedBy ?source } }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "belief",
+      "source"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Underlying_belief_(cultural_universality)",
+        "label": "Underlying belief (cultural universality)",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Underlying_belief_(cultural_universality)>"
+       },
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own's_belief",
+        "label": "Perception of own's belief",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own's_belief>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "What do they realize in the end?",
+    "answer": null,
+    "status": "unanswerable",
+    "origin": "none",
+    "note": "What they realise at the end of the story is not modelled."
+   }
+  ],
+  "confabulation": [
+   {
+    "question": "What did Sarah do after arriving home from the concert?",
+    "answer": null,
+    "status": "answered",
+    "origin": "new",
+    "note": "The outcome of the night out: telling her parents a fabricated account.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX term: <http://modellingdh.github.io/ont/odp/term/>\nSELECT ?outcome WHERE { ?person term:isEngagedIn ?event . ?event cbo:hasOutcome ?outcome . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "outcome"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Telling_parents_fabricated_evidence",
+        "label": "Telling parents fabricated evidence",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Telling_parents_fabricated_evidence>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "How did Sarah justify her actions with her parents?",
+    "answer": null,
+    "status": "answered",
+    "origin": "new",
+    "note": "Sarah produces a fabricated story.",
+    "query": "PREFIX dbo: <https://dbpedia.org/ontology/>\nSELECT ?story WHERE { ?person dbo:produces ?story . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "story"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Fabricated_story",
+        "label": "Fabricated story",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Fabricated_story>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "Why did she feel the need to fabricate a story?",
+    "answer": null,
+    "status": "answered",
+    "origin": "new",
+    "note": "The fabricated story fills a memory gap.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nSELECT ?gap WHERE { ?story cbo:fillsMemoryGap ?gap . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "gap"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Memory_gap",
+        "label": "Memory gap",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Memory_gap>"
+       }
+      ]
+     ]
+    }
+   }
+  ],
+  "clustering-illusion": [
+   {
+    "question": "What captured Sarah’s attention?",
+    "answer": "A Pattern of Consecutive digits in lottery winning numbers.",
+    "status": "answered",
+    "origin": "new",
+    "note": "The pattern in the lottery numbers, observed in consecutive digits. Sarah herself is not linked to anything in the file.",
+    "query": "PREFIX fs: <https://w3id.org/framester/data/framestercore/>\nPREFIX term: <http://modellingdh.github.io/ont/odp/term/>\nSELECT ?pattern ?observed WHERE { ?observed term:producedObservation ?pattern . ?pattern a fs:Pattern . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "pattern",
+      "observed"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Pattern_lottery_numbers",
+        "label": "Pattern lottery numbers",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Pattern_lottery_numbers>"
+       },
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Consecutive_digits",
+        "label": "Consecutive digits",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Consecutive_digits>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "What induced Sarah to believe she had found a winning pattern?",
+    "answer": "The human tendency to attribute significance to chance occurrences.",
+    "status": "partial",
+    "origin": "new",
+    "note": "The file models the illusion the lottery creates, not the human tendency the documented answer names.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nSELECT ?illusion WHERE { ?activity cbo:creates ?illusion . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "illusion"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Illusion_pattern",
+        "label": "Illusion pattern",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Illusion_pattern>"
+       }
+      ]
+     ]
+    }
+   }
+  ],
+  "insensitivity-to-sample-size": [
+   {
+    "question": "What knowledge do i have of Nova Odyssey?",
+    "answer": "That my opinion of the game can be shaped by a few reviews limiting my perspective.",
+    "status": "answered",
+    "origin": "new",
+    "note": "What the narrator knows: a game review.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nSELECT ?knowledge WHERE { ?me cbo:have_knowledge ?knowledge . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "knowledge"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_review",
+        "label": "Game review",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_review>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "How does this affect my decision?",
+    "answer": "It can either influence my positively or negatively affecting my final decision.",
+    "status": "answered",
+    "origin": "new",
+    "note": "Buying the game is influenced by the review.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX aff: <https://w3id.org/affectedBy#>\nSELECT ?decision ?influence WHERE { ?decision a cbo:Decision ; aff:influencedBy ?influence . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "decision",
+      "influence"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_bought",
+        "label": "Game bought",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_bought>"
+       },
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_review",
+        "label": "Game review",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#Game_review>"
+       }
+      ]
+     ]
+    }
+   }
+  ],
+  "neglect-of-probability": [
+   {
+    "question": "What did Amelia decide to ignore?",
+    "answer": "The presentation she was assigned",
+    "status": "partial",
+    "origin": "new",
+    "note": "In the file, the choice to ignore (procrastinate) hangs off the deadline; the documented answer says the presentation.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX np: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#>\nSELECT ?what ?choice WHERE { ?what cbo:decide ?choice . ?choice a np:Ignore . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "what",
+      "choice"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Deadline",
+        "label": "Deadline",
+        "curie": "np:Deadline"
+       },
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Procrastinate",
+        "label": "Procrastinate",
+        "curie": "np:Procrastinate"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "Her decision was affected by?",
+    "answer": "Her decision to ignore the deadline",
+    "status": "answered",
+    "origin": "new",
+    "note": "The decision about the presentation is influenced by procrastinating.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX aff: <https://w3id.org/affectedBy#>\nSELECT ?influence WHERE { ?decision a cbo:Decision ; aff:influencedBy ?influence . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "influence"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Procrastinate",
+        "label": "Procrastinate",
+        "curie": "np:Procrastinate"
+       }
+      ]
+     ]
+    }
+   }
+  ],
+  "anecdotal-fallacy": [
+   {
+    "question": "What influenced my diet choice?",
+    "answer": "The story of my friend losing weight.",
+    "status": "answered",
+    "origin": "new",
+    "note": "The narrator's belief: a friend lost weight.",
+    "query": "PREFIX cco: <http://purl.org/ontology/cco/core#>\nSELECT ?belief WHERE { ?subject cco:belief ?belief . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "belief"
+     ],
+     "rows": [
+      [
+       {
+        "value": "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Friend_lost_weight",
+        "label": "Friend lost weight",
+        "curie": "<http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Friend_lost_weight>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "How did this influence my view on the diet plan?",
+    "answer": "My perception in the activity of losing weight was influenced by the Bias because it made me perceive the diet plan as something that could work for evreyone and it didn't make me see it as something that works only on a specific individual level.",
+    "status": "answered",
+    "origin": "new",
+    "note": "The friend's story creates the perception that the diet works.",
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX term: <http://modellingdh.github.io/ont/odp/term/>\nSELECT ?perception ?conclusion WHERE { ?story cbo:creates ?perception . ?perception cbo:involves ?obs . ?obs term:producedObservation ?conclusion . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "perception",
+      "conclusion"
+     ],
+     "rows": [
+      [
+       {
+        "value": "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Working_diet",
+        "label": "Working diet",
+        "curie": "<http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Working_diet>"
+       },
+       {
+        "value": "http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Diet_works",
+        "label": "Diet works",
+        "curie": "<http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Diet_works>"
+       }
+      ]
+     ]
+    }
+   }
+  ],
+  "illusion-of-validity": [
+   {
+    "question": "What are the consequences of the investor’s biased behaviour?",
+    "answer": null,
+    "status": "answered",
+    "origin": "fixed",
+    "note": "The GitBook query asks for activitypattern:Outcome, a class no individual has. The consequence is linked with action:hasConsequence.",
+    "original": {
+     "query": "SELECT ?consequence\nWHERE {?consequence a activitypattern:Outcome}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "consequence"
+      ],
+      "rows": []
+     }
+    },
+    "query": "PREFIX action: <http://www.ontology.se/odp/content/owl/Action.owl#>\nSELECT ?consequence WHERE { ?action a action:Action ; action:hasConsequence ?consequence . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "consequence"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Negative_outcome",
+        "label": "Negative outcome",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Negative_outcome>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "What knowledge instance affect the perceived validity?",
+    "answer": null,
+    "status": "answered",
+    "origin": "original",
+    "note": "",
+    "original": {
+     "query": "SELECT ?knowledge\nWHERE {?knowledge a dbr:Knowledge}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "knowledge"
+      ],
+      "rows": [
+       [
+        {
+         "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investorship_knowledge",
+         "label": "Investorship knowledge",
+         "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investorship_knowledge>"
+        }
+       ]
+      ]
+     }
+    },
+    "query": "PREFIX dbr: <https://dbpedia.org/resource/>\nSELECT ?knowledge\nWHERE {?knowledge a dbr:Knowledge}",
+    "result": {
+     "ok": true,
+     "vars": [
+      "knowledge"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investorship_knowledge",
+        "label": "Investorship knowledge",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investorship_knowledge>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "Are investor's expectation and the final outcome considered different instances?",
+    "answer": null,
+    "status": "answered",
+    "origin": "original",
+    "note": "",
+    "original": {
+     "query": "SELECT ?identicality\nWHERE {\n  ?identicality a fs:Identicality ;\n               parameter:hasParameterDataValue false. }",
+     "result": {
+      "ok": true,
+      "vars": [
+       "identicality"
+      ],
+      "rows": [
+       [
+        {
+         "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Identicality_aspect",
+         "label": "Identicality aspect",
+         "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Identicality_aspect>"
+        }
+       ]
+      ]
+     }
+    },
+    "query": "PREFIX fs: <https://w3id.org/framester/data/framestercore/>\nPREFIX parameter: <http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#>\nSELECT ?identicality\nWHERE {\n  ?identicality a fs:Identicality ;\n               parameter:hasParameterDataValue false. }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "identicality"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Identicality_aspect",
+        "label": "Identicality aspect",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Identicality_aspect>"
+       }
+      ]
+     ]
+    }
+   }
+  ],
+  "masked-man-fallacy": [
+   {
+    "question": "What are the features owned by the entity?",
+    "answer": null,
+    "status": "answered",
+    "origin": "original",
+    "note": "",
+    "original": {
+     "query": "SELECT ?features\nWHERE {\n  ?entity a dbr:Entity ;\n          cbo:hasFeature ?features .}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "features"
+      ],
+      "rows": [
+       [
+        {
+         "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon",
+         "label": "Heart surgeon",
+         "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon>"
+        }
+       ],
+       [
+        {
+         "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist",
+         "label": "Jazz saxophonist",
+         "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist>"
+        }
+       ]
+      ]
+     }
+    },
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX dbr: <https://dbpedia.org/resource/>\nSELECT ?features\nWHERE {\n  ?entity a dbr:Entity ;\n          cbo:hasFeature ?features .}",
+    "result": {
+     "ok": true,
+     "vars": [
+      "features"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon",
+        "label": "Heart surgeon",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon>"
+       }
+      ],
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist",
+        "label": "Jazz saxophonist",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "Which features does the person acknowledge as Known Features?",
+    "answer": null,
+    "status": "answered",
+    "origin": "original",
+    "note": "",
+    "original": {
+     "query": "SELECT ?information\nWHERE {?information a cbo:KnownFeature}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "information"
+      ],
+      "rows": [
+       [
+        {
+         "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon",
+         "label": "Heart surgeon",
+         "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon>"
+        }
+       ]
+      ]
+     }
+    },
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nSELECT ?information\nWHERE {?information a cbo:KnownFeature}",
+    "result": {
+     "ok": true,
+     "vars": [
+      "information"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon",
+        "label": "Heart surgeon",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Heart_surgeon>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "Which feature is rejected by the individual?",
+    "answer": null,
+    "status": "answered",
+    "origin": "original",
+    "note": "",
+    "original": {
+     "query": "SELECT ?rejectedFeature\nWHERE {?rejectedFeature a cbo:Un-knownFeature}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "rejectedFeature"
+      ],
+      "rows": [
+       [
+        {
+         "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist",
+         "label": "Jazz saxophonist",
+         "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist>"
+        }
+       ]
+      ]
+     }
+    },
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nSELECT ?rejectedFeature\nWHERE {?rejectedFeature a cbo:Un-knownFeature}",
+    "result": {
+     "ok": true,
+     "vars": [
+      "rejectedFeature"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist",
+        "label": "Jazz saxophonist",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#Jazz_saxophonist>"
+       }
+      ]
+     ]
+    }
+   }
+  ],
+  "recency": [
+   {
+    "question": "What is the final decision reached by the individual in the decision-making process?",
+    "answer": null,
+    "status": "answered",
+    "origin": "original",
+    "note": "",
+    "original": {
+     "query": "SELECT ?decision\nWHERE {?decision a cbo:Decision}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "decision"
+      ],
+      "rows": [
+       [
+        {
+         "value": "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision",
+         "label": "Final decision",
+         "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision>"
+        }
+       ]
+      ]
+     }
+    },
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nSELECT ?decision\nWHERE {?decision a cbo:Decision}",
+    "result": {
+     "ok": true,
+     "vars": [
+      "decision"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision",
+        "label": "Final decision",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "Which memory is classified as having high importance?",
+    "answer": null,
+    "status": "answered",
+    "origin": "fixed",
+    "note": "The file links importance to memory with classification:classifies; the GitBook query asks for the inverse, isClassifiedBy, which is never asserted and no reasoner infers here.",
+    "original": {
+     "query": "SELECT ?memory\nWHERE {?importance a cbo:HighImportance.\n?memory classification:isClassifiedBy ?importance}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "memory"
+      ],
+      "rows": []
+     }
+    },
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX classification: <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#>\nSELECT ?memory WHERE { ?importance a cbo:HighImportance ; classification:classifies ?memory . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "memory"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory",
+        "label": "Recent memory",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "Which is the past memory?",
+    "answer": null,
+    "status": "answered",
+    "origin": "original",
+    "note": "",
+    "original": {
+     "query": "SELECT ?memory\nWHERE { ?memory a cbo:PastMemory }",
+     "result": {
+      "ok": true,
+      "vars": [
+       "memory"
+      ],
+      "rows": [
+       [
+        {
+         "value": "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory",
+         "label": "Past memory",
+         "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory>"
+        }
+       ]
+      ]
+     }
+    },
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nSELECT ?memory\nWHERE { ?memory a cbo:PastMemory }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "memory"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory",
+        "label": "Past memory",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory>"
+       }
+      ]
+     ]
+    }
+   }
+  ],
+  "gamblers-fallacy": [
+   {
+    "question": "Which game the contestant is participating in?",
+    "answer": "The game is a Lottery draw",
+    "status": "answered",
+    "origin": "original",
+    "note": "",
+    "original": {
+     "query": "SELECT ?game ?label\n\tWHERE {?participant participation:isParticipantIn ?game.\n               ?game rdfs:label ?label.\n}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "game",
+       "label"
+      ],
+      "rows": [
+       [
+        {
+         "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw",
+         "label": "Lottery Draw",
+         "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw>"
+        },
+        {
+         "value": "Lottery Draw",
+         "literal": true
+        }
+       ]
+      ]
+     }
+    },
+    "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX participation: <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#>\nSELECT ?game ?label\n\tWHERE {?participant participation:isParticipantIn ?game.\n               ?game rdfs:label ?label.\n}",
+    "result": {
+     "ok": true,
+     "vars": [
+      "game",
+      "label"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw",
+        "label": "Lottery Draw",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw>"
+       },
+       {
+        "value": "Lottery Draw",
+        "literal": true
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "According to the user story, what can influence the probability level of the next number draw outcome?",
+    "answer": "The probability will be affected by the sequence of the past number draws.",
+    "status": "answered",
+    "origin": "fixed",
+    "note": "The GitBook query uses cbo:hasInfluence from the sequence; the file says the probability is aff:influencedBy the sequence.",
+    "original": {
+     "query": "SELECT ?sequence\nWHERE {?probability rdf:type fs:Probability.\n       ?event parameter:hasParameter ?probability.\n       ?sequence cbo:hasInfluence ?probability.\n}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "sequence"
+      ],
+      "rows": []
+     }
+    },
+    "query": "PREFIX fs: <https://w3id.org/framester/data/framestercore/>\nPREFIX aff: <https://w3id.org/affectedBy#>\nPREFIX parameter: <http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#>\nSELECT ?sequence WHERE { ?event parameter:hasParameter ?probability . ?probability a fs:Probability ; aff:influencedBy ?sequence . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "sequence"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series",
+        "label": "Past Number Draw Series",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "According to the user story, what should be the probability level that the outcome in the next number draw will be red?",
+    "answer": "The probability level will be higher.",
+    "status": "partial",
+    "origin": "fixed",
+    "note": "The GitBook query has a syntax error (a property with no object). Fixed, it runs, but the probability carries both \"High\" and \"Low\", so the answer comes from the filter rather than from the data.",
+    "original": {
+     "query": "SELECT ?EventOutcome ?ProbabilityLevel\nWHERE {\n    ?event dbo:produces ?EventOutcome.\n    ?event parameter:hasParameter ?Probability.\n    ?Probability parameter:hasParameterDataValue. \n    FILTER (\n        CONTAINS(LCASE(STR(?EventOutcome)), \"red\") &&\n        (LCASE(?ProbabilityLevel) = \"high\")\n    )\n}",
+     "result": {
+      "ok": false,
+      "error": "ParseException: Expected SelectQuery, found '?'  (at char 262), (line:7, col:5)"
+     }
+    },
+    "query": "PREFIX dbo: <https://dbpedia.org/ontology/>\nPREFIX parameter: <http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#>\nSELECT ?outcome ?level WHERE {\n  ?event dbo:produces ?outcome ; parameter:hasParameter ?probability .\n  ?probability parameter:hasParameterDataValue ?level .\n  FILTER (CONTAINS(LCASE(STR(?outcome)), \"red\") && LCASE(STR(?level)) = \"high\")\n}",
+    "result": {
+     "ok": true,
+     "vars": [
+      "outcome",
+      "level"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number",
+        "label": "Red Number",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number>"
+       },
+       {
+        "value": "High",
+        "literal": true
+       }
+      ]
+     ]
+    }
+   }
+  ],
+  "hot-hand-fallacy": [
+   {
+    "question": "What the sports bettor believes about betting for his favourite football team victory?",
+    "answer": "He believes that, having won the bet several games in a row, this will affect upward the probability of winning again in the next match bet.",
+    "status": "partial",
+    "origin": "fixed",
+    "note": "The GitBook query uses cbo:hasInfluence and parameter:isParameterFor; the file has aff:influencedBy and parameter:hasParameter. As in Gambler's fallacy, the probability carries both \"High\" and \"Low\".",
+    "original": {
+     "query": "SELECT ?event ?eventOutcome\nWHERE {?participant cco:belief ?sequence.\n       ?sequence cbo:hasInfluence ?probability.\n       ?probability rdf:type fs:Probability.\n       ?probability parameter:hasParameterDataValue \"High\"^^xsd:string;\n                                       parameter:isParameterFor ?event.\n        ?event cbo:producesOutcomeEffect ?eventOutcome.\n}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "event",
+       "eventOutcome"
+      ],
+      "rows": []
+     }
+    },
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX aff: <https://w3id.org/affectedBy#>\nPREFIX cco: <http://purl.org/ontology/cco/core#>\nPREFIX parameter: <http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#>\nSELECT ?event ?outcome WHERE {\n  ?bettor cco:belief ?series .\n  ?probability aff:influencedBy ?series ; parameter:hasParameterDataValue \"High\" .\n  ?event parameter:hasParameter ?probability ; cbo:producesOutcomeEffect ?outcome .\n}",
+    "result": {
+     "ok": true,
+     "vars": [
+      "event",
+      "outcome"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet",
+        "label": "Football Team Match Bet",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet>"
+       },
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet",
+        "label": "Winning Bet",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "What is the outcome effect that a sequence of past Football Team Match bets has?",
+    "answer": null,
+    "status": "answered",
+    "origin": "fixed",
+    "note": "The GitBook query starts with the answer sentence pasted in, so it does not parse. The query itself was right.",
+    "original": {
+     "query": "The outcome effect is a Winning Bet.\nSELECT ?sequence ?Outcome\nWHERE {?sequence prov:wasGeneratedBy ?activity.\n       ?sequence cbo:hasOutcomeEffect ?Outcome.\n}",
+     "result": {
+      "ok": false,
+      "error": "ParseException: Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found 'The'  (at char 145), (line:3, col:1)"
+     }
+    },
+    "query": "PREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nSELECT ?sequence ?outcome WHERE { ?sequence prov:wasGeneratedBy ?activity ; cbo:hasOutcomeEffect ?outcome . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "sequence",
+      "outcome"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series",
+        "label": "Football Team Match Bet Series",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series>"
+       },
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet",
+        "label": "Winning Bet",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "According to the user story, how likely the next football team match bet will be a winning bet?",
+    "answer": "The probability of winning will be higher.",
+    "status": "answered",
+    "origin": "original",
+    "note": "",
+    "original": {
+     "query": "SELECT ?eventOutcome ?probabilityLevel\nWHERE {?event cbo:producesOutcomeEffect ?eventOutcome.\n       ?event parameter:hasParameter ?probability.\n       ?probability rdf:type fs:Probability.\n       ?probability parameter:hasParameterDataValue ?probabilityLevel.\n      FILTER (LCASE(?probabilityLevel) = \"high\")     \n}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "eventOutcome",
+       "probabilityLevel"
+      ],
+      "rows": [
+       [
+        {
+         "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet",
+         "label": "Winning Bet",
+         "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet>"
+        },
+        {
+         "value": "High",
+         "literal": true
+        }
+       ]
+      ]
+     }
+    },
+    "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX fs: <https://w3id.org/framester/data/framestercore/>\nPREFIX parameter: <http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#>\nSELECT ?eventOutcome ?probabilityLevel\nWHERE {?event cbo:producesOutcomeEffect ?eventOutcome.\n       ?event parameter:hasParameter ?probability.\n       ?probability rdf:type fs:Probability.\n       ?probability parameter:hasParameterDataValue ?probabilityLevel.\n      FILTER (LCASE(?probabilityLevel) = \"high\")     \n}",
+    "result": {
+     "ok": true,
+     "vars": [
+      "eventOutcome",
+      "probabilityLevel"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet",
+        "label": "Winning Bet",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet>"
+       },
+       {
+        "value": "High",
+        "literal": true
+       }
+      ]
+     ]
+    }
+   }
+  ],
+  "illusory-correlation": [
+   {
+    "question": "What is the effect caused by the perceived correlation between the variables?",
+    "answer": "The effect is an illusory effect.",
+    "status": "answered",
+    "origin": "original",
+    "note": "",
+    "original": {
+     "query": "SELECT ?Effect\n          WHERE {\n                 ?Correlation rdf:type fs:CognitiveConnection;\n                              cbo:hasEffect ?Effect. \n}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "Effect"
+      ],
+      "rows": [
+       [
+        {
+         "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect",
+         "label": "IllusionEffect",
+         "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect>"
+        }
+       ]
+      ]
+     }
+    },
+    "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX fs: <https://w3id.org/framester/data/framestercore/>\nSELECT ?Effect\n          WHERE {\n                 ?Correlation rdf:type fs:CognitiveConnection;\n                              cbo:hasEffect ?Effect. \n}",
+    "result": {
+     "ok": true,
+     "vars": [
+      "Effect"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect",
+        "label": "IllusionEffect",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "Due to the mind’s tendency how the trend is perceived by the Baseball player?",
+    "answer": "The trend is perceived as sort of Pattern.",
+    "status": "answered",
+    "origin": "fixed",
+    "note": "The GitBook query misspells the property (isPercievedAs).",
+    "original": {
+     "query": "Select ?Pattern\nWHERE {?Trend rdf:type fs:BecomingAware;\n              cbo:isPercievedAs ?Pattern.\n                                              \n}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "Pattern"
+      ],
+      "rows": []
+     }
+    },
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX fs: <https://w3id.org/framester/data/framestercore/>\nSELECT ?pattern WHERE { ?trend a fs:BecomingAware ; cbo:isPerceivedAs ?pattern . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "pattern"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern",
+        "label": "VariablesPattern",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "What are the elements that characterize the pattern of the trend noticed by the player?",
+    "answer": "The elements are a pair of socks and the victories obtained while wearing them.",
+    "status": "answered",
+    "origin": "fixed",
+    "note": "The file links the pattern to its parts with partof:hasPart; the GitBook query asks for the inverse, isPartOf.",
+    "original": {
+     "query": "SELECT ?variables\nWHERE {?variables partof:isPartOf ?Pattern.\n }",
+     "result": {
+      "ok": true,
+      "vars": [
+       "variables"
+      ],
+      "rows": []
+     }
+    },
+    "query": "PREFIX partof: <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#>\nSELECT ?variable WHERE { ?pattern partof:hasPart ?variable . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "variable"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories",
+        "label": "Victories",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories>"
+       }
+      ],
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks",
+        "label": "pair of socks",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks>"
+       }
+      ]
+     ]
+    }
+   }
+  ],
+  "pareidolia": [
+   {
+    "question": "During the walk in the park, what attracts the attention of the story's protagonist?",
+    "answer": "An ambiguous Stimulus",
+    "status": "answered",
+    "origin": "fixed",
+    "note": "The GitBook query has a stray space in its variable (? stimulus) and selects a variable it never binds.",
+    "original": {
+     "query": "SELECT ? stimulus\n            WHERE {?activity rdf:type fs:Activity;\n                           cbo:involves ?Stimulus.\n}",
+     "result": {
+      "ok": false,
+      "error": "ParseException: Expected SelectQuery, found ' '  (at char 229), (line:4, col:9)"
+     }
+    },
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX fs: <https://w3id.org/framester/data/framestercore/>\nSELECT ?stimulus WHERE { ?activity a fs:Activity ; cbo:involves ?stimulus . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "stimulus"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus",
+        "label": "RandomStimulus",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "According to the user story, during the walk what kind of stimulus induce the mind in the creation of meaningful shapes?",
+    "answer": "A visual Stimulus",
+    "status": "answered",
+    "origin": "fixed",
+    "note": "The GitBook query misspells a class (AmbiguousoStimulus), mixes ?stimulusLabel and ?stimuluslabel, and asks the random stimulus to be of the subclass type.",
+    "original": {
+     "query": "SELECT ?stimulusType ?stimuluslabel\n            WHERE {?activity rdf:type fs:Activity;\n                                                cbo:involves ?stimulus.\n                            ?stimulus rdf:type cbo:AmbiguousoStimulus.\n                            ?stimulusType rdfs:subClassOf cbo:AmbiguousStimulus.\n                            ?stimulusLabel rdf:type ?stimulusType.\n FILTER (?stimulusType!=cbo:AmbiguousStimulus)\n}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "stimulusType",
+       "stimuluslabel"
+      ],
+      "rows": []
+     }
+    },
+    "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nSELECT ?stimulusType ?stimulus WHERE {\n  ?stimulusType rdfs:subClassOf cbo:AmbiguousStimulus .\n  ?stimulus a ?stimulusType .\n}",
+    "result": {
+     "ok": true,
+     "vars": [
+      "stimulusType",
+      "stimulus"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#VisualStimulus",
+        "label": "VisualStimulus",
+        "curie": "cbo:VisualStimulus"
+       },
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#weather-beaten_tree_trunk",
+        "label": "weather-beaten tree trunk",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#weather-beaten_tree_trunk>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "By what elements is the perception of the protagonist of the story deceived?",
+    "answer": "It is deceived by seeing human shapes in a tree-trunk.",
+    "status": "answered",
+    "origin": "fixed",
+    "note": "The GitBook query requires the hiker to be fs:People, but the file types the hiker as fsyn:Hiker.n.1.",
+    "original": {
+     "query": "SELECT ?element\nWHERE {?person rdf:type fs:People;\n                                   cbo:isBiasedBy ?element.\n            ?element cbo:hasInfluence ?perception.\n            ?perception rdf:type fs:PerceptionExperience.\n}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "element"
+      ],
+      "rows": []
+     }
+    },
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX fs: <https://w3id.org/framester/data/framestercore/>\nSELECT ?element WHERE { ?person cbo:isBiasedBy ?element . ?element cbo:hasInfluence ?perception . ?perception a fs:PerceptionExperience . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "element"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape",
+        "label": "FacialShape",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape>"
+       }
+      ]
+     ]
+    }
+   }
+  ],
+  "anthropomorphism": [
+   {
+    "question": "Who is engaged in the perception activity?",
+    "answer": null,
+    "status": "answered",
+    "origin": "original",
+    "note": "",
+    "original": {
+     "query": "SELECT ?person\nWHERE {?perception a fs:PerceptionExperience .\n?person term:isEngagedIn ?perception}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "person"
+      ],
+      "rows": [
+       [
+        {
+         "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child",
+         "label": "Child",
+         "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child>"
+        }
+       ]
+      ]
+     }
+    },
+    "query": "PREFIX fs: <https://w3id.org/framester/data/framestercore/>\nPREFIX term: <http://modellingdh.github.io/ont/odp/term/>\nSELECT ?person\nWHERE {?perception a fs:PerceptionExperience .\n?person term:isEngagedIn ?perception}",
+    "result": {
+     "ok": true,
+     "vars": [
+      "person"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child",
+        "label": "Child",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Child>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "Which human features are observed during the perception experience?",
+    "answer": null,
+    "status": "answered",
+    "origin": "original",
+    "note": "",
+    "original": {
+     "query": "SELECT ?humanfeature\nWHERE {?perceptionexperience a fs:PerceptionExperience. \n?humanfeature term:isReflectionOn ?perceptionexperience.}",
+     "result": {
+      "ok": true,
+      "vars": [
+       "humanfeature"
+      ],
+      "rows": [
+       [
+        {
+         "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Sadness",
+         "label": "Sadness",
+         "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Sadness>"
+        }
+       ],
+       [
+        {
+         "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Joy",
+         "label": "Joy",
+         "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Joy>"
+        }
+       ]
+      ]
+     }
+    },
+    "query": "PREFIX fs: <https://w3id.org/framester/data/framestercore/>\nPREFIX term: <http://modellingdh.github.io/ont/odp/term/>\nSELECT ?humanfeature\nWHERE {?perceptionexperience a fs:PerceptionExperience. \n?humanfeature term:isReflectionOn ?perceptionexperience.}",
+    "result": {
+     "ok": true,
+     "vars": [
+      "humanfeature"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Sadness",
+        "label": "Sadness",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Sadness>"
+       }
+      ],
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Joy",
+        "label": "Joy",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Joy>"
+       }
+      ]
+     ]
+    }
+   },
+   {
+    "question": "What non-human entity is involved in the perception experience?",
+    "answer": null,
+    "status": "answered",
+    "origin": "fixed",
+    "note": "No individual is typed cbo:Non-humanEntity; the puppet is a PhysicalObject from the Move pattern.",
+    "original": {
+     "query": "SELECT ?entity\nWHERE {\n?entity a cbo:Non-humanEntity.\n?perception a fs:PerceptionExperience.\n?perception cbo:involves ?entity. }",
+     "result": {
+      "ok": true,
+      "vars": [
+       "entity"
+      ],
+      "rows": []
+     }
+    },
+    "query": "PREFIX cbo: <https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#>\nPREFIX fs: <https://w3id.org/framester/data/framestercore/>\nSELECT ?entity WHERE { ?perception a fs:PerceptionExperience ; cbo:involves ?entity . }",
+    "result": {
+     "ok": true,
+     "vars": [
+      "entity"
+     ],
+     "rows": [
+      [
+       {
+        "value": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Puppet",
+        "label": "Puppet",
+        "curie": "<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#Puppet>"
+       }
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ "prefixes": {
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "prov": "http://www.w3.org/ns/prov#",
+  "cbo": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#",
+  "fs": "https://w3id.org/framester/data/framestercore/",
+  "fsyn": "https://w3id.org/framester/data/framestersyn/",
+  "term": "http://modellingdh.github.io/ont/odp/term/",
+  "aff": "https://w3id.org/affectedBy#",
+  "cco": "http://purl.org/ontology/cco/core#",
+  "dbo": "https://dbpedia.org/ontology/",
+  "dbr": "https://dbpedia.org/resource/",
+  "dbp": "https://dbpedia.org/page/",
+  "participation": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#",
+  "parameter": "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#",
+  "partof": "http://www.ontologydesignpatterns.org/cp/owl/partof.owl#",
+  "classification": "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#",
+  "action": "http://www.ontology.se/odp/content/owl/Action.owl#",
+  "activitypattern": "http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#",
+  "nc": "https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#",
+  "np": "https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#"
+ }
+}
